@@ -156,7 +156,6 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) ->  UITableViewCell {
-        print(indexPath)
         let identifier = getCellIdentifierAtIndexPath(indexPath)
         let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath)
         if let homeCell = cell as? HomeTableViewCell {

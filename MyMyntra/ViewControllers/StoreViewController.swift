@@ -42,7 +42,6 @@ extension StoreViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    //    print(indexPath)
         let cell = tableView.dequeueReusableCell(withIdentifier: StoreTableViewCell.id, for: indexPath)
         if let storesCell = cell as? StoreTableViewCell {
             let store = stores[indexPath.row]
