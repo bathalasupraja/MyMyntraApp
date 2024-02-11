@@ -192,8 +192,8 @@
 				36AC07BA2B7893AF00F82082 /* ViewControllers */,
 				36AC07B82B78937700F82082 /* TableViewCells */,
 				36AC07B92B78939D00F82082 /* CollectionViewCell */,
-				36AC07B72B78931A00F82082 /* Storyboard */,
-				36AC07BB2B7893D200F82082 /* Resources */,
+				36AC07BD2B789A6800F82082 /* Storyboard */,
+				36AC07BC2B789A5500F82082 /* Resources */,
 			);
 			path = MyMyntra;
 			sourceTree = "<group>";
@@ -201,19 +201,10 @@
 		36AC07B62B7892FE00F82082 /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
-				3632095C2B49147A00D58EBB /* AppDelegate.swift */,
 				3632095E2B49147A00D58EBB /* SceneDelegate.swift */,
+				3632095C2B49147A00D58EBB /* AppDelegate.swift */,
 			);
 			path = AppDelegate;
-			sourceTree = "<group>";
-		};
-		36AC07B72B78931A00F82082 /* Storyboard */ = {
-			isa = PBXGroup;
-			children = (
-				363209622B49147A00D58EBB /* Main.storyboard */,
-				363209672B49147B00D58EBB /* LaunchScreen.storyboard */,
-			);
-			path = Storyboard;
 			sourceTree = "<group>";
 		};
 		36AC07B82B78937700F82082 /* TableViewCells */ = {
@@ -304,13 +295,22 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		36AC07BB2B7893D200F82082 /* Resources */ = {
+		36AC07BC2B789A5500F82082 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				363209652B49147B00D58EBB /* Assets.xcassets */,
 				3632096A2B49147B00D58EBB /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		36AC07BD2B789A6800F82082 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				363209622B49147A00D58EBB /* Main.storyboard */,
+				363209672B49147B00D58EBB /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -601,7 +601,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LRAYHCZPKF;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MyMyntra/Info.plist;
+				INFOPLIST_FILE = MyMyntra/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -629,7 +629,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LRAYHCZPKF;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MyMyntra/Info.plist;
+				INFOPLIST_FILE = MyMyntra/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
