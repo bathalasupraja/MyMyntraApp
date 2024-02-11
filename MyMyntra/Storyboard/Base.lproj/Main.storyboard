@@ -1546,6 +1546,60 @@
                                             <outlet property="allProductsCollectionView" destination="GCN-kG-0KI" id="voK-GP-86l"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeProductsImagesTableViewCell" rowHeight="157" id="qk2-d1-P7q" customClass="HomeProductsImagesTableViewCell" customModule="MyMyntra" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="337" width="393" height="157"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qk2-d1-P7q" id="bIe-Wu-xFV">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="157"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="qqo-x2-3bc">
+                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="157"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="VEe-KO-Qdz">
+                                                        <size key="itemSize" width="128" height="128"/>
+                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    </collectionViewFlowLayout>
+                                                    <cells>
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeProductsImagesCollectionViewCell" id="bQp-Gd-BET" customClass="HomeProductsImagesCollectionViewCell" customModule="MyMyntra" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="128" height="99"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="bHH-Pu-Av0">
+                                                                <rect key="frame" x="0.0" y="0.0" width="128" height="99"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dur-k0-ew5">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="128" height="99"/>
+                                                                    </imageView>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="dur-k0-ew5" firstAttribute="leading" secondItem="bHH-Pu-Av0" secondAttribute="leading" id="05J-lC-JPj"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="dur-k0-ew5" secondAttribute="bottom" id="GPK-QY-Vp7"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="dur-k0-ew5" secondAttribute="trailing" id="kQI-U7-6SO"/>
+                                                                    <constraint firstItem="dur-k0-ew5" firstAttribute="top" secondItem="bHH-Pu-Av0" secondAttribute="top" id="wsf-9i-uAa"/>
+                                                                </constraints>
+                                                            </collectionViewCellContentView>
+                                                            <size key="customSize" width="128" height="99"/>
+                                                            <connections>
+                                                                <outlet property="HomeProductsImages" destination="dur-k0-ew5" id="EKS-E7-T55"/>
+                                                            </connections>
+                                                        </collectionViewCell>
+                                                    </cells>
+                                                </collectionView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="qqo-x2-3bc" firstAttribute="leading" secondItem="bIe-Wu-xFV" secondAttribute="leading" id="0rj-ci-74o"/>
+                                                <constraint firstItem="qqo-x2-3bc" firstAttribute="top" secondItem="bIe-Wu-xFV" secondAttribute="top" id="FVc-X0-edt"/>
+                                                <constraint firstAttribute="bottom" secondItem="qqo-x2-3bc" secondAttribute="bottom" id="IU5-9Z-8iz"/>
+                                                <constraint firstAttribute="trailing" secondItem="qqo-x2-3bc" secondAttribute="trailing" id="UgL-ou-lNY"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="homeProductsImagesCollectionView" destination="qqo-x2-3bc" id="5eZ-x4-N7u"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>

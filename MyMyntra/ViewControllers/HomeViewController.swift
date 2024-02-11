@@ -41,6 +41,7 @@ class HomeViewController: UIViewController {
     var homeCoocks = [HomeCoockModel]()
     var homeDecors = [HomeDecorModel]()
     var allProducts = [AllProductsModel]()
+    var homeProducts = [HomeProductsImageModel]()
     
     override func viewDidLoad() { // TODO: should be viewDidLoad()
         super.viewDidLoad()
@@ -55,6 +56,7 @@ class HomeViewController: UIViewController {
         createHomeCoocks()
         createHomeDecors()
         createAllProducts()
+        createHomeProducts()
         homeTableView.dataSource = self
         homeTableView.delegate = self
         searchView.layer.cornerRadius = 20
@@ -112,6 +114,12 @@ class HomeViewController: UIViewController {
         }
     }
     
+    func createHomeProducts() {
+        for homeProduct in ["Image 58", "Image 59", "Image 60", "Image 61", "Image 62", "Image 63"] {
+            homeProducts.append(HomeProductsImageModel(image: homeProduct))
+        }
+    }
+    
     func getCellIdentifierAtIndexPath(_ indexPath: IndexPath) -> String {
         switch indexPath.row {
         case 0,1:
@@ -126,6 +134,8 @@ class HomeViewController: UIViewController {
             return HomeProductsTableViewCell.id
         case 8:
             return AllProductsTableViewCell.id
+        case 9:
+            return HomeProductsImagesTableViewCell.id
         default:
             return ""
         }
@@ -144,6 +154,8 @@ class HomeViewController: UIViewController {
             return 350
         case 8:
             return 60
+        case 9:
+            return 200
         default:
             return 0
         }
@@ -152,7 +164,7 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 9
+        return 10
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) ->  UITableViewCell {
@@ -161,13 +173,14 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
         if let homeCell = cell as? HomeTableViewCell {
             if indexPath.row == 0 {
                 homeCell.items = homeItems
-            } else  {
+            } else if indexPath.row == 1 {
                 homeCell.items = shoppingItems
             }
         }
         if let discountTableViewCell = cell as? DiscountTableViewCell {
-            discountTableViewCell.images = offersCreditImages
-    
+            if indexPath.row == 3 {
+                discountTableViewCell.images = offersCreditImages
+            }
         }
         
         if let homeFurnituresTableViewCell = cell as? HomeFurnituresTableViewCell {
@@ -178,13 +191,20 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
             } else if indexPath.row == 6 {
                 homeFurnituresTableViewCell.items = homeDecors
             }
-        } else if let allProductsTableViewCell = cell as? AllProductsTableViewCell {
+        }
+        if let allProductsTableViewCell = cell as? AllProductsTableViewCell {
             if indexPath.row == 8 {
                 allProductsTableViewCell.names = allProducts
+            }
+        }
+        if let homeProductsImagesTableViewCell = cell as? HomeProductsImagesTableViewCell {
+            if indexPath.row == 9 {
+                homeProductsImagesTableViewCell.images = homeProducts
             } else {
                 
             }
         }
+        
         return cell
     }
 
