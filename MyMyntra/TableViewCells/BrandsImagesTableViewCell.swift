@@ -52,7 +52,6 @@ class BrandsImagesTableViewCell: UITableViewCell {
             } else {
                 self.scrollIndex = 0
             }
-            print("\n>>>> scroll to index: \(self.scrollIndex)")
             let indexPath = IndexPath(item: self.scrollIndex, section: 0)
             self.brandsCollectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
         })

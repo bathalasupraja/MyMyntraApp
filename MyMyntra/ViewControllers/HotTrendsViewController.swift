@@ -111,7 +111,6 @@ extension HotTrendsViewController: UITableViewDataSource,UITableViewDelegate {
         return 5
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) ->  UITableViewCell {
-        print(indexPath)
         let identifier = getCellIdentifierAtIndexPath(indexPath)
         let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath)
         if let hotTrendsTableViewCell = cell as? HotTrendsTableViewCell {
