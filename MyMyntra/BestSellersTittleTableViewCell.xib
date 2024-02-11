@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BestSellersTittleTableViewCell" rowHeight="55" id="KGk-i7-Jjw" customClass="BestSellersTittleTableViewCell" customModule="MyMyntra" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="357" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="357" height="55"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jBK-Ns-6ei">
+                        <rect key="frame" x="0.0" y="0.0" width="357" height="55"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="best sellers image" translatesAutoresizingMaskIntoConstraints="NO" id="jQb-er-0i0">
+                                <rect key="frame" x="0.0" y="0.0" width="357" height="55"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="jQb-er-0i0" secondAttribute="bottom" id="Ljm-H4-dye"/>
+                            <constraint firstAttribute="trailing" secondItem="jQb-er-0i0" secondAttribute="trailing" id="WYX-MU-XzL"/>
+                            <constraint firstItem="jQb-er-0i0" firstAttribute="top" secondItem="jBK-Ns-6ei" secondAttribute="top" id="e1Y-gy-X8u"/>
+                            <constraint firstItem="jQb-er-0i0" firstAttribute="leading" secondItem="jBK-Ns-6ei" secondAttribute="leading" id="rmH-Us-PSf"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="jBK-Ns-6ei" secondAttribute="bottom" id="Nus-e9-yJl"/>
+                    <constraint firstAttribute="trailing" secondItem="jBK-Ns-6ei" secondAttribute="trailing" id="SZ0-NG-YQy"/>
+                    <constraint firstItem="jBK-Ns-6ei" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="kje-Je-jk6"/>
+                    <constraint firstItem="jBK-Ns-6ei" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="noU-pE-9Oe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="tittleImageView" destination="jQb-er-0i0" id="OtC-yr-K8w"/>
+                <outlet property="tittleView" destination="jBK-Ns-6ei" id="TKq-iC-YSO"/>
+            </connections>
+            <point key="canvasLocation" x="49.618320610687022" y="22.183098591549296"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="best sellers image" width="720" height="111"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
