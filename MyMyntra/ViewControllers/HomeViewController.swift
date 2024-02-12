@@ -32,6 +32,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var beautyButton: UIButton!
     @IBOutlet weak var beautyLabel: UILabel!
     @IBOutlet weak var homeTableView: UITableView!
+    @IBOutlet weak var homeProductsImagesCollectionView: UICollectionView!
     
     
     var homeItems = [HomeItemModel]()
@@ -42,6 +43,7 @@ class HomeViewController: UIViewController {
     var homeDecors = [HomeDecorModel]()
     var allProducts = [AllProductsModel]()
     var homeProducts = [HomeProductsImageModel]()
+    
     
     override func viewDidLoad() { // TODO: should be viewDidLoad()
         super.viewDidLoad()
@@ -59,6 +61,8 @@ class HomeViewController: UIViewController {
         createHomeProducts()
         homeTableView.dataSource = self
         homeTableView.delegate = self
+        homeProductsImagesCollectionView.dataSource = self
+        homeProductsImagesCollectionView.delegate = self
         searchView.layer.cornerRadius = 20
         searchView.layer.borderWidth = 1.5
         searchView.layer.borderColor = UIColor.lightGray.cgColor
@@ -135,7 +139,7 @@ class HomeViewController: UIViewController {
         case 8:
             return AllProductsTableViewCell.id
         case 9:
-            return HomeProductsImagesTableViewCell.id
+            return HomeProductsImagesCollectionViewCell.id
         default:
             return ""
         }
@@ -164,7 +168,7 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return 8
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) ->  UITableViewCell {
@@ -197,14 +201,6 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
                 allProductsTableViewCell.names = allProducts
             }
         }
-        if let homeProductsImagesTableViewCell = cell as? HomeProductsImagesTableViewCell {
-            if indexPath.row == 9 {
-                homeProductsImagesTableViewCell.images = homeProducts
-            } else {
-                
-            }
-        }
-        
         return cell
     }
 
@@ -214,6 +210,44 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     }
 }
 
+extension HomeViewController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        homeProducts.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HomeProductsImagesCollectionViewCell.id, for: indexPath)
+        if let homeProductsImagesCollectionViewCell = cell as? HomeProductsImagesCollectionViewCell {
+            let model = homeProducts[indexPath.row]
+            if let homeProducts = model as? HomeProductsImageModel {
+                if let imageName = homeProducts.image {
+                    if indexPath.row == 9 {
+                        let image = UIImage(named: imageName)
+                        homeProductsImagesCollectionViewCell.homeProductsImages.image = image
+                    } else {
+                        
+                    }
+                }
+            }
+        }
+        return cell
+    }
+}
+extension HomeViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        0
+    }
+        
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let collectionViewSize = collectionView.bounds.size
+        return CGSize(width: 150, height: 200)
+        
+    }
+        
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+    }
+}
 
 
 

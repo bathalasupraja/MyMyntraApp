@@ -7,6 +7,10 @@
 
 import UIKit
 
+struct HomeProductsImageModel {
+    var image: String?
+}
+
 class HomeProductsImagesCollectionViewCell: UICollectionViewCell {
     
     static let id = "HomeProductsImagesCollectionViewCell"
