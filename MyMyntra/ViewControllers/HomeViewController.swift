@@ -32,7 +32,6 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var beautyButton: UIButton!
     @IBOutlet weak var beautyLabel: UILabel!
     @IBOutlet weak var homeTableView: UITableView!
-    @IBOutlet weak var homeProductsImagesCollectionView: UICollectionView!
     
     
     var homeItems = [HomeItemModel]()
@@ -42,14 +41,17 @@ class HomeViewController: UIViewController {
     var homeCoocks = [HomeCoockModel]()
     var homeDecors = [HomeDecorModel]()
     var allProducts = [AllProductsModel]()
-    var homeProducts = [HomeProductsImageModel]()
-    
+    var product1 = [ProductModel1]()
+    var product2 = [ProductModel2]()
+    var product3 = [ProductModel3]()
+    var product4 = [ProductModel4]()
     
     override func viewDidLoad() { // TODO: should be viewDidLoad()
         super.viewDidLoad()
         homeTableView.register(UINib(nibName: OffersTableViewCell.id, bundle: nil), forCellReuseIdentifier: OffersTableViewCell.id)
         homeTableView.register(UINib(nibName: DiscountTableViewCell.id, bundle: nil), forCellReuseIdentifier: DiscountTableViewCell.id)
         homeTableView.register(UINib(nibName: HomeProductsTableViewCell.id, bundle: nil), forCellReuseIdentifier: HomeProductsTableViewCell.id)
+        homeTableView.register(UINib(nibName: HomeVersionTableViewCell.id, bundle: nil), forCellReuseIdentifier: HomeVersionTableViewCell.id)
        
         createHomeItems()
         createShoppingItems()
@@ -58,11 +60,12 @@ class HomeViewController: UIViewController {
         createHomeCoocks()
         createHomeDecors()
         createAllProducts()
-        createHomeProducts()
+        createProduct1()
+        createProduct2()
+        createProduct3()
+        createProduct4()
         homeTableView.dataSource = self
         homeTableView.delegate = self
-        homeProductsImagesCollectionView.dataSource = self
-        homeProductsImagesCollectionView.delegate = self
         searchView.layer.cornerRadius = 20
         searchView.layer.borderWidth = 1.5
         searchView.layer.borderColor = UIColor.lightGray.cgColor
@@ -118,9 +121,27 @@ class HomeViewController: UIViewController {
         }
     }
     
-    func createHomeProducts() {
-        for homeProduct in ["Image 58", "Image 59", "Image 60", "Image 61", "Image 62", "Image 63"] {
-            homeProducts.append(HomeProductsImageModel(image: homeProduct))
+    func createProduct1() {
+        for product in ["Image 58", "Image 59"] {
+            product1.append(ProductModel1(image: product))
+        }
+    }
+    
+    func createProduct2() {
+        for product in ["Image 60", "Image 61"] {
+            product2.append(ProductModel2(image: product))
+        }
+    }
+    
+    func createProduct3() {
+        for product in ["Image 62", "Image 63"] {
+            product3.append(ProductModel3(image: product))
+        }
+    }
+    
+    func createProduct4() {
+        for product in ["Image 64", "Image 65"] {
+            product4.append(ProductModel4(image: product))
         }
     }
     
@@ -138,8 +159,10 @@ class HomeViewController: UIViewController {
             return HomeProductsTableViewCell.id
         case 8:
             return AllProductsTableViewCell.id
-        case 9:
-            return HomeProductsImagesCollectionViewCell.id
+        case 9,10,11,12:
+            return HomeProductsImagesTableViewCell.id
+        case 13:
+            return HomeVersionTableViewCell.id
         default:
             return ""
         }
@@ -151,15 +174,17 @@ class HomeViewController: UIViewController {
         case 2:
             return 300
         case 3:
-            return 40
+            return 60
         case 4,5,6:
             return 320
         case 7:
             return 350
         case 8:
             return 60
-        case 9:
-            return 200
+        case 9,10,11,12:
+            return 350
+        case 13:
+            return 180
         default:
             return 0
         }
@@ -168,7 +193,7 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 8
+        return 14
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) ->  UITableViewCell {
@@ -201,51 +226,23 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
                 allProductsTableViewCell.names = allProducts
             }
         }
+        if let homeProductsImagesTableViewCell = cell as? HomeProductsImagesTableViewCell {
+            if indexPath.row == 9 {
+                homeProductsImagesTableViewCell.images = product1
+            } else if indexPath.row == 10 {
+                homeProductsImagesTableViewCell.images = product2
+            } else if indexPath.row == 11 {
+                homeProductsImagesTableViewCell.images = product3
+            } else if indexPath.row == 12 {
+                homeProductsImagesTableViewCell.images = product4
+            }
+        }
         return cell
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         let height = getCellHeightAtIndexPath(indexPath)
         return height
-    }
-}
-
-extension HomeViewController: UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        homeProducts.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HomeProductsImagesCollectionViewCell.id, for: indexPath)
-        if let homeProductsImagesCollectionViewCell = cell as? HomeProductsImagesCollectionViewCell {
-            let model = homeProducts[indexPath.row]
-            if let homeProducts = model as? HomeProductsImageModel {
-                if let imageName = homeProducts.image {
-                    if indexPath.row == 9 {
-                        let image = UIImage(named: imageName)
-                        homeProductsImagesCollectionViewCell.homeProductsImages.image = image
-                    } else {
-                        
-                    }
-                }
-            }
-        }
-        return cell
-    }
-}
-extension HomeViewController: UICollectionViewDelegate {
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        0
-    }
-        
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let collectionViewSize = collectionView.bounds.size
-        return CGSize(width: 150, height: 200)
-        
-    }
-        
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
     }
 }
 

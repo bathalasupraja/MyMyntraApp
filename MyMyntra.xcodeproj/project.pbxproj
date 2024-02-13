@@ -50,6 +50,9 @@
 		369218A42B65117100A28405 /* EverydayTrendingEssentialsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 369218A22B65117100A28405 /* EverydayTrendingEssentialsTableViewCell.xib */; };
 		369218A72B65145600A28405 /* EverydayTrendingEssentialsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369218A52B65145600A28405 /* EverydayTrendingEssentialsCollectionViewCell.swift */; };
 		369218A82B65145600A28405 /* EverydayTrendingEssentialsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 369218A62B65145600A28405 /* EverydayTrendingEssentialsCollectionViewCell.xib */; };
+		3693E73D2B7B43E600B0EBA6 /* HomeProductsImagesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3693E73C2B7B43E600B0EBA6 /* HomeProductsImagesTableViewCell.swift */; };
+		3693E7402B7B74D300B0EBA6 /* HomeVersionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3693E73E2B7B74D300B0EBA6 /* HomeVersionTableViewCell.swift */; };
+		3693E7412B7B74D300B0EBA6 /* HomeVersionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3693E73F2B7B74D300B0EBA6 /* HomeVersionTableViewCell.xib */; };
 		36A44B622B6212EE00D027C8 /* HotTrendsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A44B612B6212ED00D027C8 /* HotTrendsTableViewCell.swift */; };
 		36A44B642B6216C300D027C8 /* HotTrendsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A44B632B6216C300D027C8 /* HotTrendsCollectionViewCell.swift */; };
 		36A5CE632B62A31B00F62100 /* UserPoliciesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A5CE612B62A31B00F62100 /* UserPoliciesTableViewCell.swift */; };
@@ -128,6 +131,9 @@
 		369218A22B65117100A28405 /* EverydayTrendingEssentialsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EverydayTrendingEssentialsTableViewCell.xib; sourceTree = "<group>"; };
 		369218A52B65145600A28405 /* EverydayTrendingEssentialsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EverydayTrendingEssentialsCollectionViewCell.swift; sourceTree = "<group>"; };
 		369218A62B65145600A28405 /* EverydayTrendingEssentialsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EverydayTrendingEssentialsCollectionViewCell.xib; sourceTree = "<group>"; };
+		3693E73C2B7B43E600B0EBA6 /* HomeProductsImagesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProductsImagesTableViewCell.swift; sourceTree = "<group>"; };
+		3693E73E2B7B74D300B0EBA6 /* HomeVersionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVersionTableViewCell.swift; sourceTree = "<group>"; };
+		3693E73F2B7B74D300B0EBA6 /* HomeVersionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVersionTableViewCell.xib; sourceTree = "<group>"; };
 		36A44B612B6212ED00D027C8 /* HotTrendsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotTrendsTableViewCell.swift; sourceTree = "<group>"; };
 		36A44B632B6216C300D027C8 /* HotTrendsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotTrendsCollectionViewCell.swift; sourceTree = "<group>"; };
 		36A5CE612B62A31B00F62100 /* UserPoliciesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPoliciesTableViewCell.swift; sourceTree = "<group>"; };
@@ -212,6 +218,9 @@
 		36AC07B82B78937700F82082 /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				3693E73F2B7B74D300B0EBA6 /* HomeVersionTableViewCell.xib */,
+				3693E73E2B7B74D300B0EBA6 /* HomeVersionTableViewCell.swift */,
+				3693E73C2B7B43E600B0EBA6 /* HomeProductsImagesTableViewCell.swift */,
 				368A91992B7753F1001DF534 /* HomeProductsTableViewCell.swift */,
 				368A919A2B7753F1001DF534 /* HomeProductsTableViewCell.xib */,
 				36D786D72B75E16B00508036 /* HomeFurnituresTableViewCell.swift */,
@@ -397,6 +406,7 @@
 				36E305B32B735E4900822D45 /* MostLovedEthinicWearTableViewCell.xib in Resources */,
 				367177952B63ECAB00D0F465 /* EverydayImageTableViewCell.xib in Resources */,
 				363209642B49147A00D58EBB /* Main.storyboard in Resources */,
+				3693E7412B7B74D300B0EBA6 /* HomeVersionTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +432,7 @@
 				36E96ECA2B59552400A4664C /* ProfileViewController.swift in Sources */,
 				365C67022B6F4BE400195496 /* HotTrendsImagesCollectionViewCell.swift in Sources */,
 				36E305B22B735E4900822D45 /* MostLovedEthinicWearTableViewCell.swift in Sources */,
+				3693E73D2B7B43E600B0EBA6 /* HomeProductsImagesTableViewCell.swift in Sources */,
 				362380E12B58F46B00F7365B /* DiscountTableViewCell.swift in Sources */,
 				36A44B642B6216C300D027C8 /* HotTrendsCollectionViewCell.swift in Sources */,
 				36741E3E2B4D31EC00D32474 /* HomeTableViewCell.swift in Sources */,
@@ -453,6 +464,7 @@
 				36A88C362B690AB7009E9958 /* SellerImagesTableViewCell.swift in Sources */,
 				36D786DA2B75E3CE00508036 /* HomeFurnituresCollectionViewCell.swift in Sources */,
 				36E96EC82B59529A00A4664C /* BrandsViewController.swift in Sources */,
+				3693E7402B7B74D300B0EBA6 /* HomeVersionTableViewCell.swift in Sources */,
 				369218A72B65145600A28405 /* EverydayTrendingEssentialsCollectionViewCell.swift in Sources */,
 				36A88C2D2B68C6C3009E9958 /* BestSellersTableViewCell.swift in Sources */,
 				36457DA62B615B4000BDE641 /* SegmentTableViewCell.swift in Sources */,

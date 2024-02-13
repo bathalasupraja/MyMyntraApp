@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeVersionTableViewCell" rowHeight="227" id="KGk-i7-Jjw" customClass="HomeVersionTableViewCell" customModule="MyMyntra" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="353" height="227"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="353" height="227"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qFv-Bx-8Hq">
+                        <rect key="frame" x="20" y="20" width="313" height="50"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5g5-aF-acP">
+                                <rect key="frame" x="0.0" y="0.0" width="313" height="50"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="View More Products"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5g5-aF-acP" firstAttribute="leading" secondItem="qFv-Bx-8Hq" secondAttribute="leading" id="44x-Af-nzE"/>
+                            <constraint firstAttribute="bottom" secondItem="5g5-aF-acP" secondAttribute="bottom" id="DqC-M1-Owd"/>
+                            <constraint firstAttribute="trailing" secondItem="5g5-aF-acP" secondAttribute="trailing" id="GYg-8m-mOf"/>
+                            <constraint firstItem="5g5-aF-acP" firstAttribute="top" secondItem="qFv-Bx-8Hq" secondAttribute="top" id="KRW-Iw-aw2"/>
+                            <constraint firstAttribute="height" constant="50" id="mDL-w2-zX4"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;Clothes mean nothing until someone lives in them.&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ke-ZL-0e8">
+                        <rect key="frame" x="-1.6666666666666572" y="105" width="356.33333333333326" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="OhY-Sk-5nF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oscar De La Renta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vVI-ud-0h6">
+                        <rect key="frame" x="112.66666666666666" y="141" width="127.66666666666666" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Ppg-KR-RXK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" systemColor="systemGray2Color"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="qFv-Bx-8Hq" secondAttribute="trailing" constant="20" id="1ud-T9-E8T"/>
+                    <constraint firstItem="2Ke-ZL-0e8" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="7xN-8Z-A5g"/>
+                    <constraint firstItem="vVI-ud-0h6" firstAttribute="top" secondItem="2Ke-ZL-0e8" secondAttribute="bottom" constant="15" id="S2t-pJ-euI"/>
+                    <constraint firstItem="qFv-Bx-8Hq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Uzd-fO-aFV"/>
+                    <constraint firstItem="qFv-Bx-8Hq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="ZJy-lE-prH"/>
+                    <constraint firstItem="2Ke-ZL-0e8" firstAttribute="top" secondItem="qFv-Bx-8Hq" secondAttribute="bottom" constant="35" id="ljX-VF-6XG"/>
+                    <constraint firstItem="vVI-ud-0h6" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="o6n-56-zSz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="homeLabel" destination="2Ke-ZL-0e8" id="E4A-fT-j8f"/>
+                <outlet property="homeVersionButton" destination="5g5-aF-acP" id="IAY-jh-471"/>
+                <outlet property="homeVersionLabel" destination="vVI-ud-0h6" id="XXU-0E-tEH"/>
+                <outlet property="homeVersionView" destination="qFv-Bx-8Hq" id="yNE-zL-ZrE"/>
+            </connections>
+            <point key="canvasLocation" x="-43.511450381679388" y="84.154929577464799"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

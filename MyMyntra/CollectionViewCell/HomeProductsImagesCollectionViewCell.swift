@@ -7,9 +7,9 @@
 
 import UIKit
 
-struct HomeProductsImageModel {
-    var image: String?
-}
+//struct HomeProductsImageModel {
+//    var image: String?
+//}
 
 class HomeProductsImagesCollectionViewCell: UICollectionViewCell {
     
