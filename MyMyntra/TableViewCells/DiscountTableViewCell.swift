@@ -55,16 +55,16 @@ extension DiscountTableViewCell: UICollectionViewDataSource, UICollectionViewDel
 }
 extension DiscountTableViewCell:  UICollectionViewDelegateFlowLayout { // TODO: delegate flow layout should move to HomeTableViewCell
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        10
+        0
     }
         
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        10
+        0
     }
         
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
             //        let width = (collectionView.bounds.width - 15)/2
-        return CGSize(width:collectionView.frame.width , height: 40)
+        return CGSize(width:collectionView.bounds.width , height: 40)
     }
         
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {

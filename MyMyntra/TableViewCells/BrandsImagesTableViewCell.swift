@@ -55,7 +55,6 @@ class BrandsImagesTableViewCell: UITableViewCell {
             let indexPath = IndexPath(item: self.scrollIndex, section: 0)
             self.brandsCollectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
         })
-
     }
 
     func removeScrollTimer() {

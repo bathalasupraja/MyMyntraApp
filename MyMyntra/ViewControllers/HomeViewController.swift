@@ -41,12 +41,17 @@ class HomeViewController: UIViewController {
     var homeCoocks = [HomeCoockModel]()
     var homeDecors = [HomeDecorModel]()
     var allProducts = [AllProductsModel]()
+    var product1 = [ProductModel1]()
+    var product2 = [ProductModel2]()
+    var product3 = [ProductModel3]()
+    var product4 = [ProductModel4]()
     
     override func viewDidLoad() { // TODO: should be viewDidLoad()
         super.viewDidLoad()
         homeTableView.register(UINib(nibName: OffersTableViewCell.id, bundle: nil), forCellReuseIdentifier: OffersTableViewCell.id)
         homeTableView.register(UINib(nibName: DiscountTableViewCell.id, bundle: nil), forCellReuseIdentifier: DiscountTableViewCell.id)
         homeTableView.register(UINib(nibName: HomeProductsTableViewCell.id, bundle: nil), forCellReuseIdentifier: HomeProductsTableViewCell.id)
+        homeTableView.register(UINib(nibName: HomeVersionTableViewCell.id, bundle: nil), forCellReuseIdentifier: HomeVersionTableViewCell.id)
        
         createHomeItems()
         createShoppingItems()
@@ -55,6 +60,10 @@ class HomeViewController: UIViewController {
         createHomeCoocks()
         createHomeDecors()
         createAllProducts()
+        createProduct1()
+        createProduct2()
+        createProduct3()
+        createProduct4()
         homeTableView.dataSource = self
         homeTableView.delegate = self
         searchView.layer.cornerRadius = 20
@@ -112,6 +121,30 @@ class HomeViewController: UIViewController {
         }
     }
     
+    func createProduct1() {
+        for product in ["Image 58", "Image 59"] {
+            product1.append(ProductModel1(image: product))
+        }
+    }
+    
+    func createProduct2() {
+        for product in ["Image 60", "Image 61"] {
+            product2.append(ProductModel2(image: product))
+        }
+    }
+    
+    func createProduct3() {
+        for product in ["Image 62", "Image 63"] {
+            product3.append(ProductModel3(image: product))
+        }
+    }
+    
+    func createProduct4() {
+        for product in ["Image 64", "Image 65"] {
+            product4.append(ProductModel4(image: product))
+        }
+    }
+    
     func getCellIdentifierAtIndexPath(_ indexPath: IndexPath) -> String {
         switch indexPath.row {
         case 0,1:
@@ -126,6 +159,10 @@ class HomeViewController: UIViewController {
             return HomeProductsTableViewCell.id
         case 8:
             return AllProductsTableViewCell.id
+        case 9,10,11,12:
+            return HomeProductsImagesTableViewCell.id
+        case 13:
+            return HomeVersionTableViewCell.id
         default:
             return ""
         }
@@ -137,13 +174,17 @@ class HomeViewController: UIViewController {
         case 2:
             return 300
         case 3:
-            return 40
+            return 60
         case 4,5,6:
             return 320
         case 7:
             return 350
         case 8:
             return 60
+        case 9,10,11,12:
+            return 350
+        case 13:
+            return 180
         default:
             return 0
         }
@@ -152,7 +193,7 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 9
+        return 14
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) ->  UITableViewCell {
@@ -161,13 +202,14 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
         if let homeCell = cell as? HomeTableViewCell {
             if indexPath.row == 0 {
                 homeCell.items = homeItems
-            } else  {
+            } else if indexPath.row == 1 {
                 homeCell.items = shoppingItems
             }
         }
         if let discountTableViewCell = cell as? DiscountTableViewCell {
-            discountTableViewCell.images = offersCreditImages
-    
+            if indexPath.row == 3 {
+                discountTableViewCell.images = offersCreditImages
+            }
         }
         
         if let homeFurnituresTableViewCell = cell as? HomeFurnituresTableViewCell {
@@ -178,11 +220,21 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
             } else if indexPath.row == 6 {
                 homeFurnituresTableViewCell.items = homeDecors
             }
-        } else if let allProductsTableViewCell = cell as? AllProductsTableViewCell {
+        }
+        if let allProductsTableViewCell = cell as? AllProductsTableViewCell {
             if indexPath.row == 8 {
                 allProductsTableViewCell.names = allProducts
-            } else {
-                
+            }
+        }
+        if let homeProductsImagesTableViewCell = cell as? HomeProductsImagesTableViewCell {
+            if indexPath.row == 9 {
+                homeProductsImagesTableViewCell.images = product1
+            } else if indexPath.row == 10 {
+                homeProductsImagesTableViewCell.images = product2
+            } else if indexPath.row == 11 {
+                homeProductsImagesTableViewCell.images = product3
+            } else if indexPath.row == 12 {
+                homeProductsImagesTableViewCell.images = product4
             }
         }
         return cell
@@ -193,7 +245,6 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
         return height
     }
 }
-
 
 
 

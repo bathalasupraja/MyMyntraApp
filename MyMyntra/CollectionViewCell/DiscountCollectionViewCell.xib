@@ -24,6 +24,7 @@
                 <constraint firstItem="TjT-ZL-wMM" firstAttribute="leading" secondItem="f8m-x1-aIT" secondAttribute="leading" id="0DS-mJ-LeK"/>
                 <constraint firstItem="TjT-ZL-wMM" firstAttribute="top" secondItem="f8m-x1-aIT" secondAttribute="top" id="83t-Zw-i8b"/>
                 <constraint firstItem="f8m-x1-aIT" firstAttribute="trailing" secondItem="TjT-ZL-wMM" secondAttribute="trailing" id="JMI-Ea-G1v"/>
+                <constraint firstItem="f8m-x1-aIT" firstAttribute="trailing" secondItem="TjT-ZL-wMM" secondAttribute="trailing" id="K23-fF-81o"/>
                 <constraint firstItem="f8m-x1-aIT" firstAttribute="bottom" secondItem="TjT-ZL-wMM" secondAttribute="bottom" id="K3m-gd-Njt"/>
             </constraints>
             <connections>
