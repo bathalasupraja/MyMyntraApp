@@ -240,15 +240,15 @@
                                             <outlet property="hotTrendsCollectionView" destination="TUv-1H-zQ5" id="e9r-Zy-w3P"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HotTrendsImagesTableViewCell" rowHeight="157" id="Shb-tm-55c" customClass="HotTrendsImagesTableViewCell" customModule="MyMyntra" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="168" width="393" height="157"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HotTrendsImagesTableViewCell" rowHeight="130" id="Shb-tm-55c" customClass="HotTrendsImagesTableViewCell" customModule="MyMyntra" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="168" width="393" height="130"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Shb-tm-55c" id="lug-cm-ISA">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="157"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="130"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="aW9-4i-Z0g">
-                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="157"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="130"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="1hN-WB-O1i">
                                                         <size key="itemSize" width="128" height="128"/>
@@ -258,7 +258,7 @@
                                                     </collectionViewFlowLayout>
                                                     <cells>
                                                         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HotTrendsImagesCollectionViewCell" id="dyX-sl-9x4" customClass="HotTrendsImagesCollectionViewCell" customModule="MyMyntra" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="14.666666666666666" width="128" height="128"/>
+                                                            <rect key="frame" x="0.0" y="1" width="128" height="128"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="fQi-4A-p3g">
                                                                 <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
@@ -294,7 +294,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HotTrendsOffersTableViewCell" rowHeight="69" id="MS5-Yu-piW" customClass="HotTrendsOffersTableViewCell" customModule="MyMyntra" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="325" width="393" height="69"/>
+                                        <rect key="frame" x="0.0" y="298" width="393" height="69"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MS5-Yu-piW" id="onq-mv-Kc8">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="69"/>
@@ -385,7 +385,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HotTrendsCouponTableViewCell" rowHeight="157" id="gRn-Id-ola" customClass="HotTrendsCouponTableViewCell" customModule="MyMyntra" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="394" width="393" height="157"/>
+                                        <rect key="frame" x="0.0" y="367" width="393" height="157"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gRn-Id-ola" id="nga-mG-Kyz">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="157"/>

@@ -53,6 +53,7 @@ class HotTrendsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         hotTrendsTableView.register(UINib(nibName: SegmentTableViewCell.id, bundle: nil), forCellReuseIdentifier: SegmentTableViewCell.id)
+        hotTrendsTableView.register(UINib(nibName: HotTrendsFreshDropsTableViewCell.id, bundle: nil), forCellReuseIdentifier: HotTrendsFreshDropsTableViewCell.id)
         createHotTrends()
         createHotTrendsImages()
         hotTrendsTableView.dataSource = self
@@ -83,6 +84,8 @@ class HotTrendsViewController: UIViewController {
             return HotTrendsOffersTableViewCell.id
         case 4:
             return HotTrendsCouponTableViewCell.id
+        case 5:
+            return HotTrendsFreshDropsTableViewCell.id
         default:
             return ""
         }
@@ -100,6 +103,8 @@ class HotTrendsViewController: UIViewController {
             return 50
         case 4:
             return 150
+        case 5:
+            return 60
         default:
             return 0
         }
@@ -108,7 +113,7 @@ class HotTrendsViewController: UIViewController {
 
 extension HotTrendsViewController: UITableViewDataSource,UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 6
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) ->  UITableViewCell {
         let identifier = getCellIdentifierAtIndexPath(indexPath)
