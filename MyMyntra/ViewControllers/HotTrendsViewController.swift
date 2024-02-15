@@ -50,6 +50,7 @@ class HotTrendsViewController: UIViewController {
     var hotTrends = [HotTrendModel]()
     var hotTrendsImages = [HotTrendsImageModel]()
     var freshDrops = [FreshDropsImageModel]()
+    var hotTrendsViews = [HotTrendsViewsModel]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,6 +60,7 @@ class HotTrendsViewController: UIViewController {
         createHotTrends()
         createHotTrendsImages()
         createFreshDrops()
+        createHotTrendsViews()
         hotTrendsTableView.dataSource = self
         hotTrendsTableView.delegate = self
     }
@@ -81,6 +83,12 @@ class HotTrendsViewController: UIViewController {
         }
     }
     
+    func createHotTrendsViews() {
+        for hotTrendsView in ["All", "Jeans", "Dresses", "Track Pants", "Trousers", "Sweaters", "Tops", "Skirts"] {
+            hotTrendsViews.append(HotTrendsViewsModel(name: hotTrendsView))
+        }
+    }
+    
     func getCellIdentifierAtIndexPath(_ indexPath: IndexPath) -> String {
         switch indexPath.row {
         case 0:
@@ -97,6 +105,8 @@ class HotTrendsViewController: UIViewController {
             return HotTrendsFreshDropsTableViewCell.id
         case 6:
             return HotTrendsFreshDropsImagesTableViewCell.id
+        case 7:
+            return HotTrendsViewsTableViewCell.id
         default:
             return ""
         }
@@ -118,6 +128,8 @@ class HotTrendsViewController: UIViewController {
             return 60
         case 6:
             return 250
+        case 7:
+            return 60
         default:
             return 0
         }
@@ -126,7 +138,7 @@ class HotTrendsViewController: UIViewController {
 
 extension HotTrendsViewController: UITableViewDataSource,UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 7
+        return 8
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) ->  UITableViewCell {
         let identifier = getCellIdentifierAtIndexPath(indexPath)
@@ -141,6 +153,12 @@ extension HotTrendsViewController: UITableViewDataSource,UITableViewDelegate {
         
         if let hotTrendsFreshDropsImagesTableViewCell = cell as? HotTrendsFreshDropsImagesTableViewCell {
             hotTrendsFreshDropsImagesTableViewCell.images = freshDrops
+        }
+        
+        if let HotTrendsViewsTableViewCell = cell as? HotTrendsViewsTableViewCell {
+            if indexPath.row == 7 {
+                HotTrendsViewsTableViewCell.names = hotTrendsViews
+            }
         }
     return cell
 }

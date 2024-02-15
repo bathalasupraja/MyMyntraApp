@@ -30,7 +30,7 @@
             </constraints>
             <size key="customSize" width="339" height="215"/>
             <connections>
-                <outlet property="freshDropsImages" destination="aAz-pz-9Ce" id="nn0-qQ-9aJ"/>
+                <outlet property="freshDropsImageView" destination="aAz-pz-9Ce" id="5OI-sx-OZ0"/>
             </connections>
             <point key="canvasLocation" x="231.29770992366412" y="78.521126760563391"/>
         </collectionViewCell>

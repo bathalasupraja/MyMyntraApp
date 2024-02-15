@@ -11,7 +11,7 @@ class FreshDropsImagesCollectionViewCell: UICollectionViewCell {
     
     static let id = "FreshDropsImagesCollectionViewCell"
     
-    @IBOutlet weak var freshDropsImages: UIImageView!
+    @IBOutlet weak var freshDropsImageView: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
