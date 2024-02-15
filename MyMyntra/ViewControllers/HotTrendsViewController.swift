@@ -51,16 +51,19 @@ class HotTrendsViewController: UIViewController {
     var hotTrendsImages = [HotTrendsImageModel]()
     var freshDrops = [FreshDropsImageModel]()
     var hotTrendsViews = [HotTrendsViewsModel]()
+    var hotTrendsFashions = [HotTrendsFashionsModel]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         hotTrendsTableView.register(UINib(nibName: SegmentTableViewCell.id, bundle: nil), forCellReuseIdentifier: SegmentTableViewCell.id)
         hotTrendsTableView.register(UINib(nibName: HotTrendsFreshDropsTableViewCell.id, bundle: nil), forCellReuseIdentifier: HotTrendsFreshDropsTableViewCell.id)
         hotTrendsTableView.register(UINib(nibName: HotTrendsFreshDropsImagesTableViewCell.id, bundle: nil), forCellReuseIdentifier: HotTrendsFreshDropsImagesTableViewCell.id)
+        hotTrendsTableView.register(UINib(nibName: HotTrendsFashionsTableViewCell.id, bundle: nil), forCellReuseIdentifier: HotTrendsFashionsTableViewCell.id)
         createHotTrends()
         createHotTrendsImages()
         createFreshDrops()
         createHotTrendsViews()
+        createHotTrendsFashions()
         hotTrendsTableView.dataSource = self
         hotTrendsTableView.delegate = self
     }
@@ -89,6 +92,12 @@ class HotTrendsViewController: UIViewController {
         }
     }
     
+    func createHotTrendsFashions() {
+        for hotTrendsFashion in ["Image 73", "Image 74", "Image 75", "Image 76", "Image 77", "Image 78", "Image 79", "Image 80", "Image 81", "Image 82"] {
+            hotTrendsFashions.append(HotTrendsFashionsModel(image: hotTrendsFashion))
+        }
+    }
+    
     func getCellIdentifierAtIndexPath(_ indexPath: IndexPath) -> String {
         switch indexPath.row {
         case 0:
@@ -107,6 +116,8 @@ class HotTrendsViewController: UIViewController {
             return HotTrendsFreshDropsImagesTableViewCell.id
         case 7:
             return HotTrendsViewsTableViewCell.id
+        case 8:
+            return HotTrendsFashionsTableViewCell.id
         default:
             return ""
         }
@@ -130,6 +141,8 @@ class HotTrendsViewController: UIViewController {
             return 250
         case 7:
             return 60
+        case 8:
+            return 590
         default:
             return 0
         }
@@ -138,7 +151,7 @@ class HotTrendsViewController: UIViewController {
 
 extension HotTrendsViewController: UITableViewDataSource,UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 8
+        return 9
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) ->  UITableViewCell {
         let identifier = getCellIdentifierAtIndexPath(indexPath)
@@ -159,6 +172,9 @@ extension HotTrendsViewController: UITableViewDataSource,UITableViewDelegate {
             if indexPath.row == 7 {
                 HotTrendsViewsTableViewCell.names = hotTrendsViews
             }
+        }
+        if let hotTrendsFashionsTableViewCell = cell as? HotTrendsFashionsTableViewCell {
+            hotTrendsFashionsTableViewCell.images = hotTrendsFashions
         }
     return cell
 }
