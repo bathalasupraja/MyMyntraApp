@@ -44,7 +44,7 @@ extension SellerImagesTableViewCell: UICollectionViewDataSource, UICollectionVie
             if let sellerImage = model as? SellerImageModel {
                 if let imageName = sellerImage.image {
                     let image = UIImage(named: imageName)
-                    sellerImagesCollectionViewCell.sellerImages.image = image
+                    sellerImagesCollectionViewCell.sellerImageView.image = image
                 }
             }
         }

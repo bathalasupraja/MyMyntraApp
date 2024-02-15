@@ -28,7 +28,7 @@
                 <constraint firstItem="f8m-x1-aIT" firstAttribute="bottom" secondItem="TjT-ZL-wMM" secondAttribute="bottom" id="K3m-gd-Njt"/>
             </constraints>
             <connections>
-                <outlet property="offersCreditImages" destination="TjT-ZL-wMM" id="yDl-Q7-if6"/>
+                <outlet property="offersCreditImageView" destination="TjT-ZL-wMM" id="ecL-rX-Uxm"/>
             </connections>
             <point key="canvasLocation" x="241.98473282442748" y="24.647887323943664"/>
         </view>

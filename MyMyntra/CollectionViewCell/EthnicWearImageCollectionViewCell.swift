@@ -11,7 +11,7 @@ class EthnicWearImageCollectionViewCell: UICollectionViewCell {
     
     static let id = "EthnicWearImageCollectionViewCell"
     
-    @IBOutlet weak var ethnicWearImages: UIImageView!
+    @IBOutlet weak var ethnicWearImageView: UIImageView!
 
     override func awakeFromNib() {
         super.awakeFromNib()

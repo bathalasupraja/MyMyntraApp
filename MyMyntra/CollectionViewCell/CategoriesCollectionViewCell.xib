@@ -30,7 +30,7 @@
             </constraints>
             <size key="customSize" width="395" height="252"/>
             <connections>
-                <outlet property="categoriesImages" destination="bIq-YW-3in" id="xYc-iT-AVG"/>
+                <outlet property="categoriesImageView" destination="bIq-YW-3in" id="amD-4x-8ID"/>
             </connections>
             <point key="canvasLocation" x="139.69465648854961" y="92.253521126760575"/>
         </collectionViewCell>

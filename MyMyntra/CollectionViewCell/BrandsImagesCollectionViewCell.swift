@@ -11,7 +11,7 @@ class BrandsImagesCollectionViewCell: UICollectionViewCell {
     
     static let id = "BrandsImagesCollectionViewCell"
     
-    @IBOutlet weak var brandsImageFashions: UIImageView!
+    @IBOutlet weak var brandsImageFashionsImageView: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

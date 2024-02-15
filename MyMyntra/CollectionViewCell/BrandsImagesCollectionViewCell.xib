@@ -26,7 +26,7 @@
                 <constraint firstItem="WTP-Dz-3WV" firstAttribute="top" secondItem="W5P-Jy-Z8C" secondAttribute="top" id="wO6-Hl-eTo"/>
             </constraints>
             <connections>
-                <outlet property="brandsImageFashions" destination="WTP-Dz-3WV" id="Ql5-GN-QTc"/>
+                <outlet property="brandsImageFashionsImageView" destination="WTP-Dz-3WV" id="wpp-h7-Lm1"/>
             </connections>
             <point key="canvasLocation" x="221" y="56"/>
         </view>

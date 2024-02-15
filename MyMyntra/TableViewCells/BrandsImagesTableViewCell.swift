@@ -74,7 +74,7 @@ extension BrandsImagesTableViewCell: UICollectionViewDataSource, UICollectionVie
             let model = brandsImages[indexPath.row]
             if let imageName = model.image {
                 let image = UIImage(named: imageName)
-                brandsImagesCollectionViewCell.brandsImageFashions.image = image
+                brandsImagesCollectionViewCell.brandsImageFashionsImageView.image = image
             }
         }
         return cell

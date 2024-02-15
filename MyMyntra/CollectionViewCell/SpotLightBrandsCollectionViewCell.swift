@@ -11,7 +11,7 @@ class SpotLightBrandsCollectionViewCell: UICollectionViewCell {
     
     static let id = "SpotLightBrandsCollectionViewCell"
     
-    @IBOutlet weak var spotLightFashions: UIImageView!
+    @IBOutlet weak var spotLightFashionsImageView: UIImageView!
     
     
 }

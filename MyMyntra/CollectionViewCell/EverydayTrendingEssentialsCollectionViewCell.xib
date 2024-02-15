@@ -30,7 +30,7 @@
             </constraints>
             <size key="customSize" width="359" height="334"/>
             <connections>
-                <outlet property="trendingEssentialsImages" destination="XAx-aS-gwR" id="Iyi-kR-8wL"/>
+                <outlet property="trendingEssentialsImageView" destination="XAx-aS-gwR" id="JfM-x2-8Ha"/>
             </connections>
             <point key="canvasLocation" x="203.81679389312976" y="119.01408450704226"/>
         </collectionViewCell>
