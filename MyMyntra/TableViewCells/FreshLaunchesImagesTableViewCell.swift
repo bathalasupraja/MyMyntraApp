@@ -40,7 +40,7 @@ extension FreshLaunchesImagesTableViewCell: UICollectionViewDataSource {
             let model = freshLaunches[indexPath.row]
             if let imageName = model.image {
                 let image = UIImage(named: imageName)
-                freshLaunchesImagesColectionViewCell.freshLaunchesImages.image = image
+                freshLaunchesImagesColectionViewCell.freshLaunchesImageView.image = image
             }
         }
         

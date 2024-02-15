@@ -11,12 +11,12 @@ class CategoriesCollectionViewCell: UICollectionViewCell {
     
     static let id = "CategoriesCollectionViewCell"
     
-    @IBOutlet weak var categoriesImages: UIImageView!
+    @IBOutlet weak var categoriesImageView: UIImageView!
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        categoriesImages.layer.cornerRadius = 10
-        categoriesImages.layer.masksToBounds = true
+        categoriesImageView.layer.cornerRadius = 10
+        categoriesImageView.layer.masksToBounds = true
         
     }
 

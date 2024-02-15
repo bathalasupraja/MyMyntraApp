@@ -276,7 +276,7 @@
                                                                 </constraints>
                                                             </collectionViewCellContentView>
                                                             <connections>
-                                                                <outlet property="hotTrendsImages" destination="7UO-FX-o51" id="ly1-eA-s8w"/>
+                                                                <outlet property="hotTrendsImageView" destination="7UO-FX-o51" id="QRG-hp-iPA"/>
                                                             </connections>
                                                         </collectionViewCell>
                                                     </cells>
@@ -835,7 +835,7 @@
                                                             </collectionViewCellContentView>
                                                             <size key="customSize" width="128" height="128"/>
                                                             <connections>
-                                                                <outlet property="spotLightFashions" destination="JdX-BS-B9r" id="IVB-Ni-psB"/>
+                                                                <outlet property="spotLightFashionsImageView" destination="JdX-BS-B9r" id="W2v-Bg-1AH"/>
                                                             </connections>
                                                         </collectionViewCell>
                                                     </cells>
@@ -966,7 +966,7 @@
                                                                 </constraints>
                                                             </collectionViewCellContentView>
                                                             <connections>
-                                                                <outlet property="freshLaunchesImages" destination="yah-FR-Qv9" id="KNy-oA-EF4"/>
+                                                                <outlet property="freshLaunchesImageView" destination="yah-FR-Qv9" id="FPq-5m-Xnj"/>
                                                             </connections>
                                                         </collectionViewCell>
                                                     </cells>
@@ -1585,7 +1585,7 @@
                                                                 </constraints>
                                                             </collectionViewCellContentView>
                                                             <connections>
-                                                                <outlet property="homeProductsImages" destination="aVI-8d-eh4" id="GuD-He-RH1"/>
+                                                                <outlet property="homeProductsImageView" destination="aVI-8d-eh4" id="U7X-4m-zBZ"/>
                                                             </connections>
                                                         </collectionViewCell>
                                                     </cells>

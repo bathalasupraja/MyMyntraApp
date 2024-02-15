@@ -11,7 +11,7 @@ class FreshLaunchesImagesColectionViewCell: UICollectionViewCell {
     
     static let id = "FreshLaunchesImagesColectionViewCell"
     
-    @IBOutlet weak var freshLaunchesImages: UIImageView!
+    @IBOutlet weak var freshLaunchesImageView: UIImageView!
     
     
 }

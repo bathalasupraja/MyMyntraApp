@@ -43,7 +43,7 @@ extension HotTrendsImagesTableViewCell: UICollectionViewDataSource, UICollection
             if let images = model as? HotTrendsImageModel {
                 if let imageName = images.image {
                     let image = UIImage(named: imageName)
-                    hotTrendsImagesCollectionViewCell.hotTrendsImages.image = image
+                    hotTrendsImagesCollectionViewCell.hotTrendsImageView.image = image
                 }
             }
         }

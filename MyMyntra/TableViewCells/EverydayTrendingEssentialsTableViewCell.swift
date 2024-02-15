@@ -44,7 +44,7 @@ extension EverydayTrendingEssentialsTableViewCell: UICollectionViewDataSource, U
             let model = images[indexPath.row]
             if let imageName = model.image {
                 let image = UIImage(named: imageName)
-                everydayTrendingEssentialsCollectionViewCell.trendingEssentialsImages.image = image
+                everydayTrendingEssentialsCollectionViewCell.trendingEssentialsImageView.image = image
             }
         }
         return cell

@@ -39,7 +39,7 @@ extension SpotLightBrandsTableViewCell: UICollectionViewDataSource {
             let model = spotLightBrands[indexPath.row]
             if let imageName = model.image {
                 let image = UIImage(named: imageName)
-                spotLightBrandsCollectionViewCell.spotLightFashions.image = image
+                spotLightBrandsCollectionViewCell.spotLightFashionsImageView.image = image
             }
         }
         return cell
