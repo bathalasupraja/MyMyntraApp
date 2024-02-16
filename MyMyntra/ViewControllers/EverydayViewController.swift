@@ -30,6 +30,12 @@ class EverydayViewController: UIViewController {
     var sellerImages = [SellerImageModel]()
     var beautySellerViews = [BeautySellerViewModel]()
     var everydayImages = [EverydayModel]()
+    var everydayImage1 = [everydayImageModel1]()
+    var everydayImage2 = [everydayImageModel2]()
+    var everydayImage3 = [everydayImageModel3]()
+    var everydayImage4 = [everydayImageModel4]()
+    var everydayImage5 = [everydayImageModel5]()
+    var everydayImage6 = [everydayImageModel6]()
     
     
     override func viewDidLoad() {
@@ -45,11 +51,18 @@ class EverydayViewController: UIViewController {
         createSellerImages()
         createBeautySellerViews()
         createEverydayImages()
+        createEverydayImage1()
+        createEverydayImage2()
+        createEverydayImage3()
+        createEverydayImage4()
+        createEverydayImage5()
+        createEverydayImage6()
         everydayTableView.register(UINib(nibName: EverydayImageTableViewCell.id, bundle: nil), forCellReuseIdentifier: EverydayImageTableViewCell.id)
         everydayTableView.register(UINib(nibName: EverydayTrendingEssentialsTableViewCell.id, bundle: nil), forCellReuseIdentifier: EverydayTrendingEssentialsTableViewCell.id)
         everydayTableView.register(UINib(nibName: CategoriesTableViewCell.id, bundle: nil), forCellReuseIdentifier: CategoriesTableViewCell.id)
         everydayTableView.register(UINib(nibName: BestSellersTittleTableViewCell.id, bundle: nil), forCellReuseIdentifier: BestSellersTittleTableViewCell.id)
         everydayTableView.register(UINib(nibName: SellerImagesTableViewCell.id, bundle: nil), forCellReuseIdentifier: SellerImagesTableViewCell.id)
+        everydayTableView.register(UINib(nibName: EverydayImagesTableViewCell.id, bundle: nil), forCellReuseIdentifier: EverydayImagesTableViewCell.id)
         everydayTableView.dataSource = self
         everydayTableView.delegate = self
         
@@ -121,6 +134,46 @@ class EverydayViewController: UIViewController {
         }
     }
     
+    func createEverydayImage1() {
+        for everydayImage in ["Image 83", "Image 80" ] {
+            everydayImage1.append(everydayImageModel1(image: everydayImage))
+        }
+    }
+    
+    func createEverydayImage2() {
+        for everydayImage in ["Image 72", "Image 74"] {
+            everydayImage2.append(everydayImageModel2(image: everydayImage))
+        }
+    }
+    
+    func createEverydayImage3() {
+        for everydayImage in ["Image 68", "Image 70"] {
+            everydayImage3.append(everydayImageModel3(image: everydayImage))
+            
+        }
+    }
+    
+    func createEverydayImage4() {
+        for everydayImage in ["Image 71", "Image 66"] {
+            everydayImage4.append(everydayImageModel4(image: everydayImage))
+            
+        }
+    }
+    
+    func createEverydayImage5() {
+        for everydayImage in ["Image 82", "Image 79"] {
+            everydayImage5.append(everydayImageModel5(image: everydayImage))
+            
+        }
+    }
+    
+    func createEverydayImage6() {
+        for everydayImage in ["Image 67", "Image 69"] {
+            everydayImage6.append(everydayImageModel6(image: everydayImage))
+            
+        }
+    }
+    
     func getCellHeightAtIndexPath(_ indexPath: IndexPath) -> CGFloat {
         switch indexPath.row {
         case 0:
@@ -141,6 +194,8 @@ class EverydayViewController: UIViewController {
             return 260
         case 13:
             return 60
+        case 14,15,16,17,18,19:
+            return 300
         default:
             return 0
         }
@@ -166,6 +221,8 @@ class EverydayViewController: UIViewController {
             return EverydayTableViewCell.id
         case 13:
             return BeatySellersTableViewCell.id
+        case 14,15,16,17,18,19:
+            return EverydayImagesTableViewCell.id
         default:
             return ""
         }
@@ -173,7 +230,7 @@ class EverydayViewController: UIViewController {
 }
 extension EverydayViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 14
+        return 20
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -221,6 +278,22 @@ extension EverydayViewController: UITableViewDataSource, UITableViewDelegate {
         if let EverydayTableViewCell = cell as? EverydayTableViewCell {
             if indexPath.row == 12 {
                 EverydayTableViewCell.images = everydayImages
+            }
+        }
+        
+        if let everydayImagesTableViewCell = cell as? EverydayImagesTableViewCell {
+            if indexPath.row == 14 {
+                everydayImagesTableViewCell.images = everydayImage1
+            } else if indexPath.row == 15 {
+                everydayImagesTableViewCell.images = everydayImage2
+            } else if indexPath.row == 16 {
+                everydayImagesTableViewCell.images = everydayImage3
+            } else if indexPath.row == 17 {
+                everydayImagesTableViewCell.images = everydayImage4
+            } else if indexPath.row == 18 {
+                everydayImagesTableViewCell.images = everydayImage5
+            } else if indexPath.row == 19 {
+                everydayImagesTableViewCell.images = everydayImage6
             }
         }
         return cell
