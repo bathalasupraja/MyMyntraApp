@@ -34,6 +34,22 @@ class HotTrendsCouponTableViewCell: UITableViewCell {
     }
 }
 
+class HotTrendsVersionTableViewCell: UITableViewCell {
+    
+    static let id = "HotTrendsVersionTableViewCell"
+    
+    @IBOutlet weak var versionView: UIView!
+    @IBOutlet weak var versionButton: UIButton!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        versionButton.layer.cornerRadius = 15
+        versionButton.layer.borderColor = UIColor.systemRed.cgColor
+        versionButton.layer.borderWidth = 2
+        versionButton.layer.masksToBounds = true
+    }
+}
+
 
 
 class HotTrendsViewController: UIViewController {
@@ -118,6 +134,8 @@ class HotTrendsViewController: UIViewController {
             return HotTrendsViewsTableViewCell.id
         case 8:
             return HotTrendsFashionsTableViewCell.id
+        case 9:
+            return HotTrendsVersionTableViewCell.id
         default:
             return ""
         }
@@ -143,6 +161,8 @@ class HotTrendsViewController: UIViewController {
             return 60
         case 8:
             return 590
+        case 9:
+            return 100
         default:
             return 0
         }
@@ -151,7 +171,7 @@ class HotTrendsViewController: UIViewController {
 
 extension HotTrendsViewController: UITableViewDataSource,UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 9
+        return 10
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) ->  UITableViewCell {
         let identifier = getCellIdentifierAtIndexPath(indexPath)
