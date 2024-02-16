@@ -29,6 +29,8 @@ class EverydayViewController: UIViewController {
     var sellerViews = [SellerViewModel]()
     var sellerImages = [SellerImageModel]()
     var beautySellerViews = [BeautySellerViewModel]()
+    var everydayImages = [EverydayModel]()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +44,7 @@ class EverydayViewController: UIViewController {
         createSellerViews()
         createSellerImages()
         createBeautySellerViews()
+        createEverydayImages()
         everydayTableView.register(UINib(nibName: EverydayImageTableViewCell.id, bundle: nil), forCellReuseIdentifier: EverydayImageTableViewCell.id)
         everydayTableView.register(UINib(nibName: EverydayTrendingEssentialsTableViewCell.id, bundle: nil), forCellReuseIdentifier: EverydayTrendingEssentialsTableViewCell.id)
         everydayTableView.register(UINib(nibName: CategoriesTableViewCell.id, bundle: nil), forCellReuseIdentifier: CategoriesTableViewCell.id)
@@ -112,6 +115,12 @@ class EverydayViewController: UIViewController {
         }
     }
     
+    func createEverydayImages() {
+        for everydayImage in ["Image 84", "Image 85", "Image 86", "Image 87"] {
+            everydayImages.append(EverydayModel(image: everydayImage))
+        }
+    }
+    
     func getCellHeightAtIndexPath(_ indexPath: IndexPath) -> CGFloat {
         switch indexPath.row {
         case 0:
@@ -129,6 +138,8 @@ class EverydayViewController: UIViewController {
         case 11:
             return 290
         case 12:
+            return 260
+        case 13:
             return 60
         default:
             return 0
@@ -152,6 +163,8 @@ class EverydayViewController: UIViewController {
         case 11:
             return SellerImagesTableViewCell.id
         case 12:
+            return EverydayTableViewCell.id
+        case 13:
             return BeatySellersTableViewCell.id
         default:
             return ""
@@ -160,7 +173,7 @@ class EverydayViewController: UIViewController {
 }
 extension EverydayViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 13
+        return 14
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -200,9 +213,14 @@ extension EverydayViewController: UITableViewDataSource, UITableViewDelegate {
                 sellerImagesTableViewCell.sellerImage = sellerImages
             }
         }
-        if let BeatySellersTableViewCell = cell as? BeatySellersTableViewCell {
+        if let beatySellersTableViewCell = cell as? BeatySellersTableViewCell {
+            if indexPath.row == 13 {
+                beatySellersTableViewCell.names = beautySellerViews
+            }
+        }
+        if let EverydayTableViewCell = cell as? EverydayTableViewCell {
             if indexPath.row == 12 {
-                BeatySellersTableViewCell.names = beautySellerViews
+                EverydayTableViewCell.images = everydayImages
             }
         }
         return cell
