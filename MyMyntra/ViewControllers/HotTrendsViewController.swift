@@ -34,6 +34,22 @@ class HotTrendsCouponTableViewCell: UITableViewCell {
     }
 }
 
+class HotTrendsVersionTableViewCell: UITableViewCell {
+    
+    static let id = "HotTrendsVersionTableViewCell"
+    
+    @IBOutlet weak var versionView: UIView!
+    @IBOutlet weak var versionButton: UIButton!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        versionButton.layer.cornerRadius = 15
+        versionButton.layer.borderColor = UIColor.systemRed.cgColor
+        versionButton.layer.borderWidth = 2
+        versionButton.layer.masksToBounds = true
+    }
+}
+
 
 
 class HotTrendsViewController: UIViewController {
@@ -50,15 +66,20 @@ class HotTrendsViewController: UIViewController {
     var hotTrends = [HotTrendModel]()
     var hotTrendsImages = [HotTrendsImageModel]()
     var freshDrops = [FreshDropsImageModel]()
+    var hotTrendsViews = [HotTrendsViewsModel]()
+    var hotTrendsFashions = [HotTrendsFashionsModel]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         hotTrendsTableView.register(UINib(nibName: SegmentTableViewCell.id, bundle: nil), forCellReuseIdentifier: SegmentTableViewCell.id)
         hotTrendsTableView.register(UINib(nibName: HotTrendsFreshDropsTableViewCell.id, bundle: nil), forCellReuseIdentifier: HotTrendsFreshDropsTableViewCell.id)
         hotTrendsTableView.register(UINib(nibName: HotTrendsFreshDropsImagesTableViewCell.id, bundle: nil), forCellReuseIdentifier: HotTrendsFreshDropsImagesTableViewCell.id)
+        hotTrendsTableView.register(UINib(nibName: HotTrendsFashionsTableViewCell.id, bundle: nil), forCellReuseIdentifier: HotTrendsFashionsTableViewCell.id)
         createHotTrends()
         createHotTrendsImages()
         createFreshDrops()
+        createHotTrendsViews()
+        createHotTrendsFashions()
         hotTrendsTableView.dataSource = self
         hotTrendsTableView.delegate = self
     }
@@ -81,6 +102,18 @@ class HotTrendsViewController: UIViewController {
         }
     }
     
+    func createHotTrendsViews() {
+        for hotTrendsView in ["All", "Jeans", "Dresses", "Track Pants", "Trousers", "Sweaters", "Tops", "Skirts"] {
+            hotTrendsViews.append(HotTrendsViewsModel(name: hotTrendsView))
+        }
+    }
+    
+    func createHotTrendsFashions() {
+        for hotTrendsFashion in ["Image 73", "Image 74", "Image 75", "Image 76", "Image 77", "Image 78", "Image 79", "Image 80", "Image 81", "Image 82"] {
+            hotTrendsFashions.append(HotTrendsFashionsModel(image: hotTrendsFashion))
+        }
+    }
+    
     func getCellIdentifierAtIndexPath(_ indexPath: IndexPath) -> String {
         switch indexPath.row {
         case 0:
@@ -97,6 +130,12 @@ class HotTrendsViewController: UIViewController {
             return HotTrendsFreshDropsTableViewCell.id
         case 6:
             return HotTrendsFreshDropsImagesTableViewCell.id
+        case 7:
+            return HotTrendsViewsTableViewCell.id
+        case 8:
+            return HotTrendsFashionsTableViewCell.id
+        case 9:
+            return HotTrendsVersionTableViewCell.id
         default:
             return ""
         }
@@ -118,6 +157,12 @@ class HotTrendsViewController: UIViewController {
             return 60
         case 6:
             return 250
+        case 7:
+            return 60
+        case 8:
+            return 590
+        case 9:
+            return 100
         default:
             return 0
         }
@@ -126,7 +171,7 @@ class HotTrendsViewController: UIViewController {
 
 extension HotTrendsViewController: UITableViewDataSource,UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 7
+        return 10
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) ->  UITableViewCell {
         let identifier = getCellIdentifierAtIndexPath(indexPath)
@@ -141,6 +186,15 @@ extension HotTrendsViewController: UITableViewDataSource,UITableViewDelegate {
         
         if let hotTrendsFreshDropsImagesTableViewCell = cell as? HotTrendsFreshDropsImagesTableViewCell {
             hotTrendsFreshDropsImagesTableViewCell.images = freshDrops
+        }
+        
+        if let HotTrendsViewsTableViewCell = cell as? HotTrendsViewsTableViewCell {
+            if indexPath.row == 7 {
+                HotTrendsViewsTableViewCell.names = hotTrendsViews
+            }
+        }
+        if let hotTrendsFashionsTableViewCell = cell as? HotTrendsFashionsTableViewCell {
+            hotTrendsFashionsTableViewCell.images = hotTrendsFashions
         }
     return cell
 }
