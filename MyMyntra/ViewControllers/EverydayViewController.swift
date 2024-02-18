@@ -8,65 +8,81 @@
 import UIKit
 
 
-
-class EverydayViewController: UIViewController {
+class EverydayVersionTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var everydayView: UIView!
-    @IBOutlet weak var everydayMyntraLabel: UILabel!
-    @IBOutlet weak var everydayDownArrowButton: UIButton!
-    @IBOutlet weak var everydaySearchButton: UIButton!
-    @IBOutlet weak var everydayLikeButton: UIButton!
-    @IBOutlet weak var everydaysBagButton: UIButton!
-    @IBOutlet weak var everydayTableView: UITableView!
+    static let id = "EverydayVersionTableViewCell"
     
-    var trendingEssentialsImages = [TrendingEssentialsImageModel]()
-    var mensCategories = [MensCategoryModel]()
-    var womensCategories = [WomensCategoryModel]()
-    var kidsWearCategories = [KidsWearCategoryModel]()
-    var homeKitchenCategories = [HomeKitchenCategoryModel]()
-    var beautyPersonalCareCategories = [BeautyPersonalCareCategoryModel]()
-    var accessoriesCategories = [AccessoriesCategoryModel]()
-    var sellerViews = [SellerViewModel]()
-    var sellerImages = [SellerImageModel]()
-    var beautySellerViews = [BeautySellerViewModel]()
-    var everydayImages = [EverydayModel]()
-    var everydayImage1 = [everydayImageModel1]()
-    var everydayImage2 = [everydayImageModel2]()
-    var everydayImage3 = [everydayImageModel3]()
-    var everydayImage4 = [everydayImageModel4]()
-    var everydayImage5 = [everydayImageModel5]()
-    var everydayImage6 = [everydayImageModel6]()
+    @IBOutlet weak var versionView: UIView!
+    @IBOutlet weak var versionButton: UIButton!
     
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        createTrendingEssentialsImages()
-        createMensCategories()
-        createWomensCategories()
-        createKidsWearCategories()
-        createHomeKitchenCategories()
-        createBeautyPersonalCareCategories()
-        createAccessoriesCategories()
-        createSellerViews()
-        createSellerImages()
-        createBeautySellerViews()
-        createEverydayImages()
-        createEverydayImage1()
-        createEverydayImage2()
-        createEverydayImage3()
-        createEverydayImage4()
-        createEverydayImage5()
-        createEverydayImage6()
-        everydayTableView.register(UINib(nibName: EverydayImageTableViewCell.id, bundle: nil), forCellReuseIdentifier: EverydayImageTableViewCell.id)
-        everydayTableView.register(UINib(nibName: EverydayTrendingEssentialsTableViewCell.id, bundle: nil), forCellReuseIdentifier: EverydayTrendingEssentialsTableViewCell.id)
-        everydayTableView.register(UINib(nibName: CategoriesTableViewCell.id, bundle: nil), forCellReuseIdentifier: CategoriesTableViewCell.id)
-        everydayTableView.register(UINib(nibName: BestSellersTittleTableViewCell.id, bundle: nil), forCellReuseIdentifier: BestSellersTittleTableViewCell.id)
-        everydayTableView.register(UINib(nibName: SellerImagesTableViewCell.id, bundle: nil), forCellReuseIdentifier: SellerImagesTableViewCell.id)
-        everydayTableView.register(UINib(nibName: EverydayImagesTableViewCell.id, bundle: nil), forCellReuseIdentifier: EverydayImagesTableViewCell.id)
-        everydayTableView.dataSource = self
-        everydayTableView.delegate = self
-        
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        versionButton.layer.cornerRadius = 15
+        versionButton.layer.borderWidth = 2
+        versionButton.layer.borderColor = UIColor.cyan.cgColor
+        versionButton.layer.masksToBounds = true
     }
+    
+}
+
+
+    class EverydayViewController: UIViewController {
+        
+        @IBOutlet weak var everydayView: UIView!
+        @IBOutlet weak var everydayMyntraLabel: UILabel!
+        @IBOutlet weak var everydayDownArrowButton: UIButton!
+        @IBOutlet weak var everydaySearchButton: UIButton!
+        @IBOutlet weak var everydayLikeButton: UIButton!
+        @IBOutlet weak var everydaysBagButton: UIButton!
+        @IBOutlet weak var everydayTableView: UITableView!
+        
+        var trendingEssentialsImages = [TrendingEssentialsImageModel]()
+        var mensCategories = [MensCategoryModel]()
+        var womensCategories = [WomensCategoryModel]()
+        var kidsWearCategories = [KidsWearCategoryModel]()
+        var homeKitchenCategories = [HomeKitchenCategoryModel]()
+        var beautyPersonalCareCategories = [BeautyPersonalCareCategoryModel]()
+        var accessoriesCategories = [AccessoriesCategoryModel]()
+        var sellerViews = [SellerViewModel]()
+        var sellerImages = [SellerImageModel]()
+        var beautySellerViews = [BeautySellerViewModel]()
+        var everydayImages = [EverydayModel]()
+        var everydayImage1 = [everydayImageModel1]()
+        var everydayImage2 = [everydayImageModel2]()
+        var everydayImage3 = [everydayImageModel3]()
+        var everydayImage4 = [everydayImageModel4]()
+        var everydayImage5 = [everydayImageModel5]()
+        var everydayImage6 = [everydayImageModel6]()
+        
+        
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            createTrendingEssentialsImages()
+            createMensCategories()
+            createWomensCategories()
+            createKidsWearCategories()
+            createHomeKitchenCategories()
+            createBeautyPersonalCareCategories()
+            createAccessoriesCategories()
+            createSellerViews()
+            createSellerImages()
+            createBeautySellerViews()
+            createEverydayImages()
+            createEverydayImage1()
+            createEverydayImage2()
+            createEverydayImage3()
+            createEverydayImage4()
+            createEverydayImage5()
+            createEverydayImage6()
+            everydayTableView.register(UINib(nibName: EverydayImageTableViewCell.id, bundle: nil), forCellReuseIdentifier: EverydayImageTableViewCell.id)
+            everydayTableView.register(UINib(nibName: EverydayTrendingEssentialsTableViewCell.id, bundle: nil), forCellReuseIdentifier: EverydayTrendingEssentialsTableViewCell.id)
+            everydayTableView.register(UINib(nibName: CategoriesTableViewCell.id, bundle: nil), forCellReuseIdentifier: CategoriesTableViewCell.id)
+            everydayTableView.register(UINib(nibName: BestSellersTittleTableViewCell.id, bundle: nil), forCellReuseIdentifier: BestSellersTittleTableViewCell.id)
+            everydayTableView.register(UINib(nibName: SellerImagesTableViewCell.id, bundle: nil), forCellReuseIdentifier: SellerImagesTableViewCell.id)
+            everydayTableView.register(UINib(nibName: EverydayImagesTableViewCell.id, bundle: nil), forCellReuseIdentifier: EverydayImagesTableViewCell.id)
+            everydayTableView.dataSource = self
+            everydayTableView.delegate = self
+        }
     
     func createTrendingEssentialsImages() {
         for trendingEssentialsImage in ["trending1", "trending2", "trending3", "trending4", "trending5", "trending6", "trending7"] {
@@ -196,6 +212,8 @@ class EverydayViewController: UIViewController {
             return 60
         case 14,15,16,17,18,19:
             return 300
+        case 20:
+            return 100
         default:
             return 0
         }
@@ -223,6 +241,8 @@ class EverydayViewController: UIViewController {
             return BeatySellersTableViewCell.id
         case 14,15,16,17,18,19:
             return EverydayImagesTableViewCell.id
+        case 20:
+            return EverydayVersionTableViewCell.id
         default:
             return ""
         }
@@ -230,7 +250,7 @@ class EverydayViewController: UIViewController {
 }
 extension EverydayViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 20
+        return 21
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

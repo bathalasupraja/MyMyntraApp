@@ -107,10 +107,11 @@ extension EverydayImagesTableViewCell: UICollectionViewDelegateFlowLayout {
     }
         
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let collectionViewSize = collectionView.bounds.size
+        //        let collectionViewSize = collectionView.bounds.size
         return CGSize(width: 200, height: 300)
-        
     }
+        
+    
         
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
