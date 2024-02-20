@@ -11,6 +11,6 @@ class HotTrendsImagesCollectionViewCell: UICollectionViewCell {
     
     static let id = "HotTrendsImagesCollectionViewCell"
     
-    @IBOutlet weak var hotTrendsImages: UIImageView!
+    @IBOutlet weak var hotTrendsImageView: UIImageView!
     
 }

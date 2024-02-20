@@ -30,7 +30,7 @@
             </constraints>
             <size key="customSize" width="370" height="176"/>
             <connections>
-                <outlet property="ethnicWearImages" destination="Aak-jm-pFX" id="wUY-MN-cc4"/>
+                <outlet property="ethnicWearImageView" destination="Aak-jm-pFX" id="7Nu-VY-zYA"/>
             </connections>
             <point key="canvasLocation" x="335.87786259541986" y="64.08450704225352"/>
         </collectionViewCell>

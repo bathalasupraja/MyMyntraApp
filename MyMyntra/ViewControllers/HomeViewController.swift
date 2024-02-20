@@ -182,7 +182,7 @@ class HomeViewController: UIViewController {
         case 8:
             return 60
         case 9,10,11,12:
-            return 350
+            return 320
         case 13:
             return 180
         default:

@@ -11,7 +11,7 @@ class EverydayTrendingEssentialsCollectionViewCell: UICollectionViewCell {
     
     static let id = "EverydayTrendingEssentialsCollectionViewCell"
     
-    @IBOutlet weak var trendingEssentialsImages: UIImageView!
+    @IBOutlet weak var trendingEssentialsImageView: UIImageView!
 
     override func awakeFromNib() {
         super.awakeFromNib()

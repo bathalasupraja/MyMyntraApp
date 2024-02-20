@@ -7,15 +7,12 @@
 
 import UIKit
 
-//struct HomeProductsImageModel {
-//    var image: String?
-//}
 
 class HomeProductsImagesCollectionViewCell: UICollectionViewCell {
     
     static let id = "HomeProductsImagesCollectionViewCell"
     
-    @IBOutlet weak var homeProductsImages: UIImageView!
+    @IBOutlet weak var homeProductsImageView: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -69,42 +69,42 @@ extension CategoriesTableViewCell: UICollectionViewDataSource, UICollectionViewD
             if let mensCategory = model as? MensCategoryModel {
                 if let imageName = mensCategory.image {
                     let image = UIImage(named: imageName)
-                    categoriesCollectionViewCell.categoriesImages.image = image
+                    categoriesCollectionViewCell.categoriesImageView.image = image
                 }
             }
             
             if let womensCategory = model as? WomensCategoryModel {
                 if let imageName = womensCategory.image {
                     let image = UIImage(named: imageName)
-                    categoriesCollectionViewCell.categoriesImages.image = image
+                    categoriesCollectionViewCell.categoriesImageView.image = image
                 }
             }
             
             if let kidsWearCategory = model as? KidsWearCategoryModel {
                 if let imageName = kidsWearCategory.image {
                     let image = UIImage(named: imageName)
-                    categoriesCollectionViewCell.categoriesImages.image = image
+                    categoriesCollectionViewCell.categoriesImageView.image = image
                 }
             }
             
             if let homeKitchenCategory = model as? HomeKitchenCategoryModel {
                 if let imageName = homeKitchenCategory.image {
                     let image = UIImage(named: imageName)
-                    categoriesCollectionViewCell.categoriesImages.image = image
+                    categoriesCollectionViewCell.categoriesImageView.image = image
                 }
             }
 
             if let beautyPersonalCareCategory = model as? BeautyPersonalCareCategoryModel {
                 if let imageName = beautyPersonalCareCategory.image {
                     let image = UIImage(named: imageName)
-                    categoriesCollectionViewCell.categoriesImages.image = image
+                    categoriesCollectionViewCell.categoriesImageView.image = image
                 }
             }
 
             if let accessoriesCategory = model as? AccessoriesCategoryModel {
                 if let imageName = accessoriesCategory.image {
                     let image = UIImage(named: imageName)
-                    categoriesCollectionViewCell.categoriesImages.image = image
+                    categoriesCollectionViewCell.categoriesImageView.image = image
                 }
             }
         }

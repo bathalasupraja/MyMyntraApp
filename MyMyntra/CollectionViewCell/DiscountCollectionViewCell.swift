@@ -13,7 +13,7 @@ class DiscountCollectionViewCell: UICollectionViewCell {
     static let id = "DiscountCollectionViewCell"
     
     
-    @IBOutlet weak var offersCreditImages: UIImageView!
+    @IBOutlet weak var offersCreditImageView: UIImageView!
 
     
     override func awakeFromNib() {

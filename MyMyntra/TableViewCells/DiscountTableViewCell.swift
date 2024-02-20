@@ -47,7 +47,7 @@ extension DiscountTableViewCell: UICollectionViewDataSource, UICollectionViewDel
             let model = images[indexPath.row]
             if let imageName = model.image {
                 let image = UIImage(named: imageName)
-                DiscountCollectionViewCell.offersCreditImages.image = image
+                DiscountCollectionViewCell.offersCreditImageView.image = image
             }
         }
         return cell

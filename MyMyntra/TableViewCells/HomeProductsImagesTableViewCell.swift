@@ -53,25 +53,25 @@ extension HomeProductsImagesTableViewCell: UICollectionViewDataSource {
             if let product1 = model as? ProductModel1 {
                 if let imageName = product1.image {
                         let image = UIImage(named: imageName)
-                        homeProductsImagesCollectionViewCell.homeProductsImages.image = image
+                        homeProductsImagesCollectionViewCell.homeProductsImageView.image = image
                 }
             }
             if let product2 = model as? ProductModel2 {
                 if let imageName = product2.image {
                         let image = UIImage(named: imageName)
-                        homeProductsImagesCollectionViewCell.homeProductsImages.image = image
+                        homeProductsImagesCollectionViewCell.homeProductsImageView.image = image
                 }
             }
             if let product3 = model as? ProductModel3 {
                 if let imageName = product3.image {
                         let image = UIImage(named: imageName)
-                        homeProductsImagesCollectionViewCell.homeProductsImages.image = image
+                        homeProductsImagesCollectionViewCell.homeProductsImageView.image = image
                 }
             }
             if let product4 = model as? ProductModel4 {
                 if let imageName = product4.image {
                         let image = UIImage(named: imageName)
-                        homeProductsImagesCollectionViewCell.homeProductsImages.image = image
+                        homeProductsImagesCollectionViewCell.homeProductsImageView.image = image
                 }
             }
         }

@@ -40,7 +40,7 @@ extension EthnicWearImageTableViewCell: UICollectionViewDataSource {
             let model = ethnicWear[indexPath.row]
             if let imageName = model.image {
                 let image = UIImage(named: imageName)
-                EthnicWearImageCollectionViewCell.ethnicWearImages.image = image
+                EthnicWearImageCollectionViewCell.ethnicWearImageView.image = image
                 
             }
         }
