@@ -13,11 +13,15 @@ class ProfileImageTableViewCell: UITableViewCell {
     
     
     @IBOutlet weak var emptyView: UIView!
-    @IBOutlet weak var emptyImageView: UIImageView!
+    @IBOutlet weak var profileView: UIView!
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var profileButton: UIButton!
     
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        loginButton.layer.cornerRadius = 5
+        loginButton.layer.masksToBounds = true
     
     }
 }
@@ -43,7 +47,8 @@ class ProfileVersionTableViewCell: UITableViewCell {
     
     static let id = "ProfileVersionTableViewCell"
     
-    @IBOutlet weak var appVersionLabel: UILabel!
+    @IBOutlet weak var versionView: UIView!
+    @IBOutlet weak var appVersionButton: UIButton!
 }
 
 
