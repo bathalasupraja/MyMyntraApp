@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class HotTrendsOffersTableViewCell: UITableViewCell {
     
     static let id = "HotTrendsOffersTableViewCell"
@@ -67,7 +68,11 @@ class HotTrendsViewController: UIViewController {
     var hotTrendsImages = [HotTrendsImageModel]()
     var freshDrops = [FreshDropsImageModel]()
     var hotTrendsViews = [HotTrendsViewsModel]()
-    var hotTrendsFashions = [HotTrendsFashionsModel]()
+    var hotTrendsImage1 = [HotTrendsImageModel1]()
+    var hotTrendsImage2 = [HotTrendsImageModel2]()
+    var hotTrendsImage3 = [HotTrendsImageModel3]()
+    var hotTrendsImage4 = [HotTrendsImageModel4]()
+    var hotTrendsImage5 = [HotTrendsImageModel5]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -79,7 +84,11 @@ class HotTrendsViewController: UIViewController {
         createHotTrendsImages()
         createFreshDrops()
         createHotTrendsViews()
-        createHotTrendsFashions()
+        createHotTrendsImage1()
+        createHotTrendsImage2()
+        createHotTrendsImage3()
+        createHotTrendsImage4()
+        createHotTrendsImage5()
         hotTrendsTableView.dataSource = self
         hotTrendsTableView.delegate = self
     }
@@ -108,9 +117,36 @@ class HotTrendsViewController: UIViewController {
         }
     }
     
-    func createHotTrendsFashions() {
-        for hotTrendsFashion in ["Image 73", "Image 74", "Image 75", "Image 76", "Image 77", "Image 78", "Image 79", "Image 80", "Image 81", "Image 82"] {
-            hotTrendsFashions.append(HotTrendsFashionsModel(image: hotTrendsFashion))
+    func createHotTrendsImage1() {
+        for hotTrendsImage in ["Image 73", "Image 74" ] {
+            hotTrendsImage1.append(HotTrendsImageModel1(image: hotTrendsImage))
+        }
+    }
+    
+    func createHotTrendsImage2() {
+        for hotTrendsImage in ["Image 75", "Image 76"] {
+            hotTrendsImage2.append(HotTrendsImageModel2(image: hotTrendsImage))
+        }
+    }
+    
+    func createHotTrendsImage3() {
+        for hotTrendsImage in ["Image 77", "Image 78"] {
+            hotTrendsImage3.append(HotTrendsImageModel3(image: hotTrendsImage))
+            
+        }
+    }
+    
+    func createHotTrendsImage4() {
+        for hotTrendsImage in ["Image 79", "Image 80"] {
+            hotTrendsImage4.append(HotTrendsImageModel4(image: hotTrendsImage))
+            
+        }
+    }
+    
+    func createHotTrendsImage5() {
+        for hotTrendsImage in ["Image 81", "Image 82"] {
+            hotTrendsImage5.append(HotTrendsImageModel5(image: hotTrendsImage))
+            
         }
     }
     
@@ -132,9 +168,9 @@ class HotTrendsViewController: UIViewController {
             return HotTrendsFreshDropsImagesTableViewCell.id
         case 7:
             return HotTrendsViewsTableViewCell.id
-        case 8:
+        case 8,9,10,11,12:
             return HotTrendsFashionsTableViewCell.id
-        case 9:
+        case 13:
             return HotTrendsVersionTableViewCell.id
         default:
             return ""
@@ -159,9 +195,9 @@ class HotTrendsViewController: UIViewController {
             return 250
         case 7:
             return 60
-        case 8:
-            return 590
-        case 9:
+        case 8,9,10,11,12:
+            return 320
+        case 13:
             return 100
         default:
             return 0
@@ -171,7 +207,7 @@ class HotTrendsViewController: UIViewController {
 
 extension HotTrendsViewController: UITableViewDataSource,UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return 14
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) ->  UITableViewCell {
         let identifier = getCellIdentifierAtIndexPath(indexPath)
@@ -194,7 +230,17 @@ extension HotTrendsViewController: UITableViewDataSource,UITableViewDelegate {
             }
         }
         if let hotTrendsFashionsTableViewCell = cell as? HotTrendsFashionsTableViewCell {
-            hotTrendsFashionsTableViewCell.images = hotTrendsFashions
+            if indexPath.row == 8 {
+                hotTrendsFashionsTableViewCell.images = hotTrendsImage1
+            } else if indexPath.row == 9 {
+                hotTrendsFashionsTableViewCell.images = hotTrendsImage2
+            } else if indexPath.row == 10 {
+                hotTrendsFashionsTableViewCell.images = hotTrendsImage3
+            } else if indexPath.row == 11 {
+                hotTrendsFashionsTableViewCell.images = hotTrendsImage4
+            } else if indexPath.row == 12 {
+                hotTrendsFashionsTableViewCell.images = hotTrendsImage5
+            }
         }
     return cell
 }
