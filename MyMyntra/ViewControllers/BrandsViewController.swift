@@ -63,6 +63,7 @@ class BrandsViewController: UIViewController {
         brandsTableView.register(UINib(nibName: BrandsImagesTableViewCell.id, bundle: nil), forCellReuseIdentifier: BrandsImagesTableViewCell.id)
         brandsTableView.register(UINib(nibName: MostLovedEthinicWearTableViewCell.id, bundle: nil), forCellReuseIdentifier: MostLovedEthinicWearTableViewCell.id)
         brandsTableView.register(UINib(nibName: EthnicWearImageTableViewCell.id, bundle: nil), forCellReuseIdentifier: EthnicWearImageTableViewCell.id)
+        brandsTableView.register(UINib(nibName: FootwareTableViewCell.id, bundle: nil), forCellReuseIdentifier: FootwareTableViewCell.id)
     
         createBrandsImageFashions()
         createSpotLightFashions()
@@ -115,6 +116,8 @@ class BrandsViewController: UIViewController {
             return MostLovedEthinicWearTableViewCell.id
         case 7:
             return EthnicWearImageTableViewCell.id
+        case 8:
+            return FootwareTableViewCell.id
         default:
             return ""
         }
@@ -137,7 +140,9 @@ class BrandsViewController: UIViewController {
         case 6:
             return 60
         case 7:
-            return 200
+            return 150
+        case 8:
+            return 60
         default:
             return 0
         }
@@ -146,7 +151,7 @@ class BrandsViewController: UIViewController {
 
 extension BrandsViewController: UITableViewDataSource, UITableViewDelegate {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 8
+        return 9
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1

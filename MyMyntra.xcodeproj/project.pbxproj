@@ -41,6 +41,8 @@
 		365FF1842B7F8E1B00A95330 /* EverydayImagesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 365FF1822B7F8E1B00A95330 /* EverydayImagesTableViewCell.xib */; };
 		365FF1872B7F8F0800A95330 /* EverydayImagesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365FF1852B7F8F0800A95330 /* EverydayImagesCollectionViewCell.swift */; };
 		365FF1882B7F8F0800A95330 /* EverydayImagesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 365FF1862B7F8F0800A95330 /* EverydayImagesCollectionViewCell.xib */; };
+		3666FD372B8637E100730277 /* FootwareTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3666FD352B8637E100730277 /* FootwareTableViewCell.swift */; };
+		3666FD382B8637E100730277 /* FootwareTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3666FD362B8637E100730277 /* FootwareTableViewCell.xib */; };
 		367177912B6397DF00D0F465 /* SegmentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 367177902B6397DF00D0F465 /* SegmentTableViewCell.xib */; };
 		367177942B63ECAB00D0F465 /* EverydayImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367177922B63ECAB00D0F465 /* EverydayImageTableViewCell.swift */; };
 		367177952B63ECAB00D0F465 /* EverydayImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 367177932B63ECAB00D0F465 /* EverydayImageTableViewCell.xib */; };
@@ -140,6 +142,8 @@
 		365FF1822B7F8E1B00A95330 /* EverydayImagesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EverydayImagesTableViewCell.xib; sourceTree = "<group>"; };
 		365FF1852B7F8F0800A95330 /* EverydayImagesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EverydayImagesCollectionViewCell.swift; sourceTree = "<group>"; };
 		365FF1862B7F8F0800A95330 /* EverydayImagesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EverydayImagesCollectionViewCell.xib; sourceTree = "<group>"; };
+		3666FD352B8637E100730277 /* FootwareTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootwareTableViewCell.swift; sourceTree = "<group>"; };
+		3666FD362B8637E100730277 /* FootwareTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FootwareTableViewCell.xib; sourceTree = "<group>"; };
 		367177902B6397DF00D0F465 /* SegmentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SegmentTableViewCell.xib; sourceTree = "<group>"; };
 		367177922B63ECAB00D0F465 /* EverydayImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EverydayImageTableViewCell.swift; sourceTree = "<group>"; };
 		367177932B63ECAB00D0F465 /* EverydayImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EverydayImageTableViewCell.xib; sourceTree = "<group>"; };
@@ -254,6 +258,8 @@
 		36AC07B82B78937700F82082 /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				3666FD362B8637E100730277 /* FootwareTableViewCell.xib */,
+				3666FD352B8637E100730277 /* FootwareTableViewCell.swift */,
 				365FF1822B7F8E1B00A95330 /* EverydayImagesTableViewCell.xib */,
 				365FF1812B7F8E1B00A95330 /* EverydayImagesTableViewCell.swift */,
 				365FF17D2B7F76E500A95330 /* EverydayTableViewCell.swift */,
@@ -457,6 +463,7 @@
 				36CD5B7E2B7E3DA80026EA35 /* HotTrendsFashionsTableViewCell.xib in Resources */,
 				36E305BB2B73620C00822D45 /* EthnicWearImageCollectionViewCell.xib in Resources */,
 				363209662B49147B00D58EBB /* Assets.xcassets in Resources */,
+				3666FD382B8637E100730277 /* FootwareTableViewCell.xib in Resources */,
 				361AF5D42B5B8C7700E6D3C4 /* DiscountCollectionViewCell.xib in Resources */,
 				36ACED332B7C9B0100D4C5A9 /* HotTrendsFreshDropsImagesTableViewCell.xib in Resources */,
 				362227F52B668C7600A410A2 /* CategoriesCollectionViewCell.xib in Resources */,
@@ -478,6 +485,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3666FD372B8637E100730277 /* FootwareTableViewCell.swift in Sources */,
 				36E9B9492B4A853100BE0E67 /* HomeViewController.swift in Sources */,
 				363209612B49147A00D58EBB /* StoreViewController.swift in Sources */,
 				362227F02B668BA200A410A2 /* CategoriesTableViewCell.swift in Sources */,
