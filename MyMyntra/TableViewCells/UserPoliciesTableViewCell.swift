@@ -12,13 +12,13 @@ class UserPoliciesTableViewCell: UITableViewCell {
     static let id = "UserPoliciesTableViewCell"
     
     @IBOutlet weak var faqView: UIView!
-    @IBOutlet weak var faqLabel: UILabel!
+    @IBOutlet weak var faqButton: UIButton!
     @IBOutlet weak var aboutView: UIView!
-    @IBOutlet weak var aboutLabel: UILabel!
+    @IBOutlet weak var aboutButton: UIButton!
     @IBOutlet weak var termsView: UIView!
-    @IBOutlet weak var termsLabel: UILabel!
+    @IBOutlet weak var termsButton: UIButton!
     @IBOutlet weak var privacyView: UIView!
-    @IBOutlet weak var privacyLabel: UILabel!
+    @IBOutlet weak var privacyButton: UIButton!
     
 
     override func awakeFromNib() {
