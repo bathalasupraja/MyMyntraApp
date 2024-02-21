@@ -20,77 +20,146 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tHW-uc-l7B">
                         <rect key="frame" x="0.0" y="0.0" width="368" height="50"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="        FAQs" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Lh-Vz-nEa">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ksa-qa-zH1">
                                 <rect key="frame" x="0.0" y="0.0" width="368" height="50"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="          FAQS">
+                                            <attributes>
+                                                <font key="NSFont" size="13" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="9Lh-Vz-nEa" secondAttribute="bottom" id="BEw-YP-7yH"/>
+                            <constraint firstItem="ksa-qa-zH1" firstAttribute="leading" secondItem="tHW-uc-l7B" secondAttribute="leading" id="4Vt-fs-hwn"/>
                             <constraint firstAttribute="height" constant="50" id="C29-kF-Fwh"/>
-                            <constraint firstItem="9Lh-Vz-nEa" firstAttribute="leading" secondItem="tHW-uc-l7B" secondAttribute="leading" id="McV-XL-oV0"/>
-                            <constraint firstAttribute="trailing" secondItem="9Lh-Vz-nEa" secondAttribute="trailing" id="imn-FF-yFv"/>
-                            <constraint firstItem="9Lh-Vz-nEa" firstAttribute="top" secondItem="tHW-uc-l7B" secondAttribute="top" id="nJo-04-kCD"/>
+                            <constraint firstAttribute="trailing" secondItem="ksa-qa-zH1" secondAttribute="trailing" id="IVT-9T-axI"/>
+                            <constraint firstItem="ksa-qa-zH1" firstAttribute="top" secondItem="tHW-uc-l7B" secondAttribute="top" id="Lup-P3-bWw"/>
+                            <constraint firstAttribute="bottom" secondItem="ksa-qa-zH1" secondAttribute="bottom" id="Wtm-27-OZ7"/>
                         </constraints>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="15B-je-RaF">
                         <rect key="frame" x="0.0" y="50" width="368" height="50"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="        ABOUT US" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYF-B8-hSv">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xoy-aF-2Z3">
                                 <rect key="frame" x="0.0" y="0.0" width="368" height="50"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="  ">
+                                            <attributes>
+                                                <font key="NSFont" size="13" name="Helvetica"/>
+                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="        ">
+                                            <attributes>
+                                                <font key="NSFont" size="12" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content=" ABOUT US">
+                                            <attributes>
+                                                <font key="NSFont" size="13" name="Helvetica"/>
+                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ZYF-B8-hSv" firstAttribute="leading" secondItem="15B-je-RaF" secondAttribute="leading" id="Nci-nh-8Kr"/>
-                            <constraint firstItem="ZYF-B8-hSv" firstAttribute="top" secondItem="15B-je-RaF" secondAttribute="top" id="csN-Tw-sSX"/>
-                            <constraint firstAttribute="trailing" secondItem="ZYF-B8-hSv" secondAttribute="trailing" id="jHK-dP-Nsw"/>
+                            <constraint firstAttribute="trailing" secondItem="Xoy-aF-2Z3" secondAttribute="trailing" id="3iL-ts-JIw"/>
+                            <constraint firstItem="Xoy-aF-2Z3" firstAttribute="top" secondItem="15B-je-RaF" secondAttribute="top" id="knP-iR-V2w"/>
                             <constraint firstAttribute="height" constant="50" id="rX7-Ng-qva"/>
-                            <constraint firstAttribute="bottom" secondItem="ZYF-B8-hSv" secondAttribute="bottom" id="yKw-M9-TBw"/>
+                            <constraint firstItem="Xoy-aF-2Z3" firstAttribute="leading" secondItem="15B-je-RaF" secondAttribute="leading" id="uR8-DR-1Ee"/>
+                            <constraint firstAttribute="bottom" secondItem="Xoy-aF-2Z3" secondAttribute="bottom" id="xYV-qP-q5x"/>
                         </constraints>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pNn-jX-Gd6">
                         <rect key="frame" x="0.0" y="100" width="368" height="50"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="        TERMS OF USE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jxc-oK-ehZ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dld-Qj-Ctl">
                                 <rect key="frame" x="0.0" y="0.0" width="368" height="50"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="  ">
+                                            <attributes>
+                                                <font key="NSFont" size="13" name="Helvetica"/>
+                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="       ">
+                                            <attributes>
+                                                <font key="NSFont" size="12" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content=" TERMS OF USE">
+                                            <attributes>
+                                                <font key="NSFont" size="13" name="Helvetica"/>
+                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Jxc-oK-ehZ" firstAttribute="leading" secondItem="pNn-jX-Gd6" secondAttribute="leading" id="9nY-C8-QCm"/>
-                            <constraint firstItem="Jxc-oK-ehZ" firstAttribute="top" secondItem="pNn-jX-Gd6" secondAttribute="top" id="Kfn-bD-AIH"/>
-                            <constraint firstAttribute="trailing" secondItem="Jxc-oK-ehZ" secondAttribute="trailing" id="Ozd-CY-Efm"/>
+                            <constraint firstItem="Dld-Qj-Ctl" firstAttribute="top" secondItem="pNn-jX-Gd6" secondAttribute="top" id="Fcj-j8-FuM"/>
+                            <constraint firstAttribute="bottom" secondItem="Dld-Qj-Ctl" secondAttribute="bottom" id="Gnf-75-nX9"/>
+                            <constraint firstAttribute="trailing" secondItem="Dld-Qj-Ctl" secondAttribute="trailing" id="HAW-4G-1qn"/>
                             <constraint firstAttribute="height" constant="50" id="e1H-W0-Rg2"/>
-                            <constraint firstAttribute="bottom" secondItem="Jxc-oK-ehZ" secondAttribute="bottom" id="nM9-cY-QGO"/>
+                            <constraint firstItem="Dld-Qj-Ctl" firstAttribute="leading" secondItem="pNn-jX-Gd6" secondAttribute="leading" id="oE9-KB-i5b"/>
                         </constraints>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="buX-6N-Aea">
                         <rect key="frame" x="0.0" y="150" width="368" height="50"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="        PRIVACY POLICY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oqB-p7-Qge">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BQw-5z-kQj">
                                 <rect key="frame" x="0.0" y="0.0" width="368" height="50"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content=" ">
+                                            <attributes>
+                                                <font key="NSFont" size="13" name="Helvetica"/>
+                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="       ">
+                                            <attributes>
+                                                <font key="NSFont" size="12" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="  PRIVACY POLICY">
+                                            <attributes>
+                                                <font key="NSFont" size="13" name="Helvetica"/>
+                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="oqB-p7-Qge" firstAttribute="top" secondItem="buX-6N-Aea" secondAttribute="top" id="Atd-zg-ntY"/>
-                            <constraint firstItem="oqB-p7-Qge" firstAttribute="leading" secondItem="buX-6N-Aea" secondAttribute="leading" id="EOx-ow-alO"/>
-                            <constraint firstAttribute="bottom" secondItem="oqB-p7-Qge" secondAttribute="bottom" id="Zed-xu-1fb"/>
+                            <constraint firstItem="BQw-5z-kQj" firstAttribute="leading" secondItem="buX-6N-Aea" secondAttribute="leading" id="24q-Jg-0Lm"/>
+                            <constraint firstAttribute="trailing" secondItem="BQw-5z-kQj" secondAttribute="trailing" id="DN4-L7-CEw"/>
                             <constraint firstAttribute="height" constant="50" id="ffs-tX-Cvq"/>
-                            <constraint firstAttribute="trailing" secondItem="oqB-p7-Qge" secondAttribute="trailing" id="vra-WE-HYf"/>
+                            <constraint firstAttribute="bottom" secondItem="BQw-5z-kQj" secondAttribute="bottom" id="l4l-xy-eIl"/>
+                            <constraint firstItem="BQw-5z-kQj" firstAttribute="top" secondItem="buX-6N-Aea" secondAttribute="top" id="qpT-wh-ngl"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -111,13 +180,13 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="aboutLabel" destination="ZYF-B8-hSv" id="Rty-xV-RO3"/>
+                <outlet property="aboutButton" destination="Xoy-aF-2Z3" id="GcX-kl-EAQ"/>
                 <outlet property="aboutView" destination="15B-je-RaF" id="a5O-eS-yfL"/>
-                <outlet property="faqLabel" destination="9Lh-Vz-nEa" id="nQX-Q4-rff"/>
+                <outlet property="faqButton" destination="ksa-qa-zH1" id="o4B-gc-EQg"/>
                 <outlet property="faqView" destination="tHW-uc-l7B" id="xkm-Vy-j7H"/>
-                <outlet property="privacyLabel" destination="oqB-p7-Qge" id="B3A-70-ZFH"/>
+                <outlet property="privacyButton" destination="BQw-5z-kQj" id="Vnh-mP-bsk"/>
                 <outlet property="privacyView" destination="buX-6N-Aea" id="7dd-PT-EfS"/>
-                <outlet property="termsLabel" destination="Jxc-oK-ehZ" id="UKX-vY-PSP"/>
+                <outlet property="termsButton" destination="Dld-Qj-Ctl" id="Dlz-NL-ajT"/>
                 <outlet property="termsView" destination="pNn-jX-Gd6" id="gXb-13-vT2"/>
             </connections>
             <point key="canvasLocation" x="25.954198473282442" y="80.633802816901408"/>

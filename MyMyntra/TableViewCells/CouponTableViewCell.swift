@@ -14,8 +14,9 @@ class CouponTableViewCell: UITableViewCell {
     static let id = "CouponTableViewCell"
     
     @IBOutlet weak var couponView: UIView!
+    @IBOutlet weak var couponButton: UIButton!
     @IBOutlet weak var couponImageView: UIImageView!
-    @IBOutlet weak var couponNameLabel: UILabel!
+    @IBOutlet weak var scanButton: UIButton!
     
     
 
