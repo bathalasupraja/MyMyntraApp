@@ -57,6 +57,8 @@ class BrandsViewController: UIViewController {
     var spotLightFashions = [SpotLightBrandModel]()
     var freshLaunchesImages = [FreshLaunchesImageModel]()
     var ethnicWearImages = [EthnicImageModel]()
+    var footwearImages = [FootwearImageModel]()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,11 +66,13 @@ class BrandsViewController: UIViewController {
         brandsTableView.register(UINib(nibName: MostLovedEthinicWearTableViewCell.id, bundle: nil), forCellReuseIdentifier: MostLovedEthinicWearTableViewCell.id)
         brandsTableView.register(UINib(nibName: EthnicWearImageTableViewCell.id, bundle: nil), forCellReuseIdentifier: EthnicWearImageTableViewCell.id)
         brandsTableView.register(UINib(nibName: FootwareTableViewCell.id, bundle: nil), forCellReuseIdentifier: FootwareTableViewCell.id)
+        brandsTableView.register(UINib(nibName: BrandsFootwearTableViewCell.id, bundle: nil), forCellReuseIdentifier: BrandsFootwearTableViewCell.id)
     
         createBrandsImageFashions()
         createSpotLightFashions()
         createFreshLaunchesImages()
         createEthnicWearImages()
+        createFootwearImages()
         brandsTableView.dataSource = self
         brandsTableView.delegate = self
     }
@@ -97,6 +101,12 @@ class BrandsViewController: UIViewController {
             ethnicWearImages.append(EthnicImageModel(image: ethnicWearImage))
         }
     }
+    
+    func createFootwearImages() {
+        for footwearImage in ["Image 88", "Image 89", "Image 90", "Image 91", "Image 92", "Image 93", "Image 94", "Image 95", "Image 96", "Image 97"] {
+            footwearImages.append(FootwearImageModel(image: footwearImage))
+        }
+    }
 
     func getCellIdentifierAtIndexPath(_ indexPath: IndexPath) -> String {
         switch indexPath.section {
@@ -118,6 +128,8 @@ class BrandsViewController: UIViewController {
             return EthnicWearImageTableViewCell.id
         case 8:
             return FootwareTableViewCell.id
+        case 9:
+            return BrandsFootwearTableViewCell.id
         default:
             return ""
         }
@@ -143,6 +155,8 @@ class BrandsViewController: UIViewController {
             return 150
         case 8:
             return 60
+        case 9:
+            return 150
         default:
             return 0
         }
@@ -151,7 +165,7 @@ class BrandsViewController: UIViewController {
 
 extension BrandsViewController: UITableViewDataSource, UITableViewDelegate {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 9
+        return 10
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
@@ -173,7 +187,12 @@ extension BrandsViewController: UITableViewDataSource, UITableViewDelegate {
         }
         
         if let ethnicWearImageTableViewCell = cell as? EthnicWearImageTableViewCell {
-            ethnicWearImageTableViewCell.ethnicWear = ethnicWearImages
+            ethnicWearImageTableViewCell.images = ethnicWearImages
+        }
+        
+        if let brandsFootwearTableViewCell = cell as? BrandsFootwearTableViewCell {
+            brandsFootwearTableViewCell.images = footwearImages
+            
         }
         return cell
     }
