@@ -963,15 +963,15 @@
                                             <outlet property="spotlightView" destination="82P-Pb-Tuh" id="qXQ-6O-niw"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SpotLightBrandsTableViewCell" rowHeight="120" id="5WG-Ug-wrZ" customClass="SpotLightBrandsTableViewCell" customModule="MyMyntra" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="240" width="393" height="120"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SpotLightBrandsTableViewCell" rowHeight="92" id="5WG-Ug-wrZ" customClass="SpotLightBrandsTableViewCell" customModule="MyMyntra" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="240" width="393" height="92"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5WG-Ug-wrZ" id="0kE-sa-g1f">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="120"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="92"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="w1V-8n-cTI">
-                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="120"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="92"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="pVR-g4-ueE">
                                                         <size key="itemSize" width="128" height="128"/>
@@ -981,7 +981,7 @@
                                                     </collectionViewFlowLayout>
                                                     <cells>
                                                         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SpotLightBrandsCollectionViewCell" id="psT-m5-XJf" customClass="SpotLightBrandsCollectionViewCell" customModule="MyMyntra" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="-4" width="128" height="128"/>
+                                                            <rect key="frame" x="0.0" y="-18" width="128" height="128"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="4tu-ys-q9w">
                                                                 <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
@@ -1018,7 +1018,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BrandsFreshLaunchesTableViewCell" rowHeight="82" id="9sh-Ds-GlD" customClass="BrandsFreshLaunchesTableViewCell" customModule="MyMyntra" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="360" width="393" height="82"/>
+                                        <rect key="frame" x="0.0" y="332" width="393" height="82"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9sh-Ds-GlD" id="FjM-cm-Pp8">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="82"/>
@@ -1095,15 +1095,15 @@
                                             <outlet property="launchesView" destination="cbL-Qj-UQa" id="JH1-xz-Jp1"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FreshLaunchesImagesTableViewCell" rowHeight="123" id="LgQ-yG-W8J" customClass="FreshLaunchesImagesTableViewCell" customModule="MyMyntra" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="442" width="393" height="123"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FreshLaunchesImagesTableViewCell" rowHeight="98" id="LgQ-yG-W8J" customClass="FreshLaunchesImagesTableViewCell" customModule="MyMyntra" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="414" width="393" height="98"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LgQ-yG-W8J" id="z9H-Lf-SES">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="123"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="98"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="PkL-9g-Thu">
-                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="123"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="98"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="BFA-ib-xEX">
                                                         <size key="itemSize" width="128" height="128"/>
@@ -1113,7 +1113,7 @@
                                                     </collectionViewFlowLayout>
                                                     <cells>
                                                         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FreshLaunchesImagesColectionViewCell" id="nl0-DR-Upi" customClass="FreshLaunchesImagesColectionViewCell" customModule="MyMyntra" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="-2.6666666666666665" width="128" height="128"/>
+                                                            <rect key="frame" x="0.0" y="-15" width="128" height="128"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="X4p-Rn-95A">
                                                                 <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
