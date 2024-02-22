@@ -51,6 +51,8 @@
 		367177942B63ECAB00D0F465 /* EverydayImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367177922B63ECAB00D0F465 /* EverydayImageTableViewCell.swift */; };
 		367177952B63ECAB00D0F465 /* EverydayImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 367177932B63ECAB00D0F465 /* EverydayImageTableViewCell.xib */; };
 		36741E3E2B4D31EC00D32474 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36741E3D2B4D31EC00D32474 /* HomeTableViewCell.swift */; };
+		367FC9402B870A1900A55AD8 /* InternationalBrandsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367FC93E2B870A1900A55AD8 /* InternationalBrandsTableViewCell.swift */; };
+		367FC9412B870A1900A55AD8 /* InternationalBrandsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 367FC93F2B870A1900A55AD8 /* InternationalBrandsTableViewCell.xib */; };
 		3685D2892B71D9D60062A95E /* FreshLaunchesImagesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3685D2882B71D9D60062A95E /* FreshLaunchesImagesTableViewCell.swift */; };
 		3685D28B2B71DA8A0062A95E /* FreshLaunchesImagesColectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3685D28A2B71DA8A0062A95E /* FreshLaunchesImagesColectionViewCell.swift */; };
 		3688D1942B779B9000D4626A /* AllProductsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3688D1932B779B9000D4626A /* AllProductsTableViewCell.swift */; };
@@ -156,6 +158,8 @@
 		367177922B63ECAB00D0F465 /* EverydayImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EverydayImageTableViewCell.swift; sourceTree = "<group>"; };
 		367177932B63ECAB00D0F465 /* EverydayImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EverydayImageTableViewCell.xib; sourceTree = "<group>"; };
 		36741E3D2B4D31EC00D32474 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		367FC93E2B870A1900A55AD8 /* InternationalBrandsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternationalBrandsTableViewCell.swift; sourceTree = "<group>"; };
+		367FC93F2B870A1900A55AD8 /* InternationalBrandsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InternationalBrandsTableViewCell.xib; sourceTree = "<group>"; };
 		3685D2882B71D9D60062A95E /* FreshLaunchesImagesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreshLaunchesImagesTableViewCell.swift; sourceTree = "<group>"; };
 		3685D28A2B71DA8A0062A95E /* FreshLaunchesImagesColectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreshLaunchesImagesColectionViewCell.swift; sourceTree = "<group>"; };
 		3688D1932B779B9000D4626A /* AllProductsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllProductsTableViewCell.swift; sourceTree = "<group>"; };
@@ -266,6 +270,8 @@
 		36AC07B82B78937700F82082 /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				367FC93F2B870A1900A55AD8 /* InternationalBrandsTableViewCell.xib */,
+				367FC93E2B870A1900A55AD8 /* InternationalBrandsTableViewCell.swift */,
 				3666FD3A2B8641D300730277 /* BrandsFootwearTableViewCell.xib */,
 				3666FD392B8641D300730277 /* BrandsFootwearTableViewCell.swift */,
 				3666FD362B8637E100730277 /* FootwareTableViewCell.xib */,
@@ -484,6 +490,7 @@
 				36ACED3B2B7C9F4100D4C5A9 /* FreshDropsImagesCollectionViewCell.xib in Resources */,
 				362227F12B668BA200A410A2 /* CategoriesTableViewCell.xib in Resources */,
 				36CD5B822B7E3F580026EA35 /* HotTrendsFashionsCollectionViewCell.xib in Resources */,
+				367FC9412B870A1900A55AD8 /* InternationalBrandsTableViewCell.xib in Resources */,
 				36E305B32B735E4900822D45 /* MostLovedEthinicWearTableViewCell.xib in Resources */,
 				367177952B63ECAB00D0F465 /* EverydayImageTableViewCell.xib in Resources */,
 				363209642B49147A00D58EBB /* Main.storyboard in Resources */,
@@ -499,6 +506,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				367FC9402B870A1900A55AD8 /* InternationalBrandsTableViewCell.swift in Sources */,
 				3666FD372B8637E100730277 /* FootwareTableViewCell.swift in Sources */,
 				36E9B9492B4A853100BE0E67 /* HomeViewController.swift in Sources */,
 				363209612B49147A00D58EBB /* StoreViewController.swift in Sources */,
