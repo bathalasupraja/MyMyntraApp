@@ -54,18 +54,18 @@ extension InternationalBrandsImagesTableViewCell: UICollectionViewDataSource {
         return cell
     }
 }
-extension InternationalBrandsImagesTableViewCell: UICollectionViewDelegate {
+extension InternationalBrandsImagesTableViewCell: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         0
     }
         
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let collectionViewSize = collectionView.bounds.size
-        return CGSize(width: 150, height: 150)
+        return CGSize(width: 200, height: 250)
     }
         
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 0)
     }
     
 }
