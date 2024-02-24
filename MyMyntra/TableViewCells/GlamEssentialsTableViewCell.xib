@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GlamEssentialsTableViewCell" rowHeight="83" id="KGk-i7-Jjw" customClass="GlamEssentialsTableViewCell" customModule="MyMyntra" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="83"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="83"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MfC-w4-1db">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="83"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GLAM ESSENTIALS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndM-AO-vTw">
+                                <rect key="frame" x="10" y="0.0" width="300" height="83"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ndM-AO-vTw" secondAttribute="bottom" id="IPb-ED-6Kn"/>
+                            <constraint firstItem="ndM-AO-vTw" firstAttribute="leading" secondItem="MfC-w4-1db" secondAttribute="leading" constant="10" id="eb7-qP-F1M"/>
+                            <constraint firstItem="ndM-AO-vTw" firstAttribute="top" secondItem="MfC-w4-1db" secondAttribute="top" id="iYd-q0-8IV"/>
+                            <constraint firstAttribute="trailing" secondItem="ndM-AO-vTw" secondAttribute="trailing" constant="10" id="uCA-49-X88"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="MfC-w4-1db" secondAttribute="trailing" id="AwD-fE-JwF"/>
+                    <constraint firstItem="MfC-w4-1db" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="St4-ql-c5T"/>
+                    <constraint firstAttribute="bottom" secondItem="MfC-w4-1db" secondAttribute="bottom" id="bRf-6g-Efm"/>
+                    <constraint firstItem="MfC-w4-1db" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="tSz-TN-MTm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="essentialsView" destination="MfC-w4-1db" id="EtS-cQ-lAk"/>
+            </connections>
+            <point key="canvasLocation" x="-29.007633587786259" y="33.450704225352112"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
