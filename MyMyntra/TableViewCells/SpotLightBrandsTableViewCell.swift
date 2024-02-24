@@ -45,14 +45,14 @@ extension SpotLightBrandsTableViewCell: UICollectionViewDataSource {
         return cell
     }
 }
-extension SpotLightBrandsTableViewCell: UICollectionViewDelegate {
+extension SpotLightBrandsTableViewCell: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         0
     }
         
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let collectionViewSize = collectionView.bounds.size
-        return CGSize(width: collectionViewSize.width, height: 180)
+        return CGSize(width: collectionViewSize.width, height: 130)
     }
         
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {

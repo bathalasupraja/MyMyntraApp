@@ -185,7 +185,7 @@ class BrandsViewController: UIViewController {
         case 2:
             return 50
         case 3:
-            return 130
+            return 150
         case 4:
             return 60
         case 5:
@@ -193,15 +193,15 @@ class BrandsViewController: UIViewController {
         case 6:
             return 60
         case 7:
-            return 150
+            return 200
         case 8:
             return 60
         case 9:
-            return 150
+            return 200
         case 10:
             return 60
         case 11:
-            return 250
+            return 200
         case 12:
             return 60
         case 13:

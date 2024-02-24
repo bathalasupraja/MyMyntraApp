@@ -47,14 +47,14 @@ extension FreshLaunchesImagesTableViewCell: UICollectionViewDataSource {
         return cell
     }
 }
-extension FreshLaunchesImagesTableViewCell: UICollectionViewDelegate {
+extension FreshLaunchesImagesTableViewCell: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         0
     }
         
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let collectionViewSize = collectionView.bounds.size
-        return CGSize(width: collectionViewSize.width, height: collectionViewSize.height)
+        return CGSize(width: 150, height: 200)
         
     }
         

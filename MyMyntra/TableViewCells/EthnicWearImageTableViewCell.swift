@@ -49,14 +49,14 @@ extension EthnicWearImageTableViewCell: UICollectionViewDataSource {
     }
 }
 
-extension EthnicWearImageTableViewCell: UICollectionViewDelegate {
+extension EthnicWearImageTableViewCell: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         0
     }
         
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let collectionViewSize = collectionView.bounds.size
-        return CGSize(width: 150, height: 200)
+        return CGSize(width: 200, height: 250)
     }
         
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
