@@ -45,6 +45,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="essentialsLabel" destination="ndM-AO-vTw" id="nVQ-HN-iq2"/>
                 <outlet property="essentialsView" destination="MfC-w4-1db" id="EtS-cQ-lAk"/>
             </connections>
             <point key="canvasLocation" x="-29.007633587786259" y="33.450704225352112"/>

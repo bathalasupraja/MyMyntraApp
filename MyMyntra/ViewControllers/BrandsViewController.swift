@@ -60,6 +60,7 @@ class BrandsViewController: UIViewController {
     var footwearImages = [FootwearImageModel]()
     var internationalBrands = [InternationalBrandsImageModel]()
     var kidswearImages = [KidswearImageModel]()
+    var glamEssentialsImages = [GlamEssentialsImageModel]()
     
     
     override func viewDidLoad() {
@@ -73,6 +74,7 @@ class BrandsViewController: UIViewController {
         brandsTableView.register(UINib(nibName: InternationalBrandsImagesTableViewCell.id, bundle: nil), forCellReuseIdentifier: InternationalBrandsImagesTableViewCell.id)
         brandsTableView.register(UINib(nibName: KidswearTableViewCell.id, bundle: nil), forCellReuseIdentifier: KidswearTableViewCell.id)
         brandsTableView.register(UINib(nibName: GlamEssentialsTableViewCell.id, bundle: nil), forCellReuseIdentifier: GlamEssentialsTableViewCell.id)
+        brandsTableView.register(UINib(nibName:GlamEssentialsImageTableViewCell.id, bundle: nil), forCellReuseIdentifier: GlamEssentialsImageTableViewCell.id)
     
         createBrandsImageFashions()
         createSpotLightFashions()
@@ -81,6 +83,7 @@ class BrandsViewController: UIViewController {
         createFootwearImages()
         createInternationalBrands()
         createKidswearImages()
+        createGlamEssentialsImages()
         brandsTableView.dataSource = self
         brandsTableView.delegate = self
     }
@@ -127,6 +130,12 @@ class BrandsViewController: UIViewController {
             kidswearImages.append(KidswearImageModel(image: kidswearImage))
         }
     }
+    
+    func createGlamEssentialsImages() {
+        for glamEssentialsImage in ["Image 107", "Image 108", "Image 109", "Image 110", "Image 111"] {
+            glamEssentialsImages.append(GlamEssentialsImageModel(image: glamEssentialsImage))
+        }
+    }
 
     func getCellIdentifierAtIndexPath(_ indexPath: IndexPath) -> String {
         switch indexPath.section {
@@ -160,6 +169,8 @@ class BrandsViewController: UIViewController {
             return KidswearImagesTableViewCell.id
         case 14:
             return GlamEssentialsTableViewCell.id
+        case 15:
+            return GlamEssentialsImageTableViewCell.id
         default:
             return ""
         }
@@ -190,13 +201,15 @@ class BrandsViewController: UIViewController {
         case 10:
             return 60
         case 11:
-            return 150
+            return 250
         case 12:
             return 60
         case 13:
             return 180
         case 14:
             return 60
+        case 15:
+            return 450
         default:
             return 0
         }
@@ -205,7 +218,7 @@ class BrandsViewController: UIViewController {
 
 extension BrandsViewController: UITableViewDataSource, UITableViewDelegate {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 15
+        return 16
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
@@ -241,6 +254,10 @@ extension BrandsViewController: UITableViewDataSource, UITableViewDelegate {
         
         if let kidswearImagesTableViewCell = cell as? KidswearImagesTableViewCell {
             kidswearImagesTableViewCell.images = kidswearImages
+        }
+        
+        if let GlamEssentialsImageTableViewCell = cell as? GlamEssentialsImageTableViewCell {
+            GlamEssentialsImageTableViewCell.images = glamEssentialsImages
         }
         return cell
     }

@@ -63,6 +63,10 @@
 		367FC94D2B87919800A55AD8 /* KidswearTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 367FC94B2B87919800A55AD8 /* KidswearTableViewCell.xib */; };
 		368490F22B8A00C300DDDD7A /* GlamEssentialsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368490F02B8A00C300DDDD7A /* GlamEssentialsTableViewCell.swift */; };
 		368490F32B8A00C300DDDD7A /* GlamEssentialsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 368490F12B8A00C300DDDD7A /* GlamEssentialsTableViewCell.xib */; };
+		368490F62B8A0ABC00DDDD7A /* GlamEssentialsImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368490F42B8A0ABC00DDDD7A /* GlamEssentialsImageTableViewCell.swift */; };
+		368490F72B8A0ABC00DDDD7A /* GlamEssentialsImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 368490F52B8A0ABC00DDDD7A /* GlamEssentialsImageTableViewCell.xib */; };
+		368490FA2B8A0CE200DDDD7A /* GlamEssentialsImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368490F82B8A0CE200DDDD7A /* GlamEssentialsImageCollectionViewCell.swift */; };
+		368490FB2B8A0CE200DDDD7A /* GlamEssentialsImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 368490F92B8A0CE200DDDD7A /* GlamEssentialsImageCollectionViewCell.xib */; };
 		3685D2892B71D9D60062A95E /* FreshLaunchesImagesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3685D2882B71D9D60062A95E /* FreshLaunchesImagesTableViewCell.swift */; };
 		3685D28B2B71DA8A0062A95E /* FreshLaunchesImagesColectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3685D28A2B71DA8A0062A95E /* FreshLaunchesImagesColectionViewCell.swift */; };
 		3688D1942B779B9000D4626A /* AllProductsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3688D1932B779B9000D4626A /* AllProductsTableViewCell.swift */; };
@@ -180,6 +184,10 @@
 		367FC94B2B87919800A55AD8 /* KidswearTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KidswearTableViewCell.xib; sourceTree = "<group>"; };
 		368490F02B8A00C300DDDD7A /* GlamEssentialsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlamEssentialsTableViewCell.swift; sourceTree = "<group>"; };
 		368490F12B8A00C300DDDD7A /* GlamEssentialsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GlamEssentialsTableViewCell.xib; sourceTree = "<group>"; };
+		368490F42B8A0ABC00DDDD7A /* GlamEssentialsImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlamEssentialsImageTableViewCell.swift; sourceTree = "<group>"; };
+		368490F52B8A0ABC00DDDD7A /* GlamEssentialsImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GlamEssentialsImageTableViewCell.xib; sourceTree = "<group>"; };
+		368490F82B8A0CE200DDDD7A /* GlamEssentialsImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlamEssentialsImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		368490F92B8A0CE200DDDD7A /* GlamEssentialsImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GlamEssentialsImageCollectionViewCell.xib; sourceTree = "<group>"; };
 		3685D2882B71D9D60062A95E /* FreshLaunchesImagesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreshLaunchesImagesTableViewCell.swift; sourceTree = "<group>"; };
 		3685D28A2B71DA8A0062A95E /* FreshLaunchesImagesColectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreshLaunchesImagesColectionViewCell.swift; sourceTree = "<group>"; };
 		3688D1932B779B9000D4626A /* AllProductsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllProductsTableViewCell.swift; sourceTree = "<group>"; };
@@ -290,6 +298,8 @@
 		36AC07B82B78937700F82082 /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				368490F52B8A0ABC00DDDD7A /* GlamEssentialsImageTableViewCell.xib */,
+				368490F42B8A0ABC00DDDD7A /* GlamEssentialsImageTableViewCell.swift */,
 				368490F12B8A00C300DDDD7A /* GlamEssentialsTableViewCell.xib */,
 				368490F02B8A00C300DDDD7A /* GlamEssentialsTableViewCell.swift */,
 				3627ECCE2B88559600C2E4B7 /* KidswearImagesTableViewCell.swift */,
@@ -363,6 +373,8 @@
 		36AC07B92B78939D00F82082 /* CollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				368490F92B8A0CE200DDDD7A /* GlamEssentialsImageCollectionViewCell.xib */,
+				368490F82B8A0CE200DDDD7A /* GlamEssentialsImageCollectionViewCell.swift */,
 				3627ECD22B88600500C2E4B7 /* KidswearImagesCollectionViewCell.swift */,
 				367FC9472B87708900A55AD8 /* InternationalBrandsImagesCollectionViewCell.xib */,
 				367FC9462B87708900A55AD8 /* InternationalBrandsImagesCollectionViewCell.swift */,
@@ -492,6 +504,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				362380DA2B58E51F00F7365B /* OffersTableViewCell.xib in Resources */,
+				368490FB2B8A0CE200DDDD7A /* GlamEssentialsImageCollectionViewCell.xib in Resources */,
 				36E305B72B7360AB00822D45 /* EthnicWearImageTableViewCell.xib in Resources */,
 				36A88C332B690435009E9958 /* BestSellersTittleTableViewCell.xib in Resources */,
 				3666FD3C2B8641D300730277 /* BrandsFootwearTableViewCell.xib in Resources */,
@@ -522,6 +535,7 @@
 				362227F52B668C7600A410A2 /* CategoriesCollectionViewCell.xib in Resources */,
 				36ACED3B2B7C9F4100D4C5A9 /* FreshDropsImagesCollectionViewCell.xib in Resources */,
 				362227F12B668BA200A410A2 /* CategoriesTableViewCell.xib in Resources */,
+				368490F72B8A0ABC00DDDD7A /* GlamEssentialsImageTableViewCell.xib in Resources */,
 				368490F32B8A00C300DDDD7A /* GlamEssentialsTableViewCell.xib in Resources */,
 				36CD5B822B7E3F580026EA35 /* HotTrendsFashionsCollectionViewCell.xib in Resources */,
 				367FC9412B870A1900A55AD8 /* InternationalBrandsTableViewCell.xib in Resources */,
@@ -606,9 +620,11 @@
 				36CD5B782B7E1A5A0026EA35 /* HotTrendsViewsTableViewCell.swift in Sources */,
 				36D786DA2B75E3CE00508036 /* HomeFurnituresCollectionViewCell.swift in Sources */,
 				36CD5B812B7E3F580026EA35 /* HotTrendsFashionsCollectionViewCell.swift in Sources */,
+				368490FA2B8A0CE200DDDD7A /* GlamEssentialsImageCollectionViewCell.swift in Sources */,
 				3666FD3F2B8643AB00730277 /* BrandsFootwearImagesCollectionViewCell.swift in Sources */,
 				36E96EC82B59529A00A4664C /* BrandsViewController.swift in Sources */,
 				3693E7402B7B74D300B0EBA6 /* HomeVersionTableViewCell.swift in Sources */,
+				368490F62B8A0ABC00DDDD7A /* GlamEssentialsImageTableViewCell.swift in Sources */,
 				369218A72B65145600A28405 /* EverydayTrendingEssentialsCollectionViewCell.swift in Sources */,
 				36A88C2D2B68C6C3009E9958 /* BestSellersTableViewCell.swift in Sources */,
 				36457DA62B615B4000BDE641 /* SegmentTableViewCell.swift in Sources */,
