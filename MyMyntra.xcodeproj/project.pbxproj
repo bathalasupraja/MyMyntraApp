@@ -74,6 +74,10 @@
 		3689F71F2B4BCBBF004A04F3 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3689F71E2B4BCBBF004A04F3 /* HomeCollectionViewCell.swift */; };
 		368A919B2B7753F1001DF534 /* HomeProductsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368A91992B7753F1001DF534 /* HomeProductsTableViewCell.swift */; };
 		368A919C2B7753F1001DF534 /* HomeProductsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 368A919A2B7753F1001DF534 /* HomeProductsTableViewCell.xib */; };
+		368C88192B8B509A0001106F /* WatchesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C88172B8B509A0001106F /* WatchesTableViewCell.swift */; };
+		368C881A2B8B509A0001106F /* WatchesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 368C88182B8B509A0001106F /* WatchesTableViewCell.xib */; };
+		368C881D2B8B8CFB0001106F /* WatchesImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C881B2B8B8CFB0001106F /* WatchesImageTableViewCell.swift */; };
+		368C881E2B8B8CFB0001106F /* WatchesImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 368C881C2B8B8CFB0001106F /* WatchesImageTableViewCell.xib */; };
 		369218A32B65117100A28405 /* EverydayTrendingEssentialsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369218A12B65117100A28405 /* EverydayTrendingEssentialsTableViewCell.swift */; };
 		369218A42B65117100A28405 /* EverydayTrendingEssentialsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 369218A22B65117100A28405 /* EverydayTrendingEssentialsTableViewCell.xib */; };
 		369218A72B65145600A28405 /* EverydayTrendingEssentialsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369218A52B65145600A28405 /* EverydayTrendingEssentialsCollectionViewCell.swift */; };
@@ -195,6 +199,10 @@
 		3689F71E2B4BCBBF004A04F3 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		368A91992B7753F1001DF534 /* HomeProductsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProductsTableViewCell.swift; sourceTree = "<group>"; };
 		368A919A2B7753F1001DF534 /* HomeProductsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeProductsTableViewCell.xib; sourceTree = "<group>"; };
+		368C88172B8B509A0001106F /* WatchesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchesTableViewCell.swift; sourceTree = "<group>"; };
+		368C88182B8B509A0001106F /* WatchesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WatchesTableViewCell.xib; sourceTree = "<group>"; };
+		368C881B2B8B8CFB0001106F /* WatchesImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchesImageTableViewCell.swift; sourceTree = "<group>"; };
+		368C881C2B8B8CFB0001106F /* WatchesImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WatchesImageTableViewCell.xib; sourceTree = "<group>"; };
 		369218A12B65117100A28405 /* EverydayTrendingEssentialsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EverydayTrendingEssentialsTableViewCell.swift; sourceTree = "<group>"; };
 		369218A22B65117100A28405 /* EverydayTrendingEssentialsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EverydayTrendingEssentialsTableViewCell.xib; sourceTree = "<group>"; };
 		369218A52B65145600A28405 /* EverydayTrendingEssentialsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EverydayTrendingEssentialsCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -298,6 +306,8 @@
 		36AC07B82B78937700F82082 /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				368C88182B8B509A0001106F /* WatchesTableViewCell.xib */,
+				368C88172B8B509A0001106F /* WatchesTableViewCell.swift */,
 				368490F52B8A0ABC00DDDD7A /* GlamEssentialsImageTableViewCell.xib */,
 				368490F42B8A0ABC00DDDD7A /* GlamEssentialsImageTableViewCell.swift */,
 				368490F12B8A00C300DDDD7A /* GlamEssentialsTableViewCell.xib */,
@@ -440,6 +450,8 @@
 			isa = PBXGroup;
 			children = (
 				363209622B49147A00D58EBB /* Main.storyboard */,
+				368C881B2B8B8CFB0001106F /* WatchesImageTableViewCell.swift */,
+				368C881C2B8B8CFB0001106F /* WatchesImageTableViewCell.xib */,
 				363209672B49147B00D58EBB /* LaunchScreen.storyboard */,
 			);
 			path = Storyboard;
@@ -528,6 +540,7 @@
 				369218A82B65145600A28405 /* EverydayTrendingEssentialsCollectionViewCell.xib in Resources */,
 				36CD5B7E2B7E3DA80026EA35 /* HotTrendsFashionsTableViewCell.xib in Resources */,
 				36E305BB2B73620C00822D45 /* EthnicWearImageCollectionViewCell.xib in Resources */,
+				368C881A2B8B509A0001106F /* WatchesTableViewCell.xib in Resources */,
 				363209662B49147B00D58EBB /* Assets.xcassets in Resources */,
 				3666FD382B8637E100730277 /* FootwareTableViewCell.xib in Resources */,
 				361AF5D42B5B8C7700E6D3C4 /* DiscountCollectionViewCell.xib in Resources */,
@@ -541,6 +554,7 @@
 				367FC9412B870A1900A55AD8 /* InternationalBrandsTableViewCell.xib in Resources */,
 				36E305B32B735E4900822D45 /* MostLovedEthinicWearTableViewCell.xib in Resources */,
 				367177952B63ECAB00D0F465 /* EverydayImageTableViewCell.xib in Resources */,
+				368C881E2B8B8CFB0001106F /* WatchesImageTableViewCell.xib in Resources */,
 				363209642B49147A00D58EBB /* Main.storyboard in Resources */,
 				3693E7412B7B74D300B0EBA6 /* HomeVersionTableViewCell.xib in Resources */,
 				365FF1882B7F8F0800A95330 /* EverydayImagesCollectionViewCell.xib in Resources */,
@@ -573,6 +587,7 @@
 				368490F22B8A00C300DDDD7A /* GlamEssentialsTableViewCell.swift in Sources */,
 				3688D1942B779B9000D4626A /* AllProductsTableViewCell.swift in Sources */,
 				36E96EC62B5950D700A4664C /* EverydayViewController.swift in Sources */,
+				368C881D2B8B8CFB0001106F /* WatchesImageTableViewCell.swift in Sources */,
 				36A44B622B6212EE00D027C8 /* HotTrendsTableViewCell.swift in Sources */,
 				36E96ECA2B59552400A4664C /* ProfileViewController.swift in Sources */,
 				365C67022B6F4BE400195496 /* HotTrendsImagesCollectionViewCell.swift in Sources */,
@@ -629,6 +644,7 @@
 				36A88C2D2B68C6C3009E9958 /* BestSellersTableViewCell.swift in Sources */,
 				36457DA62B615B4000BDE641 /* SegmentTableViewCell.swift in Sources */,
 				362227ED2B66867F00A410A2 /* PriceStoreTableViewCell.swift in Sources */,
+				368C88192B8B509A0001106F /* WatchesTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
