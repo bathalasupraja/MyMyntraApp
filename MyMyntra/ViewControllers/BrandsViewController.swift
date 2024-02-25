@@ -76,6 +76,7 @@ class BrandsViewController: UIViewController {
         brandsTableView.register(UINib(nibName: GlamEssentialsTableViewCell.id, bundle: nil), forCellReuseIdentifier: GlamEssentialsTableViewCell.id)
         brandsTableView.register(UINib(nibName:GlamEssentialsImageTableViewCell.id, bundle: nil), forCellReuseIdentifier: GlamEssentialsImageTableViewCell.id)
         brandsTableView.register(UINib(nibName: WatchesTableViewCell.id, bundle: nil), forCellReuseIdentifier: WatchesTableViewCell.id)
+        brandsTableView.register(UINib(nibName: WatchesImageTableViewCell.id, bundle: nil), forCellReuseIdentifier: WatchesImageTableViewCell.id)
     
         createBrandsImageFashions()
         createSpotLightFashions()
@@ -174,6 +175,8 @@ class BrandsViewController: UIViewController {
             return GlamEssentialsImageTableViewCell.id
         case 16:
             return WatchesTableViewCell.id
+        case 17:
+            return WatchesImageTableViewCell.id
         default:
             return ""
         }
@@ -215,6 +218,8 @@ class BrandsViewController: UIViewController {
             return 450
         case 16:
             return 60
+        case 17:
+            return 200
         default:
             return 0
         }
@@ -223,7 +228,7 @@ class BrandsViewController: UIViewController {
 
 extension BrandsViewController: UITableViewDataSource, UITableViewDelegate {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 17
+        return 18
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
