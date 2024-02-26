@@ -25,6 +25,14 @@
 		3627ECD42B88600500C2E4B7 /* KidswearImagesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3627ECD22B88600500C2E4B7 /* KidswearImagesCollectionViewCell.swift */; };
 		362AC0ED2B7482E30048E513 /* BeatySellersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362AC0EC2B7482E30048E513 /* BeatySellersTableViewCell.swift */; };
 		362AC0EF2B7484BA0048E513 /* BeautySellersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362AC0EE2B7484BA0048E513 /* BeautySellersCollectionViewCell.swift */; };
+		362F8EE02B8C4692006BB443 /* WatchesImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362F8EDE2B8C4692006BB443 /* WatchesImageCollectionViewCell.swift */; };
+		362F8EE12B8C4692006BB443 /* WatchesImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 362F8EDF2B8C4692006BB443 /* WatchesImageCollectionViewCell.xib */; };
+		362F8EE42B8C6F4C006BB443 /* JewelleryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362F8EE22B8C6F4C006BB443 /* JewelleryTableViewCell.swift */; };
+		362F8EE52B8C6F4C006BB443 /* JewelleryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 362F8EE32B8C6F4C006BB443 /* JewelleryTableViewCell.xib */; };
+		362F8EE82B8CC922006BB443 /* JewelleryImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362F8EE62B8CC922006BB443 /* JewelleryImageTableViewCell.swift */; };
+		362F8EE92B8CC922006BB443 /* JewelleryImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 362F8EE72B8CC922006BB443 /* JewelleryImageTableViewCell.xib */; };
+		362F8EEC2B8CCD44006BB443 /* JewelleryImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362F8EEA2B8CCD44006BB443 /* JewelleryImageCollectionViewCell.swift */; };
+		362F8EED2B8CCD44006BB443 /* JewelleryImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 362F8EEB2B8CCD44006BB443 /* JewelleryImageCollectionViewCell.xib */; };
 		3632095D2B49147A00D58EBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3632095C2B49147A00D58EBB /* AppDelegate.swift */; };
 		3632095F2B49147A00D58EBB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3632095E2B49147A00D58EBB /* SceneDelegate.swift */; };
 		363209612B49147A00D58EBB /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363209602B49147A00D58EBB /* StoreViewController.swift */; };
@@ -148,6 +156,14 @@
 		3627ECD22B88600500C2E4B7 /* KidswearImagesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KidswearImagesCollectionViewCell.swift; sourceTree = "<group>"; };
 		362AC0EC2B7482E30048E513 /* BeatySellersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeatySellersTableViewCell.swift; sourceTree = "<group>"; };
 		362AC0EE2B7484BA0048E513 /* BeautySellersCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeautySellersCollectionViewCell.swift; sourceTree = "<group>"; };
+		362F8EDE2B8C4692006BB443 /* WatchesImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchesImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		362F8EDF2B8C4692006BB443 /* WatchesImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WatchesImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		362F8EE22B8C6F4C006BB443 /* JewelleryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JewelleryTableViewCell.swift; sourceTree = "<group>"; };
+		362F8EE32B8C6F4C006BB443 /* JewelleryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JewelleryTableViewCell.xib; sourceTree = "<group>"; };
+		362F8EE62B8CC922006BB443 /* JewelleryImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JewelleryImageTableViewCell.swift; sourceTree = "<group>"; };
+		362F8EE72B8CC922006BB443 /* JewelleryImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JewelleryImageTableViewCell.xib; sourceTree = "<group>"; };
+		362F8EEA2B8CCD44006BB443 /* JewelleryImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JewelleryImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		362F8EEB2B8CCD44006BB443 /* JewelleryImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JewelleryImageCollectionViewCell.xib; sourceTree = "<group>"; };
 		363209592B49147A00D58EBB /* MyMyntra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMyntra.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3632095C2B49147A00D58EBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3632095E2B49147A00D58EBB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -306,6 +322,12 @@
 		36AC07B82B78937700F82082 /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				362F8EE72B8CC922006BB443 /* JewelleryImageTableViewCell.xib */,
+				362F8EE62B8CC922006BB443 /* JewelleryImageTableViewCell.swift */,
+				362F8EE32B8C6F4C006BB443 /* JewelleryTableViewCell.xib */,
+				362F8EE22B8C6F4C006BB443 /* JewelleryTableViewCell.swift */,
+				368C881C2B8B8CFB0001106F /* WatchesImageTableViewCell.xib */,
+				368C881B2B8B8CFB0001106F /* WatchesImageTableViewCell.swift */,
 				368C88182B8B509A0001106F /* WatchesTableViewCell.xib */,
 				368C88172B8B509A0001106F /* WatchesTableViewCell.swift */,
 				368490F52B8A0ABC00DDDD7A /* GlamEssentialsImageTableViewCell.xib */,
@@ -383,6 +405,10 @@
 		36AC07B92B78939D00F82082 /* CollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				362F8EEB2B8CCD44006BB443 /* JewelleryImageCollectionViewCell.xib */,
+				362F8EEA2B8CCD44006BB443 /* JewelleryImageCollectionViewCell.swift */,
+				362F8EDF2B8C4692006BB443 /* WatchesImageCollectionViewCell.xib */,
+				362F8EDE2B8C4692006BB443 /* WatchesImageCollectionViewCell.swift */,
 				368490F92B8A0CE200DDDD7A /* GlamEssentialsImageCollectionViewCell.xib */,
 				368490F82B8A0CE200DDDD7A /* GlamEssentialsImageCollectionViewCell.swift */,
 				3627ECD22B88600500C2E4B7 /* KidswearImagesCollectionViewCell.swift */,
@@ -450,8 +476,6 @@
 			isa = PBXGroup;
 			children = (
 				363209622B49147A00D58EBB /* Main.storyboard */,
-				368C881B2B8B8CFB0001106F /* WatchesImageTableViewCell.swift */,
-				368C881C2B8B8CFB0001106F /* WatchesImageTableViewCell.xib */,
 				363209672B49147B00D58EBB /* LaunchScreen.storyboard */,
 			);
 			path = Storyboard;
@@ -543,10 +567,13 @@
 				368C881A2B8B509A0001106F /* WatchesTableViewCell.xib in Resources */,
 				363209662B49147B00D58EBB /* Assets.xcassets in Resources */,
 				3666FD382B8637E100730277 /* FootwareTableViewCell.xib in Resources */,
+				362F8EE12B8C4692006BB443 /* WatchesImageCollectionViewCell.xib in Resources */,
+				362F8EED2B8CCD44006BB443 /* JewelleryImageCollectionViewCell.xib in Resources */,
 				361AF5D42B5B8C7700E6D3C4 /* DiscountCollectionViewCell.xib in Resources */,
 				36ACED332B7C9B0100D4C5A9 /* HotTrendsFreshDropsImagesTableViewCell.xib in Resources */,
 				362227F52B668C7600A410A2 /* CategoriesCollectionViewCell.xib in Resources */,
 				36ACED3B2B7C9F4100D4C5A9 /* FreshDropsImagesCollectionViewCell.xib in Resources */,
+				362F8EE92B8CC922006BB443 /* JewelleryImageTableViewCell.xib in Resources */,
 				362227F12B668BA200A410A2 /* CategoriesTableViewCell.xib in Resources */,
 				368490F72B8A0ABC00DDDD7A /* GlamEssentialsImageTableViewCell.xib in Resources */,
 				368490F32B8A00C300DDDD7A /* GlamEssentialsTableViewCell.xib in Resources */,
@@ -555,6 +582,7 @@
 				36E305B32B735E4900822D45 /* MostLovedEthinicWearTableViewCell.xib in Resources */,
 				367177952B63ECAB00D0F465 /* EverydayImageTableViewCell.xib in Resources */,
 				368C881E2B8B8CFB0001106F /* WatchesImageTableViewCell.xib in Resources */,
+				362F8EE52B8C6F4C006BB443 /* JewelleryTableViewCell.xib in Resources */,
 				363209642B49147A00D58EBB /* Main.storyboard in Resources */,
 				3693E7412B7B74D300B0EBA6 /* HomeVersionTableViewCell.xib in Resources */,
 				365FF1882B7F8F0800A95330 /* EverydayImagesCollectionViewCell.xib in Resources */,
@@ -590,12 +618,14 @@
 				368C881D2B8B8CFB0001106F /* WatchesImageTableViewCell.swift in Sources */,
 				36A44B622B6212EE00D027C8 /* HotTrendsTableViewCell.swift in Sources */,
 				36E96ECA2B59552400A4664C /* ProfileViewController.swift in Sources */,
+				362F8EEC2B8CCD44006BB443 /* JewelleryImageCollectionViewCell.swift in Sources */,
 				365C67022B6F4BE400195496 /* HotTrendsImagesCollectionViewCell.swift in Sources */,
 				36E305B22B735E4900822D45 /* MostLovedEthinicWearTableViewCell.swift in Sources */,
 				367FC94C2B87919800A55AD8 /* KidswearTableViewCell.swift in Sources */,
 				3693E73D2B7B43E600B0EBA6 /* HomeProductsImagesTableViewCell.swift in Sources */,
 				362380E12B58F46B00F7365B /* DiscountTableViewCell.swift in Sources */,
 				36A44B642B6216C300D027C8 /* HotTrendsCollectionViewCell.swift in Sources */,
+				362F8EE42B8C6F4C006BB443 /* JewelleryTableViewCell.swift in Sources */,
 				36741E3E2B4D31EC00D32474 /* HomeTableViewCell.swift in Sources */,
 				36A5CE632B62A31B00F62100 /* UserPoliciesTableViewCell.swift in Sources */,
 				3688D1962B779CA100D4626A /* AllProductsCollectionViewCell.swift in Sources */,
@@ -614,6 +644,7 @@
 				365FF1872B7F8F0800A95330 /* EverydayImagesCollectionViewCell.swift in Sources */,
 				362380DD2B58EAF100F7365B /* DiscountCollectionViewCell.swift in Sources */,
 				3605ECDD2B5B680000B51246 /* CouponTableViewCell.swift in Sources */,
+				362F8EE82B8CC922006BB443 /* JewelleryImageTableViewCell.swift in Sources */,
 				360362B02B5D49B6005AE278 /* BrandsTableViewCell.swift in Sources */,
 				363209712B491BC100D58EBB /* StoreTableViewCell.swift in Sources */,
 				3632095F2B49147A00D58EBB /* SceneDelegate.swift in Sources */,
@@ -626,6 +657,7 @@
 				365C67002B6F49CA00195496 /* HotTrendsImagesTableViewCell.swift in Sources */,
 				36348C072B70C0EE00EE116C /* SpotLightBrandsCollectionViewCell.swift in Sources */,
 				367177942B63ECAB00D0F465 /* EverydayImageTableViewCell.swift in Sources */,
+				362F8EE02B8C4692006BB443 /* WatchesImageCollectionViewCell.swift in Sources */,
 				362227F42B668C7600A410A2 /* CategoriesCollectionViewCell.swift in Sources */,
 				365FF1802B7F7EA500A95330 /* EverydayCollectionViewCell.swift in Sources */,
 				36A88C2F2B68C84B009E9958 /* BestSellersCollectionViewCell.swift in Sources */,

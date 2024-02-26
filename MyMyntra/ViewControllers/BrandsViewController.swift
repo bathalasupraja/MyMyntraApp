@@ -61,6 +61,8 @@ class BrandsViewController: UIViewController {
     var internationalBrands = [InternationalBrandsImageModel]()
     var kidswearImages = [KidswearImageModel]()
     var glamEssentialsImages = [GlamEssentialsImageModel]()
+    var watchesImages = [WatchesImageModel]()
+    var jewelleryImages = [JewelleryImageModel]()
     
     
     override func viewDidLoad() {
@@ -77,6 +79,8 @@ class BrandsViewController: UIViewController {
         brandsTableView.register(UINib(nibName:GlamEssentialsImageTableViewCell.id, bundle: nil), forCellReuseIdentifier: GlamEssentialsImageTableViewCell.id)
         brandsTableView.register(UINib(nibName: WatchesTableViewCell.id, bundle: nil), forCellReuseIdentifier: WatchesTableViewCell.id)
         brandsTableView.register(UINib(nibName: WatchesImageTableViewCell.id, bundle: nil), forCellReuseIdentifier: WatchesImageTableViewCell.id)
+        brandsTableView.register(UINib(nibName: JewelleryTableViewCell.id, bundle: nil), forCellReuseIdentifier: JewelleryTableViewCell.id)
+        brandsTableView.register(UINib(nibName: JewelleryImageTableViewCell.id, bundle: nil), forCellReuseIdentifier: JewelleryImageTableViewCell.id)
     
         createBrandsImageFashions()
         createSpotLightFashions()
@@ -86,6 +90,8 @@ class BrandsViewController: UIViewController {
         createInternationalBrands()
         createKidswearImages()
         createGlamEssentialsImages()
+        createWatchesImages()
+        createJewelleryImages()
         brandsTableView.dataSource = self
         brandsTableView.delegate = self
     }
@@ -138,6 +144,18 @@ class BrandsViewController: UIViewController {
             glamEssentialsImages.append(GlamEssentialsImageModel(image: glamEssentialsImage))
         }
     }
+    
+    func createWatchesImages() {
+        for watchesImage in ["Image 112", "Image 113", "Image 114", "Image 115", "Image 116"] {
+            watchesImages.append(WatchesImageModel(image: watchesImage))
+        }
+    }
+    
+    func createJewelleryImages() {
+        for jewelleryImage in ["Image 117", "Image 118", "Image 119", "Image 120", "Image 121"] {
+            jewelleryImages.append(JewelleryImageModel(image: jewelleryImage))
+        }
+    }
 
     func getCellIdentifierAtIndexPath(_ indexPath: IndexPath) -> String {
         switch indexPath.section {
@@ -177,6 +195,10 @@ class BrandsViewController: UIViewController {
             return WatchesTableViewCell.id
         case 17:
             return WatchesImageTableViewCell.id
+        case 18:
+            return JewelleryTableViewCell.id
+        case 19:
+            return JewelleryImageTableViewCell.id
         default:
             return ""
         }
@@ -220,6 +242,10 @@ class BrandsViewController: UIViewController {
             return 60
         case 17:
             return 200
+        case 18:
+            return 60
+        case 19:
+            return 200
         default:
             return 0
         }
@@ -228,7 +254,7 @@ class BrandsViewController: UIViewController {
 
 extension BrandsViewController: UITableViewDataSource, UITableViewDelegate {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 18
+        return 20
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
@@ -268,6 +294,14 @@ extension BrandsViewController: UITableViewDataSource, UITableViewDelegate {
         
         if let GlamEssentialsImageTableViewCell = cell as? GlamEssentialsImageTableViewCell {
             GlamEssentialsImageTableViewCell.images = glamEssentialsImages
+        }
+        
+        if let watchesImageTableViewCell = cell as? WatchesImageTableViewCell {
+            watchesImageTableViewCell.images = watchesImages
+        }
+        
+        if let jewelleryImageTableViewCell = cell as? JewelleryImageTableViewCell {
+            jewelleryImageTableViewCell.images = jewelleryImages
         }
         return cell
     }

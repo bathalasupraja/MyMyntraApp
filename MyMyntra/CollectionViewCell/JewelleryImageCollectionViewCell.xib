@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="JewelleryImageCollectionViewCell" id="gTV-IL-0wX" customClass="JewelleryImageCollectionViewCell" customModule="MyMyntra" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="332" height="144"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="332" height="144"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bl7-La-GRN">
+                        <rect key="frame" x="0.0" y="0.0" width="332" height="144"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="bl7-La-GRN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="G2N-RY-enh"/>
+                <constraint firstAttribute="trailing" secondItem="bl7-La-GRN" secondAttribute="trailing" id="Q3V-j8-R7B"/>
+                <constraint firstItem="bl7-La-GRN" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="YPp-o1-bm1"/>
+                <constraint firstAttribute="bottom" secondItem="bl7-La-GRN" secondAttribute="bottom" id="qfx-zf-9hD"/>
+            </constraints>
+            <size key="customSize" width="332" height="144"/>
+            <connections>
+                <outlet property="jewelleryImageView" destination="bl7-La-GRN" id="ZdW-aX-pMX"/>
+            </connections>
+            <point key="canvasLocation" x="186.25954198473281" y="52.816901408450704"/>
+        </collectionViewCell>
+    </objects>
+</document>
