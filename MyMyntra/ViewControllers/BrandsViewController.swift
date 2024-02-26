@@ -58,6 +58,8 @@ class BrandsViewController: UIViewController {
     var freshLaunchesImages = [FreshLaunchesImageModel]()
     var ethnicWearImages = [EthnicImageModel]()
     var footwearImages = [FootwearImageModel]()
+    var internationalBrands = [InternationalBrandsImageModel]()
+    var kidswearImages = [KidswearImageModel]()
     
     
     override func viewDidLoad() {
@@ -67,12 +69,17 @@ class BrandsViewController: UIViewController {
         brandsTableView.register(UINib(nibName: EthnicWearImageTableViewCell.id, bundle: nil), forCellReuseIdentifier: EthnicWearImageTableViewCell.id)
         brandsTableView.register(UINib(nibName: FootwareTableViewCell.id, bundle: nil), forCellReuseIdentifier: FootwareTableViewCell.id)
         brandsTableView.register(UINib(nibName: BrandsFootwearTableViewCell.id, bundle: nil), forCellReuseIdentifier: BrandsFootwearTableViewCell.id)
+        brandsTableView.register(UINib(nibName: InternationalBrandsTableViewCell.id, bundle: nil), forCellReuseIdentifier: InternationalBrandsTableViewCell.id)
+        brandsTableView.register(UINib(nibName: InternationalBrandsImagesTableViewCell.id, bundle: nil), forCellReuseIdentifier: InternationalBrandsImagesTableViewCell.id)
+        brandsTableView.register(UINib(nibName: KidswearTableViewCell.id, bundle: nil), forCellReuseIdentifier: KidswearTableViewCell.id)
     
         createBrandsImageFashions()
         createSpotLightFashions()
         createFreshLaunchesImages()
         createEthnicWearImages()
         createFootwearImages()
+        createInternationalBrands()
+        createKidswearImages()
         brandsTableView.dataSource = self
         brandsTableView.delegate = self
     }
@@ -107,6 +114,18 @@ class BrandsViewController: UIViewController {
             footwearImages.append(FootwearImageModel(image: footwearImage))
         }
     }
+    
+    func createInternationalBrands() {
+        for internationalBrand in ["Image 98", "Image 99", "Image 100", "Image 101", "Image 102"] {
+            internationalBrands.append(InternationalBrandsImageModel(image: internationalBrand))
+        }
+    }
+    
+    func createKidswearImages() {
+        for kidswearImage in ["Image 103", "Image 104", "Image 105", "Image 106"] {
+            kidswearImages.append(KidswearImageModel(image: kidswearImage))
+        }
+    }
 
     func getCellIdentifierAtIndexPath(_ indexPath: IndexPath) -> String {
         switch indexPath.section {
@@ -130,6 +149,14 @@ class BrandsViewController: UIViewController {
             return FootwareTableViewCell.id
         case 9:
             return BrandsFootwearTableViewCell.id
+        case 10:
+            return InternationalBrandsTableViewCell.id
+        case 11:
+            return InternationalBrandsImagesTableViewCell.id
+        case 12:
+            return KidswearTableViewCell.id
+        case 13:
+            return KidswearImagesTableViewCell.id
         default:
             return ""
         }
@@ -157,6 +184,14 @@ class BrandsViewController: UIViewController {
             return 60
         case 9:
             return 150
+        case 10:
+            return 60
+        case 11:
+            return 150
+        case 12:
+            return 60
+        case 13:
+            return 180
         default:
             return 0
         }
@@ -165,7 +200,7 @@ class BrandsViewController: UIViewController {
 
 extension BrandsViewController: UITableViewDataSource, UITableViewDelegate {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 10
+        return 14
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
@@ -193,6 +228,14 @@ extension BrandsViewController: UITableViewDataSource, UITableViewDelegate {
         if let brandsFootwearTableViewCell = cell as? BrandsFootwearTableViewCell {
             brandsFootwearTableViewCell.images = footwearImages
             
+        }
+        
+        if let internationalBrandsImagesTableViewCell = cell as? InternationalBrandsImagesTableViewCell {
+            internationalBrandsImagesTableViewCell.images = internationalBrands
+        }
+        
+        if let kidswearImagesTableViewCell = cell as? KidswearImagesTableViewCell {
+            kidswearImagesTableViewCell.images = kidswearImages
         }
         return cell
     }
