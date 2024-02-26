@@ -1,55 +1,58 @@
 //
-//  EthnicWearImageTableViewCell.swift
+//  WatchesImageTableViewCell.swift
 //  MyMyntra
 //
-//  Created by Supraja on 07/02/24.
+//  Created by Supraja on 25/02/24.
 //
 
 import UIKit
 
-class EthnicWearImageTableViewCell: UITableViewCell {
+struct WatchesImageModel {
+    var image: String?
+}
+
+class WatchesImageTableViewCell: UITableViewCell {
     
-    static let id = "EthnicWearImageTableViewCell"
+    static let id = "WatchesImageTableViewCell"
     
-    @IBOutlet weak var ethinicWearImageCollectionView: UICollectionView!
+    @IBOutlet weak var watchesImagesCollectionView: UICollectionView!
     
-    var images = [EthnicImageModel]()
+    var images = [WatchesImageModel]()
     
+
     override func awakeFromNib() {
         super.awakeFromNib()
-        ethinicWearImageCollectionView.register(UINib(nibName: EthnicWearImageCollectionViewCell.id, bundle: nil), forCellWithReuseIdentifier: EthnicWearImageCollectionViewCell.id)
-        ethinicWearImageCollectionView.dataSource = self
-        ethinicWearImageCollectionView.delegate = self
+        watchesImagesCollectionView.register(UINib(nibName: WatchesImageCollectionViewCell.id, bundle: nil), forCellWithReuseIdentifier: WatchesImageCollectionViewCell.id)
+        watchesImagesCollectionView.dataSource = self
+        watchesImagesCollectionView.delegate = self
         
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-    
     }
 }
-extension EthnicWearImageTableViewCell: UICollectionViewDataSource {
+extension WatchesImageTableViewCell: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         images.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: EthnicWearImageCollectionViewCell.id, for: indexPath)
-        if let EthnicWearImageCollectionViewCell = cell as? EthnicWearImageCollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: WatchesImageCollectionViewCell.id, for: indexPath)
+        if let watchesImageCollectionViewCell = cell as? WatchesImageCollectionViewCell {
             let model = images[indexPath.row]
-            if let ethnicWearImages = model as? EthnicImageModel {
-                if let imageName = ethnicWearImages.image {
+            if let watchesImages = model as? WatchesImageModel {
+                if let imageName = watchesImages.image {
                     let image = UIImage(named: imageName)
-                    EthnicWearImageCollectionViewCell.ethnicWearImageView.image = image
+                    watchesImageCollectionViewCell.watchesImageView.image = image
                 }
             }
         }
         return cell
     }
 }
-
-extension EthnicWearImageTableViewCell: UICollectionViewDelegateFlowLayout {
+extension WatchesImageTableViewCell: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         0
     }
@@ -60,7 +63,6 @@ extension EthnicWearImageTableViewCell: UICollectionViewDelegateFlowLayout {
     }
         
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 0)
+        UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 0)
     }
 }
-    
