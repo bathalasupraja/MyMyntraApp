@@ -170,15 +170,15 @@
                                 <rect key="frame" x="0.0" y="120" width="393" height="649"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HotTrendsTableViewCell" rowHeight="118" id="2KR-yJ-V1M" customClass="HotTrendsTableViewCell" customModule="MyMyntra" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="118"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HotTrendsTableViewCell" rowHeight="94" id="2KR-yJ-V1M" customClass="HotTrendsTableViewCell" customModule="MyMyntra" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="94"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2KR-yJ-V1M" id="ohR-eT-Cnp">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="118"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="94"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="TUv-1H-zQ5">
-                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="118"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="94"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5D0-1h-S7O">
                                                         <size key="itemSize" width="128" height="113"/>
@@ -188,7 +188,7 @@
                                                     </collectionViewFlowLayout>
                                                     <cells>
                                                         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HotTrendsCollectionViewCell" id="Hys-U9-RLD" customClass="HotTrendsCollectionViewCell" customModule="MyMyntra" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="9.6666666666666661" width="128" height="99"/>
+                                                            <rect key="frame" x="0.0" y="-2.6666666666666665" width="128" height="99"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ybn-EL-R0I">
                                                                 <rect key="frame" x="0.0" y="0.0" width="128" height="99"/>
@@ -240,15 +240,15 @@
                                             <outlet property="hotTrendsCollectionView" destination="TUv-1H-zQ5" id="e9r-Zy-w3P"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HotTrendsImagesTableViewCell" rowHeight="130" id="Shb-tm-55c" customClass="HotTrendsImagesTableViewCell" customModule="MyMyntra" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="168" width="393" height="130"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HotTrendsImagesTableViewCell" rowHeight="102" id="Shb-tm-55c" customClass="HotTrendsImagesTableViewCell" customModule="MyMyntra" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="144" width="393" height="102"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Shb-tm-55c" id="lug-cm-ISA">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="130"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="102"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="aW9-4i-Z0g">
-                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="130"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="102"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="1hN-WB-O1i">
                                                         <size key="itemSize" width="128" height="128"/>
@@ -258,7 +258,7 @@
                                                     </collectionViewFlowLayout>
                                                     <cells>
                                                         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HotTrendsImagesCollectionViewCell" id="dyX-sl-9x4" customClass="HotTrendsImagesCollectionViewCell" customModule="MyMyntra" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="1" width="128" height="128"/>
+                                                            <rect key="frame" x="0.0" y="-13" width="128" height="128"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="fQi-4A-p3g">
                                                                 <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
@@ -293,30 +293,30 @@
                                             <outlet property="hotTrendsImagesCollectionView" destination="aW9-4i-Z0g" id="j6t-6v-mMn"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HotTrendsOffersTableViewCell" rowHeight="69" id="MS5-Yu-piW" customClass="HotTrendsOffersTableViewCell" customModule="MyMyntra" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="298" width="393" height="69"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HotTrendsOffersTableViewCell" rowHeight="70" id="MS5-Yu-piW" customClass="HotTrendsOffersTableViewCell" customModule="MyMyntra" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="246" width="393" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MS5-Yu-piW" id="onq-mv-Kc8">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="69"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="70"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F9v-aj-sjC">
-                                                    <rect key="frame" x="5" y="5" width="383" height="59"/>
+                                                    <rect key="frame" x="5" y="5" width="383" height="60"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2024'" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7jP-ii-Hjq">
-                                                            <rect key="frame" x="55" y="17.666666666666668" width="55" height="24.000000000000004"/>
+                                                            <rect key="frame" x="55" y="18" width="55" height="24"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOTTEST TRENDS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxO-e7-yBV">
-                                                            <rect key="frame" x="120" y="20.666666666666668" width="143" height="18.000000000000004"/>
+                                                            <rect key="frame" x="120" y="21" width="143" height="18"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="drM-gZ-G6X">
-                                                            <rect key="frame" x="10" y="12.333333333333332" width="20" height="34.333333333333343"/>
+                                                            <rect key="frame" x="10" y="13" width="20" height="34.333333333333336"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="20" id="LHn-Ap-xMu"/>
                                                             </constraints>
@@ -325,7 +325,7 @@
                                                             <buttonConfiguration key="configuration" style="plain" image="star" catalog="system"/>
                                                         </button>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y3q-rn-ol5">
-                                                            <rect key="frame" x="288" y="6.6666666666666679" width="15" height="45.666666666666657"/>
+                                                            <rect key="frame" x="288" y="7.3333333333333321" width="15" height="45.666666666666671"/>
                                                             <color key="tintColor" systemColor="labelColor"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="15" id="wXl-CA-w3N"/>
@@ -335,7 +335,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWI-kx-18v">
-                                                            <rect key="frame" x="323" y="12.333333333333332" width="15" height="34.333333333333343"/>
+                                                            <rect key="frame" x="323" y="13" width="15" height="34.333333333333336"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="15" id="a2G-AB-vmQ"/>
                                                             </constraints>
@@ -344,7 +344,7 @@
                                                             <buttonConfiguration key="configuration" style="plain" image="square" catalog="system"/>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1A-PS-bQo">
-                                                            <rect key="frame" x="358" y="12.333333333333332" width="15" height="34.333333333333343"/>
+                                                            <rect key="frame" x="358" y="13" width="15" height="34.333333333333336"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="15" id="W2V-0J-cbf"/>
                                                             </constraints>
@@ -384,15 +384,15 @@
                                             <outlet property="offersView" destination="F9v-aj-sjC" id="K6x-uL-PdU"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HotTrendsCouponTableViewCell" rowHeight="157" id="gRn-Id-ola" customClass="HotTrendsCouponTableViewCell" customModule="MyMyntra" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="367" width="393" height="157"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HotTrendsCouponTableViewCell" rowHeight="126" id="gRn-Id-ola" customClass="HotTrendsCouponTableViewCell" customModule="MyMyntra" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="316" width="393" height="126"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gRn-Id-ola" id="nga-mG-Kyz">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="157"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="126"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hotTrends_coupon" translatesAutoresizingMaskIntoConstraints="NO" id="uqn-T1-LB0">
-                                                    <rect key="frame" x="5" y="15" width="383" height="142"/>
+                                                    <rect key="frame" x="5" y="15" width="383" height="111"/>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
@@ -404,6 +404,119 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="offersImageView" destination="uqn-T1-LB0" id="MrM-xk-roD"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HotTrendsViewsTableViewCell" rowHeight="101" id="QtR-Uc-aBO" customClass="HotTrendsViewsTableViewCell" customModule="MyMyntra" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="442" width="393" height="101"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QtR-Uc-aBO" id="yPd-2a-riS">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="101"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="tZb-dn-c8U">
+                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="101"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="8wq-Tl-TWv">
+                                                        <size key="itemSize" width="128" height="99"/>
+                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    </collectionViewFlowLayout>
+                                                    <cells>
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HotTrendsViewsCollectionViewCell" id="PIj-tn-IYb" customClass="HotTrendsViewsCollectionViewCell" customModule="MyMyntra" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="1" width="128" height="99"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="oT5-LK-PfL">
+                                                                <rect key="frame" x="0.0" y="0.0" width="128" height="99"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                                <subviews>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="97E-Vj-azK">
+                                                                        <rect key="frame" x="15" y="10" width="98" height="79"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5To-Su-OSO">
+                                                                                <rect key="frame" x="15" y="19.666666666666671" width="68" height="40"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="height" constant="40" id="Ma1-bP-QoS"/>
+                                                                                </constraints>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="trailing" secondItem="5To-Su-OSO" secondAttribute="trailing" constant="15" id="02r-9l-VIZ"/>
+                                                                            <constraint firstItem="5To-Su-OSO" firstAttribute="leading" secondItem="97E-Vj-azK" secondAttribute="leading" constant="15" id="RVD-aw-wXM"/>
+                                                                            <constraint firstAttribute="height" constant="40" id="v8K-xe-1Lp"/>
+                                                                            <constraint firstItem="5To-Su-OSO" firstAttribute="centerY" secondItem="97E-Vj-azK" secondAttribute="centerY" id="yP0-I8-gCw"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="bottom" secondItem="97E-Vj-azK" secondAttribute="bottom" constant="10" id="7Bw-BJ-Cx6"/>
+                                                                    <constraint firstItem="97E-Vj-azK" firstAttribute="top" secondItem="oT5-LK-PfL" secondAttribute="top" constant="10" id="QZW-ZX-NNm"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="97E-Vj-azK" secondAttribute="trailing" constant="15" id="p8B-Sh-YyW"/>
+                                                                    <constraint firstItem="97E-Vj-azK" firstAttribute="leading" secondItem="oT5-LK-PfL" secondAttribute="leading" constant="15" id="xBe-eF-tYa"/>
+                                                                </constraints>
+                                                            </collectionViewCellContentView>
+                                                            <size key="customSize" width="128" height="99"/>
+                                                            <connections>
+                                                                <outlet property="namesLabel" destination="5To-Su-OSO" id="Fe5-Re-VCh"/>
+                                                                <outlet property="namesView" destination="97E-Vj-azK" id="WbL-kF-4xQ"/>
+                                                            </connections>
+                                                        </collectionViewCell>
+                                                    </cells>
+                                                </collectionView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="tZb-dn-c8U" secondAttribute="trailing" id="9JA-zr-qU6"/>
+                                                <constraint firstAttribute="bottom" secondItem="tZb-dn-c8U" secondAttribute="bottom" id="Aw4-O9-MnI"/>
+                                                <constraint firstItem="tZb-dn-c8U" firstAttribute="leading" secondItem="yPd-2a-riS" secondAttribute="leading" id="J0S-gy-Nbp"/>
+                                                <constraint firstItem="tZb-dn-c8U" firstAttribute="top" secondItem="yPd-2a-riS" secondAttribute="top" id="ZcW-N4-IUF"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="hotTrendsViewsCollection" destination="tZb-dn-c8U" id="g34-Rf-yP2"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HotTrendsVersionTableViewCell" rowHeight="95" id="0Eh-J4-Leg" customClass="HotTrendsVersionTableViewCell" customModule="MyMyntra" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="543" width="393" height="95"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0Eh-J4-Leg" id="raB-Cx-wgD">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="95"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GYQ-W0-1kJ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="95"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z2X-at-Xfe">
+                                                            <rect key="frame" x="46.666666666666657" y="25" width="300" height="45"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="45" id="JVD-ta-3bA"/>
+                                                                <constraint firstAttribute="width" constant="300" id="fO0-nX-HRp"/>
+                                                            </constraints>
+                                                            <color key="tintColor" systemColor="systemRedColor"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" title="SHOW MORE PRODUCTS"/>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="z2X-at-Xfe" firstAttribute="centerX" secondItem="GYQ-W0-1kJ" secondAttribute="centerX" id="aur-fW-BSk"/>
+                                                        <constraint firstItem="z2X-at-Xfe" firstAttribute="centerY" secondItem="GYQ-W0-1kJ" secondAttribute="centerY" id="qmo-Uh-Ffh"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="GYQ-W0-1kJ" firstAttribute="leading" secondItem="raB-Cx-wgD" secondAttribute="leading" id="0Sd-Qe-Pji"/>
+                                                <constraint firstItem="GYQ-W0-1kJ" firstAttribute="top" secondItem="raB-Cx-wgD" secondAttribute="top" id="GXI-A5-zUp"/>
+                                                <constraint firstAttribute="bottom" secondItem="GYQ-W0-1kJ" secondAttribute="bottom" id="Npa-z0-OTG"/>
+                                                <constraint firstAttribute="trailing" secondItem="GYQ-W0-1kJ" secondAttribute="trailing" id="r25-Kn-tw3"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="versionButton" destination="z2X-at-Xfe" id="vYy-M4-b2H"/>
+                                            <outlet property="versionView" destination="GYQ-W0-1kJ" id="ZkS-E4-hQ4"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -472,46 +585,76 @@
                                 <rect key="frame" x="0.0" y="100" width="393" height="669"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProfileImageTableViewCell" rowHeight="127" id="PXu-Cz-M8e" customClass="ProfileImageTableViewCell" customModule="MyMyntra" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="127"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProfileImageTableViewCell" rowHeight="212" id="PXu-Cz-M8e" customClass="ProfileImageTableViewCell" customModule="MyMyntra" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="212"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PXu-Cz-M8e" id="YtP-D7-Sri">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="127"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="212"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S18-aP-Jkp">
-                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="127"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IOB-2K-fmy">
+                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="212"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_Image" translatesAutoresizingMaskIntoConstraints="NO" id="jTW-Tp-f4l">
-                                                            <rect key="frame" x="0.0" y="0.0" width="393" height="127"/>
-                                                        </imageView>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5fA-R7-4A4">
+                                                            <rect key="frame" x="0.0" y="0.0" width="393" height="122"/>
+                                                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </view>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DTJ-wH-Tz1">
+                                                            <rect key="frame" x="20" y="50" width="150" height="142"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="150" id="VWn-Jv-PhS"/>
+                                                            </constraints>
+                                                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" image="person-fill">
+                                                                <attributedString key="attributedTitle"/>
+                                                                <attributedString key="attributedSubtitle"/>
+                                                            </buttonConfiguration>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zob-CS-710">
+                                                            <rect key="frame" x="185" y="142" width="193" height="50"/>
+                                                            <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" title="LOG IN/SIGN UP"/>
+                                                        </button>
                                                     </subviews>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
-                                                        <constraint firstItem="jTW-Tp-f4l" firstAttribute="leading" secondItem="S18-aP-Jkp" secondAttribute="leading" id="GYx-vG-eAv"/>
-                                                        <constraint firstAttribute="trailing" secondItem="jTW-Tp-f4l" secondAttribute="trailing" id="ja7-cP-OHw"/>
-                                                        <constraint firstItem="jTW-Tp-f4l" firstAttribute="top" secondItem="S18-aP-Jkp" secondAttribute="top" id="jtv-ov-kPd"/>
-                                                        <constraint firstAttribute="bottom" secondItem="jTW-Tp-f4l" secondAttribute="bottom" id="oqb-IV-sqF"/>
+                                                        <constraint firstItem="5fA-R7-4A4" firstAttribute="top" secondItem="IOB-2K-fmy" secondAttribute="top" id="9f5-Ca-qxu"/>
+                                                        <constraint firstAttribute="bottom" secondItem="DTJ-wH-Tz1" secondAttribute="bottom" constant="20" id="C2l-kz-wro"/>
+                                                        <constraint firstItem="DTJ-wH-Tz1" firstAttribute="leading" secondItem="IOB-2K-fmy" secondAttribute="leading" constant="20" id="JiU-oF-fTu"/>
+                                                        <constraint firstItem="5fA-R7-4A4" firstAttribute="leading" secondItem="IOB-2K-fmy" secondAttribute="leading" id="LdM-aG-T1g"/>
+                                                        <constraint firstItem="zob-CS-710" firstAttribute="leading" secondItem="DTJ-wH-Tz1" secondAttribute="trailing" constant="15" id="O9Y-7f-3FY"/>
+                                                        <constraint firstAttribute="bottom" secondItem="5fA-R7-4A4" secondAttribute="bottom" constant="90" id="OVp-xY-TEV"/>
+                                                        <constraint firstAttribute="trailing" secondItem="5fA-R7-4A4" secondAttribute="trailing" id="RNs-JK-tqL"/>
+                                                        <constraint firstAttribute="bottom" secondItem="zob-CS-710" secondAttribute="bottom" constant="20" id="V57-ZW-hMk"/>
+                                                        <constraint firstItem="zob-CS-710" firstAttribute="top" secondItem="5fA-R7-4A4" secondAttribute="bottom" constant="20" id="d6J-8Q-eGT"/>
+                                                        <constraint firstAttribute="trailing" secondItem="zob-CS-710" secondAttribute="trailing" constant="15" id="iwt-uQ-yvM"/>
+                                                        <constraint firstItem="DTJ-wH-Tz1" firstAttribute="top" secondItem="IOB-2K-fmy" secondAttribute="top" constant="50" id="yjT-Bc-plf"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="S18-aP-Jkp" secondAttribute="bottom" id="PlT-ON-RgX"/>
-                                                <constraint firstItem="S18-aP-Jkp" firstAttribute="leading" secondItem="YtP-D7-Sri" secondAttribute="leading" id="agi-Px-KN0"/>
-                                                <constraint firstItem="S18-aP-Jkp" firstAttribute="top" secondItem="YtP-D7-Sri" secondAttribute="top" id="qV3-rj-GK3"/>
-                                                <constraint firstAttribute="trailing" secondItem="S18-aP-Jkp" secondAttribute="trailing" id="v0K-s8-Ygc"/>
+                                                <constraint firstAttribute="trailing" secondItem="IOB-2K-fmy" secondAttribute="trailing" id="FhL-xH-7Vn"/>
+                                                <constraint firstAttribute="bottom" secondItem="IOB-2K-fmy" secondAttribute="bottom" id="K24-3V-jnm"/>
+                                                <constraint firstItem="IOB-2K-fmy" firstAttribute="top" secondItem="YtP-D7-Sri" secondAttribute="top" id="KF6-n4-FB5"/>
+                                                <constraint firstItem="IOB-2K-fmy" firstAttribute="leading" secondItem="YtP-D7-Sri" secondAttribute="leading" id="XMU-Gp-WL9"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="emptyImageView" destination="jTW-Tp-f4l" id="HPD-x1-TgS"/>
-                                            <outlet property="emptyView" destination="S18-aP-Jkp" id="mNB-67-P9L"/>
+                                            <outlet property="emptyView" destination="IOB-2K-fmy" id="9D2-hO-GF5"/>
+                                            <outlet property="loginButton" destination="zob-CS-710" id="bs7-RM-Di9"/>
+                                            <outlet property="profileButton" destination="DTJ-wH-Tz1" id="dHd-ek-Udu"/>
+                                            <outlet property="profileView" destination="5fA-R7-4A4" id="9Gy-Gp-kIS"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProfileTableViewCell" rowHeight="78" id="o2k-5j-GwE" customClass="ProfileTableViewCell" customModule="MyMyntra" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="177" width="393" height="78"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProfileTableViewCell" rowHeight="92" id="o2k-5j-GwE" customClass="ProfileTableViewCell" customModule="MyMyntra" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="262" width="393" height="92"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="o2k-5j-GwE" id="EMw-zo-kF8">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="78"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="92"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9S3-FD-xxR">
@@ -558,7 +701,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProfileEmptyTableViewCell" rowHeight="55" id="wUA-2p-dxf" customClass="ProfileEmptyTableViewCell" customModule="MyMyntra" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="255" width="393" height="55"/>
+                                        <rect key="frame" x="0.0" y="354" width="393" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wUA-2p-dxf" id="UjI-pT-EGJ">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="55"/>
@@ -567,7 +710,7 @@
                                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EmptyTableViewCell" rowHeight="45" id="CTs-o8-ybx" customClass="EmptyTableViewCell" customModule="MyMyntra" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="310" width="393" height="45"/>
+                                        <rect key="frame" x="0.0" y="409" width="393" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CTs-o8-ybx" id="HiB-FO-aEk">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="45"/>
@@ -576,7 +719,7 @@
                                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EmptyProfileTableViewCell" id="5LF-vf-qjG" customClass="EmptyProfileTableViewCell" customModule="MyMyntra" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="355" width="393" height="43.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="454" width="393" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5LF-vf-qjG" id="KR7-Z8-tsN">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
@@ -585,30 +728,52 @@
                                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProfileVersionTableViewCell" rowHeight="175" id="cOq-v5-mZF" customClass="ProfileVersionTableViewCell" customModule="MyMyntra" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="398.66666793823242" width="393" height="175"/>
+                                        <rect key="frame" x="0.0" y="497.66666793823242" width="393" height="175"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cOq-v5-mZF" id="fAV-EA-UqJ">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="175"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="APP VERSION 4.2401.10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="go4-jl-bRR">
-                                                    <rect key="frame" x="123.33333333333333" y="45" width="146.66666666666669" height="20"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a77-XH-yhg">
+                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="175"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPl-oZ-DhG">
+                                                            <rect key="frame" x="138.66666666666666" y="30" width="116" height="18"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="18" id="t8p-2f-4iJ"/>
+                                                            </constraints>
+                                                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain">
+                                                                <attributedString key="attributedTitle">
+                                                                    <fragment content="APP VERSION 4.2401.20">
+                                                                        <attributes>
+                                                                            <font key="NSFont" size="8" name="Helvetica"/>
+                                                                            <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                </attributedString>
+                                                            </buttonConfiguration>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemGray6Color"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="20" id="6V1-P3-umt"/>
+                                                        <constraint firstItem="gPl-oZ-DhG" firstAttribute="top" secondItem="a77-XH-yhg" secondAttribute="top" constant="30" id="3TT-EP-FbR"/>
+                                                        <constraint firstItem="gPl-oZ-DhG" firstAttribute="centerX" secondItem="a77-XH-yhg" secondAttribute="centerX" id="xLx-ab-WLb"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="go4-jl-bRR" firstAttribute="centerX" secondItem="fAV-EA-UqJ" secondAttribute="centerX" id="3sQ-uj-E60"/>
-                                                <constraint firstItem="go4-jl-bRR" firstAttribute="top" secondItem="fAV-EA-UqJ" secondAttribute="top" constant="45" id="TIE-py-KZ3"/>
+                                                <constraint firstItem="a77-XH-yhg" firstAttribute="leading" secondItem="fAV-EA-UqJ" secondAttribute="leading" id="Fwm-8f-OP6"/>
+                                                <constraint firstAttribute="trailing" secondItem="a77-XH-yhg" secondAttribute="trailing" id="MPX-jN-6Vc"/>
+                                                <constraint firstItem="a77-XH-yhg" firstAttribute="top" secondItem="fAV-EA-UqJ" secondAttribute="top" id="n5K-Oh-Yqe"/>
+                                                <constraint firstAttribute="bottom" secondItem="a77-XH-yhg" secondAttribute="bottom" id="r46-Dg-ZA5"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                                         <connections>
-                                            <outlet property="appVersionLabel" destination="go4-jl-bRR" id="hoy-TQ-sBS"/>
+                                            <outlet property="appVersionButton" destination="gPl-oZ-DhG" id="Nd5-kO-c3I"/>
+                                            <outlet property="versionView" destination="a77-XH-yhg" id="LAv-KE-JpQ"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -798,15 +963,15 @@
                                             <outlet property="spotlightView" destination="82P-Pb-Tuh" id="qXQ-6O-niw"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SpotLightBrandsTableViewCell" rowHeight="120" id="5WG-Ug-wrZ" customClass="SpotLightBrandsTableViewCell" customModule="MyMyntra" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="240" width="393" height="120"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SpotLightBrandsTableViewCell" rowHeight="92" id="5WG-Ug-wrZ" customClass="SpotLightBrandsTableViewCell" customModule="MyMyntra" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="240" width="393" height="92"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5WG-Ug-wrZ" id="0kE-sa-g1f">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="120"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="92"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="w1V-8n-cTI">
-                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="120"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="92"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="pVR-g4-ueE">
                                                         <size key="itemSize" width="128" height="128"/>
@@ -816,7 +981,7 @@
                                                     </collectionViewFlowLayout>
                                                     <cells>
                                                         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SpotLightBrandsCollectionViewCell" id="psT-m5-XJf" customClass="SpotLightBrandsCollectionViewCell" customModule="MyMyntra" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="-4" width="128" height="128"/>
+                                                            <rect key="frame" x="0.0" y="-18" width="128" height="128"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="4tu-ys-q9w">
                                                                 <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
@@ -853,7 +1018,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BrandsFreshLaunchesTableViewCell" rowHeight="82" id="9sh-Ds-GlD" customClass="BrandsFreshLaunchesTableViewCell" customModule="MyMyntra" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="360" width="393" height="82"/>
+                                        <rect key="frame" x="0.0" y="332" width="393" height="82"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9sh-Ds-GlD" id="FjM-cm-Pp8">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="82"/>
@@ -930,15 +1095,15 @@
                                             <outlet property="launchesView" destination="cbL-Qj-UQa" id="JH1-xz-Jp1"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FreshLaunchesImagesTableViewCell" rowHeight="123" id="LgQ-yG-W8J" customClass="FreshLaunchesImagesTableViewCell" customModule="MyMyntra" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="442" width="393" height="123"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FreshLaunchesImagesTableViewCell" rowHeight="113" id="LgQ-yG-W8J" customClass="FreshLaunchesImagesTableViewCell" customModule="MyMyntra" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="414" width="393" height="113"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LgQ-yG-W8J" id="z9H-Lf-SES">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="123"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="113"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="PkL-9g-Thu">
-                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="123"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="113"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="BFA-ib-xEX">
                                                         <size key="itemSize" width="128" height="128"/>
@@ -948,7 +1113,7 @@
                                                     </collectionViewFlowLayout>
                                                     <cells>
                                                         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FreshLaunchesImagesColectionViewCell" id="nl0-DR-Upi" customClass="FreshLaunchesImagesColectionViewCell" customModule="MyMyntra" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="-2.6666666666666665" width="128" height="128"/>
+                                                            <rect key="frame" x="0.0" y="-7.666666666666667" width="128" height="128"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="X4p-Rn-95A">
                                                                 <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
@@ -981,6 +1146,60 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="freshLaunchesImagesCollectionView" destination="PkL-9g-Thu" id="hoU-BC-iCW"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="KidswearImagesTableViewCell" rowHeight="109" id="Ht7-Y2-XVC" customClass="KidswearImagesTableViewCell" customModule="MyMyntra" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="527" width="393" height="109"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ht7-Y2-XVC" id="dbE-ur-fxd">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="109"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="W8i-Fa-M01">
+                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="109"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rXM-im-17C">
+                                                        <size key="itemSize" width="124" height="98"/>
+                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    </collectionViewFlowLayout>
+                                                    <cells>
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="KidswearImagesCollectionViewCell" id="nyN-6e-Cjg" customClass="KidswearImagesCollectionViewCell" customModule="MyMyntra" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="5.666666666666667" width="124" height="98"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="bup-nA-FJZ">
+                                                                <rect key="frame" x="0.0" y="0.0" width="124" height="98"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VGe-dZ-umX">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="124" height="98"/>
+                                                                    </imageView>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="bottom" secondItem="VGe-dZ-umX" secondAttribute="bottom" id="8dS-vB-ZhH"/>
+                                                                    <constraint firstItem="VGe-dZ-umX" firstAttribute="top" secondItem="bup-nA-FJZ" secondAttribute="top" id="CUo-2I-2CP"/>
+                                                                    <constraint firstItem="VGe-dZ-umX" firstAttribute="leading" secondItem="bup-nA-FJZ" secondAttribute="leading" id="sTH-QD-Pex"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="VGe-dZ-umX" secondAttribute="trailing" id="wts-xB-tKi"/>
+                                                                </constraints>
+                                                            </collectionViewCellContentView>
+                                                            <size key="customSize" width="124" height="98"/>
+                                                            <connections>
+                                                                <outlet property="kidswearImageView" destination="VGe-dZ-umX" id="VD9-dv-IiO"/>
+                                                            </connections>
+                                                        </collectionViewCell>
+                                                    </cells>
+                                                </collectionView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="W8i-Fa-M01" firstAttribute="top" secondItem="dbE-ur-fxd" secondAttribute="top" id="AgF-bo-Bvj"/>
+                                                <constraint firstAttribute="bottom" secondItem="W8i-Fa-M01" secondAttribute="bottom" id="JYu-nF-tz6"/>
+                                                <constraint firstAttribute="trailing" secondItem="W8i-Fa-M01" secondAttribute="trailing" id="rUT-wE-Zm4"/>
+                                                <constraint firstItem="W8i-Fa-M01" firstAttribute="leading" secondItem="dbE-ur-fxd" secondAttribute="leading" id="uIO-jT-xQT"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="kidswearCollectionView" destination="W8i-Fa-M01" id="wg0-Dx-vzK"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -1741,18 +1960,18 @@
                                 <rect key="frame" x="0.0" y="120" width="393" height="649"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PriceStoreTableViewCell" rowHeight="234" id="juL-Sn-bKu" customClass="PriceStoreTableViewCell" customModule="MyMyntra" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="234"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PriceStoreTableViewCell" rowHeight="154" id="juL-Sn-bKu" customClass="PriceStoreTableViewCell" customModule="MyMyntra" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="154"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="juL-Sn-bKu" id="f0x-dX-8v7">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="234"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="154"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JF9-bi-ClC">
-                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="234"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="154"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="priceStoreImage" translatesAutoresizingMaskIntoConstraints="NO" id="MYX-ue-UOa">
-                                                            <rect key="frame" x="0.0" y="0.0" width="393" height="234"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="393" height="154"/>
                                                         </imageView>
                                                     </subviews>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1776,15 +1995,15 @@
                                             <outlet property="priceStoreView" destination="JF9-bi-ClC" id="VXe-zQ-6WJ"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BestSellersTableViewCell" rowHeight="117" id="O0a-Aj-QN2" customClass="BestSellersTableViewCell" customModule="MyMyntra" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="284" width="393" height="117"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BestSellersTableViewCell" rowHeight="94" id="O0a-Aj-QN2" customClass="BestSellersTableViewCell" customModule="MyMyntra" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="204" width="393" height="94"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="O0a-Aj-QN2" id="gCR-Cf-yjc">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="117"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="94"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="A4m-CY-CcX">
-                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="117"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="94"/>
                                                     <color key="backgroundColor" systemColor="systemBrownColor"/>
                                                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ry9-Uq-yjN">
                                                         <size key="itemSize" width="128" height="128"/>
@@ -1794,7 +2013,7 @@
                                                     </collectionViewFlowLayout>
                                                     <cells>
                                                         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BestSellersCollectionViewCell" id="wV7-8B-cez" customClass="BestSellersCollectionViewCell" customModule="MyMyntra" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="8.6666666666666661" width="128" height="100"/>
+                                                            <rect key="frame" x="0.0" y="-3" width="128" height="100"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="vjd-fS-95F">
                                                                 <rect key="frame" x="0.0" y="0.0" width="128" height="100"/>
@@ -1850,15 +2069,15 @@
                                             <outlet property="bestSellersCollectionView" destination="A4m-CY-CcX" id="Q5q-iL-3gT"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BeatySellersTableViewCell" rowHeight="123" id="Won-oy-UiW" customClass="BeatySellersTableViewCell" customModule="MyMyntra" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="401" width="393" height="123"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BeatySellersTableViewCell" rowHeight="109" id="Won-oy-UiW" customClass="BeatySellersTableViewCell" customModule="MyMyntra" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="298" width="393" height="109"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Won-oy-UiW" id="SIF-Z1-UvM">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="123"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="109"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="qYh-St-OEw">
-                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="123"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="109"/>
                                                     <color key="backgroundColor" systemColor="systemBrownColor"/>
                                                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CfU-L6-YLJ">
                                                         <size key="itemSize" width="133" height="116"/>
@@ -1868,7 +2087,7 @@
                                                     </collectionViewFlowLayout>
                                                     <cells>
                                                         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BeautySellersCollectionViewCell" id="AkX-Ug-8Sa" customClass="BeautySellersCollectionViewCell" customModule="MyMyntra" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="11.666666666666666" width="128" height="100"/>
+                                                            <rect key="frame" x="0.0" y="4.666666666666667" width="128" height="100"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="CqB-Hi-VLp">
                                                                 <rect key="frame" x="0.0" y="0.0" width="128" height="100"/>
@@ -1921,6 +2140,110 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="beautySellersCollectionView" destination="qYh-St-OEw" id="vIo-7e-uak"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EverydayTableViewCell" rowHeight="119" id="xbp-Qe-Jb3" customClass="EverydayTableViewCell" customModule="MyMyntra" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="407" width="393" height="119"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xbp-Qe-Jb3" id="8sp-XH-lQa">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="119"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Ve3-x3-9kU">
+                                                    <rect key="frame" x="0.0" y="11" width="393" height="97"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="mnP-xs-eqh">
+                                                        <size key="itemSize" width="128" height="128"/>
+                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    </collectionViewFlowLayout>
+                                                    <cells>
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EverydayCollectionViewCell" id="51V-Nz-4ra" customClass="EverydayCollectionViewCell" customModule="MyMyntra" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="-1" width="120" height="99"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="dtw-Vw-zWi">
+                                                                <rect key="frame" x="0.0" y="0.0" width="120" height="99"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Kj-GI-dns">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="99"/>
+                                                                    </imageView>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="5Kj-GI-dns" firstAttribute="leading" secondItem="dtw-Vw-zWi" secondAttribute="leading" id="12H-BJ-ygd"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="5Kj-GI-dns" secondAttribute="trailing" id="6DT-Xw-815"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="5Kj-GI-dns" secondAttribute="bottom" id="bOA-FH-nq6"/>
+                                                                    <constraint firstItem="5Kj-GI-dns" firstAttribute="top" secondItem="dtw-Vw-zWi" secondAttribute="top" id="mno-Ks-CiG"/>
+                                                                </constraints>
+                                                            </collectionViewCellContentView>
+                                                            <size key="customSize" width="120" height="99"/>
+                                                            <connections>
+                                                                <outlet property="everydayImageView" destination="5Kj-GI-dns" id="Tih-xl-Ric"/>
+                                                            </connections>
+                                                        </collectionViewCell>
+                                                    </cells>
+                                                </collectionView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Ve3-x3-9kU" firstAttribute="bottom" secondItem="8sp-XH-lQa" secondAttribute="bottomMargin" id="FkM-DC-JAf"/>
+                                                <constraint firstItem="Ve3-x3-9kU" firstAttribute="top" secondItem="8sp-XH-lQa" secondAttribute="topMargin" id="gAo-4a-vkG"/>
+                                                <constraint firstAttribute="trailing" secondItem="Ve3-x3-9kU" secondAttribute="trailing" id="tNK-1p-h4P"/>
+                                                <constraint firstItem="Ve3-x3-9kU" firstAttribute="leading" secondItem="8sp-XH-lQa" secondAttribute="leading" id="xMm-98-prD"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="everydayCollectionView" destination="Ve3-x3-9kU" id="flo-SK-Mt6"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EverydayVersionTableViewCell" rowHeight="118" id="bk1-ai-DmP" customClass="EverydayVersionTableViewCell" customModule="MyMyntra" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="526" width="393" height="118"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bk1-ai-DmP" id="kuQ-Bg-JY9">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="118"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ONr-7V-3ep">
+                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="118"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o6l-iM-6Bh">
+                                                            <rect key="frame" x="20" y="40" width="353" height="40"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="40" id="7er-nh-31C"/>
+                                                            </constraints>
+                                                            <color key="tintColor" systemColor="systemTealColor"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain">
+                                                                <attributedString key="attributedTitle">
+                                                                    <fragment content="VIEW MORE ITEMS">
+                                                                        <attributes>
+                                                                            <font key="NSFont" size="20" name="Helvetica"/>
+                                                                            <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                </attributedString>
+                                                            </buttonConfiguration>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="o6l-iM-6Bh" firstAttribute="leading" secondItem="ONr-7V-3ep" secondAttribute="leading" constant="20" id="6Ml-vy-Wjh"/>
+                                                        <constraint firstItem="o6l-iM-6Bh" firstAttribute="centerX" secondItem="ONr-7V-3ep" secondAttribute="centerX" id="Anz-Qy-Qwp"/>
+                                                        <constraint firstItem="o6l-iM-6Bh" firstAttribute="top" secondItem="ONr-7V-3ep" secondAttribute="top" constant="40" id="Py5-O7-bSK"/>
+                                                        <constraint firstAttribute="trailing" secondItem="o6l-iM-6Bh" secondAttribute="trailing" constant="20" id="jb4-DP-8yY"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="ONr-7V-3ep" secondAttribute="bottom" id="45z-Zn-XFN"/>
+                                                <constraint firstItem="ONr-7V-3ep" firstAttribute="top" secondItem="kuQ-Bg-JY9" secondAttribute="top" id="Byh-SG-g4F"/>
+                                                <constraint firstAttribute="trailing" secondItem="ONr-7V-3ep" secondAttribute="trailing" id="JDh-Yu-7Op"/>
+                                                <constraint firstItem="ONr-7V-3ep" firstAttribute="leading" secondItem="kuQ-Bg-JY9" secondAttribute="leading" id="QEz-KG-4lb"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="versionButton" destination="o6l-iM-6Bh" id="Sna-0T-fzA"/>
+                                            <outlet property="versionView" destination="ONr-7V-3ep" id="NwS-ZY-PSk"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -2015,9 +2338,9 @@
         <image name="king_Cap" width="24" height="24"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="mic" catalog="system" width="110" height="128"/>
+        <image name="person-fill" width="100" height="100"/>
         <image name="priceStoreImage" width="720" height="454"/>
         <image name="profile" width="24" height="24"/>
-        <image name="profile_Image" width="720" height="372"/>
         <image name="square" catalog="system" width="128" height="114"/>
         <image name="star" catalog="system" width="128" height="116"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
@@ -2038,6 +2361,12 @@
         </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
