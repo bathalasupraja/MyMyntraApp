@@ -23,6 +23,8 @@
 		362380E12B58F46B00F7365B /* DiscountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362380DF2B58F46B00F7365B /* DiscountTableViewCell.swift */; };
 		3627ECD02B88559600C2E4B7 /* KidswearImagesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3627ECCE2B88559600C2E4B7 /* KidswearImagesTableViewCell.swift */; };
 		3627ECD42B88600500C2E4B7 /* KidswearImagesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3627ECD22B88600500C2E4B7 /* KidswearImagesCollectionViewCell.swift */; };
+		362A8B872B8DFFBA0008B1E7 /* BrandsVersionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362A8B852B8DFFBA0008B1E7 /* BrandsVersionTableViewCell.swift */; };
+		362A8B882B8DFFBA0008B1E7 /* BrandsVersionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 362A8B862B8DFFBA0008B1E7 /* BrandsVersionTableViewCell.xib */; };
 		362AC0ED2B7482E30048E513 /* BeatySellersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362AC0EC2B7482E30048E513 /* BeatySellersTableViewCell.swift */; };
 		362AC0EF2B7484BA0048E513 /* BeautySellersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362AC0EE2B7484BA0048E513 /* BeautySellersCollectionViewCell.swift */; };
 		362F8EE02B8C4692006BB443 /* WatchesImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362F8EDE2B8C4692006BB443 /* WatchesImageCollectionViewCell.swift */; };
@@ -154,6 +156,8 @@
 		362380DF2B58F46B00F7365B /* DiscountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountTableViewCell.swift; sourceTree = "<group>"; };
 		3627ECCE2B88559600C2E4B7 /* KidswearImagesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KidswearImagesTableViewCell.swift; sourceTree = "<group>"; };
 		3627ECD22B88600500C2E4B7 /* KidswearImagesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KidswearImagesCollectionViewCell.swift; sourceTree = "<group>"; };
+		362A8B852B8DFFBA0008B1E7 /* BrandsVersionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandsVersionTableViewCell.swift; sourceTree = "<group>"; };
+		362A8B862B8DFFBA0008B1E7 /* BrandsVersionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BrandsVersionTableViewCell.xib; sourceTree = "<group>"; };
 		362AC0EC2B7482E30048E513 /* BeatySellersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeatySellersTableViewCell.swift; sourceTree = "<group>"; };
 		362AC0EE2B7484BA0048E513 /* BeautySellersCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeautySellersCollectionViewCell.swift; sourceTree = "<group>"; };
 		362F8EDE2B8C4692006BB443 /* WatchesImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchesImageCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -322,6 +326,8 @@
 		36AC07B82B78937700F82082 /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				362A8B862B8DFFBA0008B1E7 /* BrandsVersionTableViewCell.xib */,
+				362A8B852B8DFFBA0008B1E7 /* BrandsVersionTableViewCell.swift */,
 				362F8EE72B8CC922006BB443 /* JewelleryImageTableViewCell.xib */,
 				362F8EE62B8CC922006BB443 /* JewelleryImageTableViewCell.swift */,
 				362F8EE32B8C6F4C006BB443 /* JewelleryTableViewCell.xib */,
@@ -557,6 +563,7 @@
 				3666FD402B8643AB00730277 /* BrandsFootwearImagesCollectionViewCell.xib in Resources */,
 				367FC9452B876F8B00A55AD8 /* InternationalBrandsImagesTableViewCell.xib in Resources */,
 				36CB1EB82B5E828000465A70 /* BrandsImagesCollectionViewCell.xib in Resources */,
+				362A8B882B8DFFBA0008B1E7 /* BrandsVersionTableViewCell.xib in Resources */,
 				36A88C3B2B691766009E9958 /* SellerImagesCollectionViewCell.xib in Resources */,
 				365FF1842B7F8E1B00A95330 /* EverydayImagesTableViewCell.xib in Resources */,
 				369218A42B65117100A28405 /* EverydayTrendingEssentialsTableViewCell.xib in Resources */,
@@ -606,6 +613,7 @@
 				36CD5B7A2B7E2DF10026EA35 /* HotTrendsViewsCollectionViewCell.swift in Sources */,
 				36A88C3A2B691766009E9958 /* SellerImagesCollectionViewCell.swift in Sources */,
 				36348C052B70BF9A00EE116C /* SpotLightBrandsTableViewCell.swift in Sources */,
+				362A8B872B8DFFBA0008B1E7 /* BrandsVersionTableViewCell.swift in Sources */,
 				365FF17E2B7F76E500A95330 /* EverydayTableViewCell.swift in Sources */,
 				3685D2892B71D9D60062A95E /* FreshLaunchesImagesTableViewCell.swift in Sources */,
 				36CB1EB32B5E80A400465A70 /* BrandsImagesTableViewCell.swift in Sources */,
