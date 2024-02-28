@@ -19,13 +19,12 @@ class BrandsImagesTableViewCell: UITableViewCell {
     
     var scrollIndex: Int = 0
     
-    var brandsImages = [BrandsImageModel]()
-    
+    var images = [BrandsImageModel]()
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        createScrollTimer()
-        removeScrollTimer()
+      //  createScrollTimer()
+     //   removeScrollTimer()
         brandsCollectionView.register(UINib(nibName: BrandsImagesCollectionViewCell.id, bundle: nil), forCellWithReuseIdentifier: BrandsImagesCollectionViewCell.id)
         
         brandsCollectionView.dataSource = self
@@ -33,7 +32,7 @@ class BrandsImagesTableViewCell: UITableViewCell {
     }
     
     func prepareImages(_ images: [BrandsImageModel]) {
-        self.brandsImages = images
+        self.images = images
         brandsCollectionView.reloadData()
     }
     
@@ -41,18 +40,18 @@ class BrandsImagesTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         
-        
     }
     
     func createScrollTimer() {
         scrollTimer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: { _ in
-            let maxIndex = self.brandsImages.count - 1
+            let maxIndex = self.images.count - 1
             if self.scrollIndex < maxIndex {
-                self.scrollIndex += 1
+                self.scrollIndex += 8
             } else {
                 self.scrollIndex = 0
             }
-            let indexPath = IndexPath(item: self.scrollIndex, section: 0)
+            print("\n>>>> scroll to index: \(self.scrollIndex)")
+            let indexPath = IndexPath(item: self.scrollIndex, section: 1)
             self.brandsCollectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
         })
     }
@@ -65,16 +64,18 @@ class BrandsImagesTableViewCell: UITableViewCell {
 
 extension BrandsImagesTableViewCell: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        brandsImages.count
+        images.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: BrandsImagesCollectionViewCell.id, for: indexPath)
         if let brandsImagesCollectionViewCell = cell as? BrandsImagesCollectionViewCell {
-            let model = brandsImages[indexPath.row]
-            if let imageName = model.image {
-                let image = UIImage(named: imageName)
-                brandsImagesCollectionViewCell.brandsImageFashionsImageView.image = image
+            let model = images[indexPath.item]
+            if let brandsImageFashions = model as? BrandsImageModel {
+                if let imageName = model.image {
+                    let image = UIImage(named: imageName)
+                    brandsImagesCollectionViewCell.brandsImageFashionsImageView.image = image
+                }
             }
         }
         return cell
