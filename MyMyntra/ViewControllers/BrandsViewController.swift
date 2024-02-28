@@ -97,6 +97,16 @@ class BrandsViewController: UIViewController {
         brandsTableView.delegate = self
     }
     
+//    override func viewWillAppear(_ animated: Bool) {
+//        super.viewWillAppear(animated)
+//        createScrollTimer()
+//    }
+//
+//    override func viewWillDisappear(_ animated: Bool) {
+//        super.viewWillDisappear(animated)
+//        removeScrollTimer()
+//    }
+    
     func createBrandsImageFashions() {
         for brandsImageFashion in ["Image 2", "Image 3", "Image 4", "Image 5", "Image 6", "Image 7", "Image 8", "Image 9", "Image 10", "Image 11", "Image 12", "Image 13", "Image 14" ] {
             brandsImageFashions.append(BrandsImageModel(image: brandsImageFashion))
@@ -269,7 +279,7 @@ extension BrandsViewController: UITableViewDataSource, UITableViewDelegate {
         let identifier = getCellIdentifierAtIndexPath(indexPath)
         let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath)
         if let brandsImagesTableViewCell = cell as? BrandsImagesTableViewCell {
-                brandsImagesTableViewCell.brandsImages = brandsImageFashions
+                brandsImagesTableViewCell.images = brandsImageFashions
         }
         
         if let spotLightBrandsTableViewCell = cell as? SpotLightBrandsTableViewCell {
