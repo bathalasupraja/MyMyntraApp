@@ -14,4 +14,13 @@ class SpotLightBrandsCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var spotLightFashionsImageView: UIImageView!
     
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+    }
+    
 }

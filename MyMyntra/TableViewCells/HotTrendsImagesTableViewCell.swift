@@ -17,6 +17,10 @@ class HotTrendsImagesTableViewCell: UITableViewCell {
     
     @IBOutlet weak var hotTrendsImagesCollectionView: UICollectionView!
     
+//    var scrollTimer: Timer?
+//
+//    var scrollIndex: Int = 0
+    
     var images = [HotTrendsImageModel]()
     
 
@@ -24,12 +28,32 @@ class HotTrendsImagesTableViewCell: UITableViewCell {
         super.awakeFromNib()
         hotTrendsImagesCollectionView.dataSource = self
         hotTrendsImagesCollectionView.delegate = self
-    
+     //   createScrollTimer()
     }
+    
+//    func prepareImages(_ images: [HotTrendsImageModel]) {
+//        self.images = images
+//        hotTrendsImagesCollectionView.reloadData()
+//    }
+    
+//    override func prepareForReuse() {
+//        super.prepareForReuse()
+//        removeScrollTimer()
+//    }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
+    
+//    func createScrollTimer() {
+//        scrollTimer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: { _ in
+//
+//        })
+//    }
+//
+//    func removeScrollTimer() {
+//
+//    }
 }
 extension HotTrendsImagesTableViewCell: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
