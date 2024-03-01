@@ -17,9 +17,9 @@ class HotTrendsImagesTableViewCell: UITableViewCell {
     
     @IBOutlet weak var hotTrendsImagesCollectionView: UICollectionView!
     
-//    var scrollTimer: Timer?
-//
-//    var scrollIndex: Int = 0
+    var scrollTimer: Timer?
+
+    var scrollIndex: Int = 0
     
     var images = [HotTrendsImageModel]()
     
@@ -28,32 +28,41 @@ class HotTrendsImagesTableViewCell: UITableViewCell {
         super.awakeFromNib()
         hotTrendsImagesCollectionView.dataSource = self
         hotTrendsImagesCollectionView.delegate = self
-     //   createScrollTimer()
+        createScrollTimer()
     }
     
-//    func prepareImages(_ images: [HotTrendsImageModel]) {
-//        self.images = images
-//        hotTrendsImagesCollectionView.reloadData()
-//    }
+    func prepareImages(_ images: [HotTrendsImageModel]) {
+        self.images = images
+        hotTrendsImagesCollectionView.reloadData()
+    }
     
-//    override func prepareForReuse() {
-//        super.prepareForReuse()
-//        removeScrollTimer()
-//    }
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        removeScrollTimer()
+    }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
     
-//    func createScrollTimer() {
-//        scrollTimer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: { _ in
-//
-//        })
-//    }
-//
-//    func removeScrollTimer() {
-//
-//    }
+    func createScrollTimer() {
+        scrollTimer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: { _ in
+            let maxIndex = self.images.count - 1
+            if self.scrollIndex < maxIndex {
+                self.scrollIndex += 1
+            } else {
+                self.scrollIndex = 0
+            }
+            let indexPath = IndexPath(item: self.scrollIndex, section: 0)
+            self.hotTrendsImagesCollectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
+
+        })
+    }
+
+    func removeScrollTimer() {
+        scrollTimer?.invalidate()
+        scrollTimer = nil
+    }
 }
 extension HotTrendsImagesTableViewCell: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
