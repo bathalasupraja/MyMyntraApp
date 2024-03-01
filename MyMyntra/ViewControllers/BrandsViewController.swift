@@ -83,6 +83,7 @@ class BrandsViewController: UIViewController {
         brandsTableView.register(UINib(nibName: JewelleryImageTableViewCell.id, bundle: nil), forCellReuseIdentifier: JewelleryImageTableViewCell.id)
         brandsTableView.register(UINib(nibName: BrandsVersionTableViewCell.id, bundle: nil), forCellReuseIdentifier: BrandsVersionTableViewCell.id)
     
+        
         createBrandsImageFashions()
         createSpotLightFashions()
         createFreshLaunchesImages()
@@ -97,15 +98,6 @@ class BrandsViewController: UIViewController {
         brandsTableView.delegate = self
     }
     
-//    override func viewWillAppear(_ animated: Bool) {
-//        super.viewWillAppear(animated)
-//        createScrollTimer()
-//    }
-//
-//    override func viewWillDisappear(_ animated: Bool) {
-//        super.viewWillDisappear(animated)
-//        removeScrollTimer()
-//    }
     
     func createBrandsImageFashions() {
         for brandsImageFashion in ["Image 2", "Image 3", "Image 4", "Image 5", "Image 6", "Image 7", "Image 8", "Image 9", "Image 10", "Image 11", "Image 12", "Image 13", "Image 14" ] {
@@ -283,7 +275,7 @@ extension BrandsViewController: UITableViewDataSource, UITableViewDelegate {
         }
         
         if let spotLightBrandsTableViewCell = cell as? SpotLightBrandsTableViewCell {
-            spotLightBrandsTableViewCell.spotLightBrands = spotLightFashions
+            spotLightBrandsTableViewCell.images = spotLightFashions
         }
         
         if let freshLaunchesImagesTableViewCell = cell as? FreshLaunchesImagesTableViewCell {

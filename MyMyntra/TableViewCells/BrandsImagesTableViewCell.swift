@@ -16,24 +16,28 @@ class BrandsImagesTableViewCell: UITableViewCell {
     @IBOutlet weak var brandsCollectionView: UICollectionView!
     
     var scrollTimer: Timer? /// Create ----- after our work complete ? ---- we have to destroy
-    
+
     var scrollIndex: Int = 0
     
     var images = [BrandsImageModel]()
     
     override func awakeFromNib() {
         super.awakeFromNib()
-      //  createScrollTimer()
-     //   removeScrollTimer()
         brandsCollectionView.register(UINib(nibName: BrandsImagesCollectionViewCell.id, bundle: nil), forCellWithReuseIdentifier: BrandsImagesCollectionViewCell.id)
         
         brandsCollectionView.dataSource = self
         brandsCollectionView.delegate = self
+        createScrollTimer()
     }
-    
+
     func prepareImages(_ images: [BrandsImageModel]) {
         self.images = images
         brandsCollectionView.reloadData()
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        removeScrollTimer()
     }
     
     
@@ -46,17 +50,18 @@ class BrandsImagesTableViewCell: UITableViewCell {
         scrollTimer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: { _ in
             let maxIndex = self.images.count - 1
             if self.scrollIndex < maxIndex {
-                self.scrollIndex += 8
+                self.scrollIndex += 1
             } else {
                 self.scrollIndex = 0
             }
-            print("\n>>>> scroll to index: \(self.scrollIndex)")
-            let indexPath = IndexPath(item: self.scrollIndex, section: 1)
+           // print("\n>>>> scroll to index: \(self.scrollIndex)")
+            let indexPath = IndexPath(item: self.scrollIndex, section: 0)
             self.brandsCollectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
         })
     }
 
     func removeScrollTimer() {
+       // print("Remove Timer")
         scrollTimer?.invalidate()
         scrollTimer = nil
     }

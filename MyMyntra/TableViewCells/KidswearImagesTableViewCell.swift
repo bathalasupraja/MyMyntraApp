@@ -18,6 +18,10 @@ class KidswearImagesTableViewCell: UITableViewCell {
     
     @IBOutlet weak var kidswearCollectionView: UICollectionView!
     
+    var scrollTimer: Timer?
+    
+    var scrollIndex: Int = 0
+    
     var images = [KidswearImageModel]()
     
 
@@ -25,11 +29,42 @@ class KidswearImagesTableViewCell: UITableViewCell {
         super.awakeFromNib()
         kidswearCollectionView.dataSource = self
         kidswearCollectionView.delegate = self
+        createScrollTimer()
+    }
+    
+    func prepareImages(_ images: [KidswearImageModel]) {
+        self.images = images
+        kidswearCollectionView.reloadData()
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        removeScrollTimer()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
+    }
+    
+    func createScrollTimer() {
+        scrollTimer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: { _ in
+            let maxIndex = self.images.count - 1
+            if self.scrollIndex < maxIndex {
+                self.scrollIndex += 1
+            } else {
+                self.scrollIndex = 0
+            }
+           // print("\n>>>> scroll to index: \(self.scrollIndex)")
+            let indexPath = IndexPath(item: self.scrollIndex, section: 0)
+            self.kidswearCollectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
+        })
+    }
+    
+    func removeScrollTimer() {
+       // print("Remove Timer")
+        scrollTimer?.invalidate()
+        scrollTimer = nil
     }
 }
 extension KidswearImagesTableViewCell: UICollectionViewDataSource {
